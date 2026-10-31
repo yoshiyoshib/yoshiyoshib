@@ -1,0 +1,182 @@
+<title>ひとふりおみくじ</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<style>
+  /* Layout: one centered column — the wooden box on top, the paper fortune unfolds below it */
+  :root {
+    --paper: #f7f3ec;
+    --ink: #2a211c;
+    --muted: #6f625a;
+    --shu: #b8321f;        /* 朱色 vermilion */
+    --wood: #8a5a36;
+    --wood-dark: #5e3b22;
+    --card: #fffdf8;
+    --line: #e2d8ca;
+    --display: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    --body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1715; --ink: #f1e9df; --muted: #b5a698; --shu: #e0573f;
+      --wood: #a06d45; --wood-dark: #6d4528; --card: #26201d; --line: #3d3430;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1715; --ink: #f1e9df; --muted: #b5a698; --shu: #e0573f;
+    --wood: #a06d45; --wood-dark: #6d4528; --card: #26201d; --line: #3d3430;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--paper); color: var(--ink); font-family: var(--body);
+    font-size: 16px; line-height: 1.7;
+  }
+  main {
+    max-width: 440px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 48px;
+    display: flex; flex-direction: column; align-items: center; gap: 24px;
+  }
+  header { text-align: center; }
+  h1 {
+    font-family: var(--display); font-weight: 800; font-size: 2rem; margin: 0;
+    letter-spacing: 0.08em; text-wrap: balance;
+  }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 0.9rem; }
+
+  /* おみくじ箱 */
+  .box-wrap { position: relative; width: 120px; height: 200px; }
+  .stick {
+    position: absolute; left: 50%; top: 0; width: 10px; height: 70px; margin-left: -5px;
+    background: #e8d3a8; border-radius: 2px; opacity: 0; transform: translateY(40px);
+    transition: transform .5s ease, opacity .3s;
+  }
+  .stick.out { opacity: 1; transform: translateY(-28px); }
+  .box {
+    position: absolute; inset: 40px 0 0 0;
+    background: linear-gradient(90deg, var(--wood-dark), var(--wood) 30%, var(--wood) 70%, var(--wood-dark));
+    border-radius: 6px; display: grid; place-items: center;
+    box-shadow: inset 0 6px 0 rgba(0,0,0,.18);
+  }
+  .box span {
+    writing-mode: vertical-rl; font-family: var(--display); font-weight: 800;
+    color: #fff4e2; font-size: 1.5rem; letter-spacing: .2em;
+    border: 2px solid #fff4e2; padding: 8px 4px;
+  }
+  .shaking { animation: shake .7s ease-in-out; }
+  @keyframes shake {
+    0%,100% { transform: rotate(0); }
+    20% { transform: rotate(-14deg); } 40% { transform: rotate(12deg); }
+    60% { transform: rotate(-10deg); } 80% { transform: rotate(6deg); }
+  }
+
+  button {
+    font-family: var(--body); font-weight: 700; font-size: 1.05rem;
+    background: var(--shu); color: #fff; border: 0; border-radius: 999px;
+    padding: 14px 40px; cursor: pointer; letter-spacing: .1em;
+  }
+  button:active { transform: scale(.97); }
+  button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  button:disabled { opacity: .6; cursor: default; }
+
+  /* 結果の紙 */
+  .fortune {
+    width: 100%; background: var(--card); border: 1px solid var(--line);
+    border-top: 6px solid var(--shu); padding: 20px 20px 16px;
+    animation: unfold .5s ease-out;
+  }
+  @keyframes unfold { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: none; } }
+  .no { color: var(--muted); font-size: .8rem; letter-spacing: .15em; text-align: center; }
+  .rank {
+    font-family: var(--display); font-weight: 800; font-size: 3.4rem; line-height: 1.2;
+    text-align: center; color: var(--shu); letter-spacing: .1em; margin: 4px 0;
+  }
+  .poem { text-align: center; font-family: var(--display); margin: 0 0 16px; }
+  dl { margin: 0; display: grid; grid-template-columns: auto 1fr; border-top: 1px solid var(--line); }
+  dt, dd { padding: 8px 0; border-bottom: 1px solid var(--line); margin: 0; }
+  dt { font-family: var(--display); font-weight: 800; padding-right: 16px; color: var(--muted); }
+  .note { font-size: .78rem; color: var(--muted); text-align: center; margin: 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .shaking, .fortune { animation: none; }
+    .stick { transition: none; }
+  }
+</style>
+
+<main>
+  <header>
+    <h1>ひとふりおみくじ</h1>
+    <p>箱をふって、今日の運勢を占いましょう</p>
+  </header>
+
+  <div class="box-wrap" id="boxWrap" aria-hidden="true">
+    <div class="stick" id="stick"></div>
+    <div class="box"><span>御神籤</span></div>
+  </div>
+
+  <button id="draw" type="button">おみくじを引く</button>
+
+  <section class="fortune" id="result" hidden aria-live="polite"></section>
+
+  <p class="note">遊び用のおみくじです。結果は毎回ランダムに決まります。</p>
+</main>
+
+<script>
+  const ranks = [
+    { name: "大吉", weight: 16, poem: "雲晴れて 月の光の さやけさよ" },
+    { name: "中吉", weight: 20, poem: "春風に 花のつぼみの ほころびぬ" },
+    { name: "小吉", weight: 20, poem: "細き道 ゆけば広野に 出でにけり" },
+    { name: "吉",   weight: 22, poem: "静かなる 水にうつれる 秋の空" },
+    { name: "末吉", weight: 14, poem: "冬枯れの 枝にも芽ぶく 時ぞ来る" },
+    { name: "凶",   weight: 8,  poem: "雨やみて 土かたまりて 道ひらく" },
+  ];
+  const items = {
+    "願望": ["思いのほか早く叶う", "焦らず待てば叶う", "人の助けで叶う", "少し時間がかかる"],
+    "待人": ["便りあり、来る", "遅れて来る", "思わぬ人が来る", "来ないが心配無用"],
+    "失物": ["身近なところから出る", "高いところを探せ", "時がたてば出る", "人に聞けば見つかる"],
+    "学問": ["努力が実を結ぶ", "基礎を固めよ", "良い師に恵まれる", "毎日少しずつ進めよ"],
+    "旅行": ["東の方角が吉", "近場が良し", "思い立ったら吉日", "天気に気をつけよ"],
+    "恋愛": ["素直な言葉が通じる", "身近な縁を大切に", "相手の話をよく聞け", "焦らず育てよ"],
+  };
+  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+  function pickRank() {
+    const total = ranks.reduce((s, r) => s + r.weight, 0);
+    let n = Math.random() * total;
+    for (const r of ranks) { if ((n -= r.weight) < 0) return r; }
+    return ranks[0];
+  }
+
+  const btn = document.getElementById("draw");
+  const wrap = document.getElementById("boxWrap");
+  const stick = document.getElementById("stick");
+  const result = document.getElementById("result");
+  const kanji = ["〇","一","二","三","四","五","六","七","八","九"];
+  const toKanji = n => String(n).split("").map(d => kanji[d]).join("");
+
+  btn.addEventListener("click", () => {
+    btn.disabled = true;
+    result.hidden = true;
+    stick.classList.remove("out");
+    wrap.classList.remove("shaking");
+    void wrap.offsetWidth;
+    wrap.classList.add("shaking");
+    setTimeout(() => {
+      stick.classList.add("out");
+      const r = pickRank();
+      const no = 1 + Math.floor(Math.random() * 100);
+      const rows = Object.entries(items)
+        .map(([k, v]) => `<dt>${k}</dt><dd>${pick(v)}</dd>`).join("");
+      result.innerHTML =
+        `<div class="no">第${toKanji(no)}番</div>` +
+        `<div class="rank">${r.name}</div>` +
+        `<p class="poem">${r.poem}</p>` +
+        `<dl>${rows}</dl>`;
+      result.hidden = false;
+      result.style.animation = "none"; void result.offsetWidth; result.style.animation = "";
+      btn.textContent = "もう一度引く";
+      btn.disabled = false;
+    }, 750);
+  });
+</script>
