@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-04",
+  "no": 1,
+  "kind": "word",
+  "level": "C1",
+  "status": "draft",
+  "theme": { "en": "Describing people at work", "ja": "仕事ぶりを表す形容詞" },
+  "items": [
+    {
+      "term": "meticulous",
+      "ipa": "/məˈtɪkjələs/",
+      "pos": "adjective",
+      "ja": "細部まで注意を払う、几帳面な",
+      "definition": "Very careful and paying close attention to every detail.",
+      "example": "She keeps **meticulous** records of every meeting.",
+      "example_ja": "彼女はすべての会議を細かく記録している。",
+      "note": "careful より強いほめ言葉。副詞は meticulously。"
+    },
+    {
+      "term": "candid",
+      "ipa": "/ˈkændɪd/",
+      "pos": "adjective",
+      "ja": "率直な、遠慮のない",
+      "definition": "Honest and direct, even when the truth may be uncomfortable.",
+      "example": "Thanks for being so **candid** about the problems.",
+      "example_ja": "問題点について率直に話してくれてありがとう。",
+      "note": "candid photo は「自然な瞬間を撮ったスナップ写真」。"
+    },
+    {
+      "term": "resilient",
+      "ipa": "/rɪˈzɪliənt/",
+      "pos": "adjective",
+      "ja": "立ち直りが早い、打たれ強い",
+      "definition": "Able to recover quickly after something difficult or unpleasant.",
+      "example": "The team proved remarkably **resilient** after the setback.",
+      "example_ja": "そのチームは挫折のあと、驚くほど早く立ち直った。",
+      "note": "名詞は resilience（回復力）。"
+    },
+    {
+      "term": "pragmatic",
+      "ipa": "/præɡˈmætɪk/",
+      "pos": "adjective",
+      "ja": "現実的な、実際的な",
+      "definition": "Dealing with problems in a sensible way based on what is possible.",
+      "example": "We need a **pragmatic** solution, not a perfect one.",
+      "example_ja": "必要なのは完璧な解決策ではなく、現実的な解決策だ。",
+      "note": "反対の意味は idealistic（理想主義的な）。"
+    },
+    {
+      "term": "complacent",
+      "ipa": "/kəmˈpleɪsənt/",
+      "pos": "adjective",
+      "ja": "現状に満足しきった、油断した",
+      "definition": "Too satisfied with your situation, so you stop trying to improve.",
+      "example": "After two good years, the company became **complacent**.",
+      "example_ja": "2年好調が続いたあと、その会社は慢心してしまった。",
+      "note": "悪い意味で使います。complaisant（愛想のいい）と混同注意。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Don't get ____ just because the first test went well.",
+    "options": ["pragmatic", "complacent", "candid"],
+    "answer": "B",
+    "why": "complacent＝うまくいって油断し、努力をやめてしまう状態。"
+  },
+  "caption": "仕事ぶりを表すC1レベルの形容詞5つ 🧠\n\n1. meticulous｜細部まで注意を払う\n2. candid｜率直な\n3. resilient｜打たれ強い\n4. pragmatic｜現実的な\n5. complacent｜油断した、慢心した\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英単語 #英語勉強 #大人の英語 #ビジネス英語 #英語上級 #TOEIC #IELTS #英検1級 #英語好きな人と繋がりたい #englishvocabulary #learnenglish #advancedenglish #C1english"
+}

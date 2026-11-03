@@ -5,16 +5,19 @@
 <title>Daily Lexicon template</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&family=Noto+Sans:wght@400&family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
 <style>
-  /* Layout: 1080x1350 (4:5) carousel. Cover on deep ink, one entry per slide on cool paper, recap + quiz to close. */
+  /* Layout: feed = 1080x1350 (4:5) carousel — cover on deep ink, one entry per slide on cool paper, recap + quiz to close.
+     story = 1080x1920 (9:16), content kept inside Instagram's safe zone (top 250 / bottom 340). */
   :root {
     --ink: #141a33;
     --paper: #f1f3f8;
     --card: #ffffff;
     --muted: #5d6480;
     --rule: #d8dce8;
-    --phrasal: #2b4be0;   /* 句動詞 */
-    --idiom: #d24a14;     /* イディオム */
-    --word: #0b7a5c;      /* C1–C2 単語 */
+    --on-ink-muted: #aab2d6;
+    --phrasal: #2b4be0;  --phrasal-lt: #8fa2ff;   /* 句動詞 */
+    --idiom: #d24a14;    --idiom-lt: #ff9a6b;     /* イディオム */
+    --word: #0b7a5c;     --word-lt: #5fd3ae;      /* C1–C2 単語 */
+    --review: #6b4fd8;   --review-lt: #b9a8ff;    /* 週のおさらい */
     --headword: "Young Serif", Georgia, serif;
     --en: "Figtree", "Helvetica Neue", Arial, sans-serif;
     --ipa: "Noto Sans", "Lucida Sans Unicode", sans-serif;
@@ -30,116 +33,173 @@
   }
   .label { font-family: var(--mono); font-size: 24px; letter-spacing: .14em; text-transform: uppercase; }
   .ja { font-family: var(--ja); }
+  .dot { width: 18px; height: 18px; border-radius: 50%; flex: none; display: inline-block; }
 
-  /* ---------- top bar & footer (shared) ---------- */
+  .k-phrasal { --accent: var(--phrasal); --accent-lt: var(--phrasal-lt); --hl: rgba(43, 75, 224, .22); }
+  .k-idiom   { --accent: var(--idiom);   --accent-lt: var(--idiom-lt);   --hl: rgba(210, 74, 20, .22); }
+  .k-word    { --accent: var(--word);    --accent-lt: var(--word-lt);    --hl: rgba(11, 122, 92, .22); }
+  .k-review  { --accent: var(--review);  --accent-lt: var(--review-lt);  --hl: rgba(107, 79, 216, .22); }
+
+  /* ---------- shared bar & footer ---------- */
   .bar { display: flex; justify-content: space-between; align-items: center; color: var(--muted); }
   .foot {
     margin-top: auto; height: 120px; display: flex; justify-content: space-between; align-items: center;
-    border-top: 2px solid var(--rule); color: var(--muted); font-size: 26px;
+    border-top: 2px solid var(--rule); color: var(--muted); font-size: 26px; flex: none;
   }
   .foot b { color: var(--ink); font-weight: 700; }
 
   /* ---------- cover ---------- */
   .cover { background: var(--ink); color: #fff; }
-  .cover .bar { color: #aab2d6; }
+  .cover .bar { color: var(--on-ink-muted); }
   .cover h1 {
     font-family: var(--headword); font-weight: 400; font-size: 150px; line-height: .98;
     margin: 120px 0 0; letter-spacing: -.01em;
   }
-  .cover h1 em { font-style: normal; color: #8fa2ff; }
-  .cover .theme { font-family: var(--ja); font-size: 44px; font-weight: 700; margin: 36px 0 0; }
-  .cover .theme small { display: block; font-family: var(--en); font-weight: 500; font-size: 30px; color: #aab2d6; margin-top: 8px; }
-  .cover ol { list-style: none; margin: 72px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+  .cover h1 em { font-style: normal; color: var(--accent-lt); }
+  .lv { font-family: var(--en); font-weight: 700; font-size: .86em; letter-spacing: -.02em; }
+  .cover .theme { font-family: var(--ja); font-size: 44px; font-weight: 700; margin: 36px 0 0; line-height: 1.35; }
+  .cover .theme small { display: block; font-family: var(--en); font-weight: 500; font-size: 30px; color: var(--on-ink-muted); margin-top: 8px; }
+  .cover ol { list-style: none; margin: 64px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
   .cover li { display: flex; align-items: center; gap: 24px; font-size: 38px; font-weight: 500; }
-  .dot { width: 18px; height: 18px; border-radius: 50%; flex: none; }
-  .cover .foot { border-color: #2c3456; color: #aab2d6; }
-  .cover .foot b { color: #fff; }
-  .legend { display: flex; gap: 28px; font-size: 24px; }
-  .legend span { display: flex; align-items: center; gap: 10px; }
-  .legend .dot { width: 14px; height: 14px; }
+  .cover li .dot { background: var(--accent-lt); }
+  .cover li small { font-family: var(--ja); font-size: 28px; color: var(--on-ink-muted); margin-left: auto; }
+  .cover .foot { border-color: #2c3456; color: var(--on-ink-muted); }
+  .kindtag { display: flex; align-items: center; gap: 12px; font-size: 26px; }
+  .kindtag .dot { background: var(--accent-lt); width: 14px; height: 14px; }
 
   /* ---------- entry ---------- */
   .chip {
     display: inline-flex; align-items: center; gap: 12px; color: #fff; padding: 10px 20px 10px 18px;
     border-radius: 6px; font-family: var(--mono); font-size: 24px; letter-spacing: .14em; text-transform: uppercase;
+    background: var(--accent);
   }
   .chip .ja { letter-spacing: 0; font-size: 24px; font-weight: 700; text-transform: none; opacity: .9; }
-  .term {
-    font-family: var(--headword); font-weight: 400; line-height: 1.02; margin: 56px 0 0;
-    font-size: 128px; letter-spacing: -.01em;
-  }
+  .term { font-family: var(--headword); font-weight: 400; line-height: 1.02; margin: 56px 0 0; font-size: 128px; letter-spacing: -.01em; }
   .pron { display: flex; gap: 24px; align-items: baseline; margin-top: 22px; color: var(--muted); font-size: 32px; }
   .pron .ipa { font-family: var(--ipa); }
   .pron .pos { font-style: italic; }
   .meaning-ja { font-family: var(--ja); font-weight: 700; font-size: 58px; line-height: 1.3; margin: 44px 0 0; }
   .definition { font-size: 34px; line-height: 1.45; margin: 18px 0 0; color: #2c3350; max-width: 880px; }
-  .example {
-    margin-top: 48px; background: var(--card); border-radius: 18px; padding: 40px 44px;
-    border-left: 10px solid var(--accent);
-  }
+  .example { margin-top: 48px; background: var(--card); border-radius: 18px; padding: 40px 44px; border-left: 10px solid var(--accent); }
   .example .label { color: var(--accent); font-size: 22px; }
   .example .en { font-size: 40px; line-height: 1.42; margin: 14px 0 0; font-weight: 500; }
-  .example .en mark {
-    background: linear-gradient(transparent 58%, var(--hl) 58%); color: inherit; padding: 0 2px; font-weight: 700;
-  }
+  mark { background: linear-gradient(transparent 58%, var(--hl) 58%); color: inherit; padding: 0 2px; font-weight: 700; }
   .example .ja { font-size: 29px; line-height: 1.6; color: var(--muted); margin: 16px 0 0; }
   .note { margin-top: 32px; font-size: 29px; line-height: 1.55; color: var(--muted); display: flex; gap: 16px; }
   .note .label { color: var(--ink); font-size: 22px; padding-top: 5px; flex: none; }
 
-  .t-phrasal { --accent: var(--phrasal); --hl: rgba(43, 75, 224, .22); }
-  .t-idiom   { --accent: var(--idiom);   --hl: rgba(210, 74, 20, .22); }
-  .t-word    { --accent: var(--word);    --hl: rgba(11, 122, 92, .22); }
-  .chip { background: var(--accent); }
-
-  /* ---------- recap ---------- */
+  /* ---------- recap lists ---------- */
   .recap h2 { font-family: var(--headword); font-weight: 400; font-size: 72px; margin: 40px 0 0; line-height: 1; }
   .recap h2 + p { font-family: var(--ja); font-size: 30px; color: var(--muted); margin: 14px 0 0; }
   .list { margin: 28px 0 0; display: flex; flex-direction: column; border-top: 2px solid var(--rule); }
   .row { display: grid; grid-template-columns: 18px 1fr; gap: 26px; align-items: baseline; padding: 14px 0; border-bottom: 2px solid var(--rule); }
-  .row .dot { transform: translateY(-4px); }
+  .row .dot { transform: translateY(-4px); background: var(--accent); }
   .row strong { font-size: 33px; font-weight: 700; display: block; }
   .row span { font-family: var(--ja); font-size: 26px; color: var(--muted); }
+  .daylist .row { padding: 20px 0; }
+  .daylist .row strong { font-size: 40px; }
+  .daylist .row span { font-size: 30px; }
+
   .quiz { margin: 28px 0 24px; background: var(--ink); color: #fff; border-radius: 18px; padding: 30px 40px; }
-  .quiz .label { color: #8fa2ff; font-size: 22px; }
+  .quiz .label { color: var(--accent-lt); font-size: 22px; }
   .quiz p { font-size: 33px; line-height: 1.4; margin: 10px 0 16px; font-weight: 500; }
-  .quiz .opts { display: flex; flex-wrap: wrap; gap: 14px 34px; font-size: 30px; color: #cfd5f0; }
-  .quiz .opts b { color: #8fa2ff; font-family: var(--mono); margin-right: 8px; }
-  .quiz small { display: block; margin-top: 16px; font-family: var(--ja); font-size: 26px; color: #aab2d6; }
+  .quiz .opts { display: flex; flex-wrap: wrap; gap: 12px 34px; font-size: 30px; color: #cfd5f0; }
+  .quiz .opts b { color: var(--accent-lt); font-family: var(--mono); margin-right: 8px; }
+  .quiz small { display: block; margin-top: 16px; font-family: var(--ja); font-size: 26px; color: var(--on-ink-muted); }
+  .quizzes .quiz { margin: 0; padding: 26px 36px; }
+  .quizzes .quiz p { font-size: 31px; margin: 6px 0 12px; }
+  .quizzes .quiz .opts { font-size: 27px; }
+  .quizzes { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+
+  /* ---------- story (9:16) ---------- */
+  .story {
+    width: 1080px; height: 1920px; background: var(--ink); color: #fff; overflow: hidden;
+    padding: 260px 88px 360px; display: flex; flex-direction: column; margin-bottom: 40px;
+  }
+  .story .label { color: var(--accent-lt); }
+  .story h1 { font-family: var(--headword); font-weight: 400; font-size: 104px; line-height: 1; margin: 28px 0 0; }
+  .story h1 + p { font-family: var(--ja); font-size: 36px; color: var(--on-ink-muted); margin: 16px 0 0; }
+  .story .qa { margin-top: 56px; display: flex; flex-direction: column; gap: 44px; }
+  .story .q p { font-size: 40px; line-height: 1.45; margin: 0; font-weight: 500; }
+  .story .q mark { background: linear-gradient(transparent 58%, rgba(255,255,255,.22) 58%); color: var(--accent-lt); }
+  .story .opts { list-style: none; padding: 0; margin: 22px 0 0; display: flex; flex-direction: column; gap: 12px; font-size: 32px; }
+  .story .opts li { color: #8790b8; display: flex; gap: 18px; align-items: baseline; }
+  .story .opts li b { font-family: var(--mono); }
+  .story .opts li.ok { color: #fff; font-weight: 700; }
+  .story .opts li.ok b { color: var(--accent-lt); }
+  .story .opts li.ok::after { content: "✓"; color: var(--accent-lt); }
+  .story .why { font-family: var(--ja); font-size: 30px; color: var(--on-ink-muted); line-height: 1.6; margin: 18px 0 0; }
+  .story .next { margin-top: auto; border-top: 2px solid #2c3456; padding-top: 36px; font-family: var(--ja); font-size: 34px; line-height: 1.5; }
+  .story .next b { color: var(--accent-lt); font-family: var(--en); }
+  .story .next small { display: block; font-size: 28px; color: var(--on-ink-muted); margin-top: 8px; }
 </style>
 </head>
 <body>
 <div id="root"></div>
 <script>
-const TYPE = {
-  phrasal: { en: "Phrasal verb", ja: "句動詞", color: "var(--phrasal)" },
-  idiom:   { en: "Idiom",        ja: "イディオム", color: "var(--idiom)" },
-  word:    { en: "Word",         ja: "単語", color: "var(--word)" },
+const KIND = {
+  phrasal: { en: "Phrasal verb", ja: "句動詞", title: n => `${n} Phrasal<br><em>Verbs</em>`, short: "Phrasal Verbs" },
+  idiom:   { en: "Idiom",        ja: "イディオム", title: n => `${n} English<br><em>Idioms</em>`, short: "Idioms" },
+  word:    { en: "Word",         ja: "単語", title: (n, lv) => `${n} <span class="lv">${lv || "C1"}</span><br><em>Words</em>`, short: "Words" },
+  review:  { en: "Review",       ja: "週のおさらい", title: () => `Weekly<br><em>Review</em>`, short: "Weekly Review" },
 };
+const WD = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+const WD_JA = ["日", "月", "火", "水", "木", "金", "土"];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const marked = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<mark>$1</mark>");
 const pad = n => String(n).padStart(2, "0");
+const d = s => new Date(s + "T00:00:00");
+const fmtDate = s => d(s).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const md = s => `${d(s).getMonth() + 1}/${d(s).getDate()}`;
+const kindTitle = p => p.kind === "word" ? `${p.level || "C1"} Words` : KIND[p.kind].short;
+const kindTitleHtml = p => p.kind === "word" ? `<span class="lv">${esc(p.level || "C1")}</span> Words` : KIND[p.kind].short;
 
-function render(post, cfg) {
-  const items = post.items;
-  const total = items.length + 2;
-  const fmtDate = new Date(post.date + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
-  const bar = (i) => `<div class="bar label"><span>${esc(cfg.brand)} · No.${String(post.no).padStart(3, "0")}</span><span>${pad(i)} / ${pad(total)}</span></div>`;
-  const foot = (left) => `<div class="foot"><b>${esc(cfg.handle)}</b><span class="ja">${left}</span></div>`;
-  const chipLabel = it => it.type === "word" ? `${TYPE.word.en} · ${esc(it.level || "C1")}` : TYPE[it.type].en;
+function slidesFor(post, cfg, week) {
+  const kind = post.kind;
+  const K = KIND[kind];
+  const no = "No." + String(post.no).padStart(3, "0");
+  const out = [];
+  const total = kind === "review" ? week.length + 2 : post.items.length + 2;
+  const bar = i => `<div class="bar label"><span>${esc(cfg.brand)} · ${no}</span><span>${pad(i)} / ${pad(total)}</span></div>`;
+  const foot = right => `<div class="foot"><b>${esc(cfg.handle)}</b><span class="ja">${right}</span></div>`;
 
-  const slides = [];
-  slides.push(`<section class="slide cover">
-    <div class="bar label"><span>${esc(cfg.brand)} · No.${String(post.no).padStart(3, "0")}</span><span>${esc(fmtDate)}</span></div>
-    <h1>${items.length} English<br><em>expressions</em></h1>
+  // cover
+  const coverList = kind === "review"
+    ? week.map(w => `<li class="k-${w.kind}"><i class="dot"></i>${esc(kindTitle(w))}<small>${WD_JA[d(w.date).getDay()]}曜日</small></li>`).join("")
+    : post.items.map(it => `<li><i class="dot"></i>${esc(it.term)}</li>`).join("");
+  out.push(`<section class="slide cover k-${kind}">
+    <div class="bar label"><span>${esc(cfg.brand)} · ${no}</span><span>${esc(fmtDate(post.date))}</span></div>
+    <h1>${K.title(kind === "review" ? 0 : post.items.length, post.level)}</h1>
     <p class="theme">${esc(post.theme.ja)}<small>${esc(post.theme.en)}</small></p>
-    <ol>${items.map(it => `<li><i class="dot" style="background:${TYPE[it.type].color}"></i>${esc(it.term)}</li>`).join("")}</ol>
-    <div class="foot"><div class="legend">${Object.values(TYPE).map(t => `<span class="ja"><i class="dot" style="background:${t.color}"></i>${t.ja}</span>`).join("")}</div><span class="ja">スワイプ →</span></div>
+    <ol>${coverList}</ol>
+    <div class="foot"><span class="kindtag ja"><i class="dot"></i>${kind === "word" ? `${esc(post.level || "C1")}レベルの単語` : K.ja}</span><span class="ja">スワイプ →</span></div>
   </section>`);
 
-  items.forEach((it, i) => {
-    slides.push(`<section class="slide t-${it.type}">
+  if (kind === "review") {
+    week.forEach((w, i) => {
+      out.push(`<section class="slide recap k-${w.kind}">
+        ${bar(i + 2)}
+        <div style="margin-top:56px"><span class="chip">${WD[d(w.date).getDay()]} ${md(w.date)}<span class="ja">${w.kind === "word" ? (w.level || "C1") + "単語" : KIND[w.kind].ja}</span></span></div>
+        <h2>${kindTitleHtml(w)}</h2><p>${esc(w.theme.ja)}</p>
+        <div class="list daylist">${w.items.map(it => `<div class="row"><i class="dot"></i><div><strong>${esc(it.term)}</strong><span>${esc(it.ja)}</span></div></div>`).join("")}</div>
+        ${foot("覚えていたものはいくつ？")}
+      </section>`);
+    });
+    out.push(`<section class="slide recap k-review">
+      ${bar(total)}
+      <h2>Quiz time</h2><p>今週の表現から3問。答えはコメントで！</p>
+      <div class="quizzes">${post.quizzes.map((q, k) => `<div class="quiz"><div class="label">Q${k + 1}</div><p>${esc(q.sentence)}</p>
+        <div class="opts">${q.options.map((o, j) => `<span><b>${"ABCD"[j]}</b>${esc(o)}</span>`).join("")}</div></div>`).join("")}</div>
+      ${foot("正解は明日のストーリーで")}
+    </section>`);
+    return out;
+  }
+
+  post.items.forEach((it, i) => {
+    const chip = kind === "word" ? `${K.en} · ${esc(it.level || post.level || "C1")}` : K.en;
+    out.push(`<section class="slide k-${kind}">
       ${bar(i + 2)}
-      <div style="margin-top:64px"><span class="chip">${chipLabel(it)}<span class="ja">${TYPE[it.type].ja}</span></span></div>
+      <div style="margin-top:64px"><span class="chip">${chip}<span class="ja">${K.ja}</span></span></div>
       <h2 class="term fit">${esc(it.term)}</h2>
       <div class="pron">${it.ipa ? `<span class="ipa">${esc(it.ipa)}</span>` : ""}${it.pos ? `<span class="pos">${esc(it.pos)}</span>` : ""}</div>
       <p class="meaning-ja">${esc(it.ja)}</p>
@@ -151,32 +211,67 @@ function render(post, cfg) {
   });
 
   const q = post.quiz;
-  slides.push(`<section class="slide recap">
+  out.push(`<section class="slide recap k-${kind}">
     ${bar(total)}
-    <h2>Review</h2><p>今日の${items.length}つをおさらい</p>
-    <div class="list">${items.map(it => `<div class="row"><i class="dot" style="background:${TYPE[it.type].color}"></i><div><strong>${esc(it.term)}</strong><span>${esc(it.ja)}</span></div></div>`).join("")}</div>
+    <h2>Review</h2><p>今日の${post.items.length}つをおさらい</p>
+    <div class="list">${post.items.map(it => `<div class="row"><i class="dot"></i><div><strong>${esc(it.term)}</strong><span>${esc(it.ja)}</span></div></div>`).join("")}</div>
     ${q ? `<div class="quiz"><div class="label">Quiz</div><p>${esc(q.sentence)}</p>
       <div class="opts">${q.options.map((o, k) => `<span><b>${"ABCD"[k]}</b>${esc(o)}</span>`).join("")}</div>
-      <small>答えはコメントで！ 正解はキャプションの最後に</small></div>` : ""}
+      <small>答えはコメントで！ 正解は明日のストーリーで</small></div>` : ""}
     ${foot("フォローして毎日ひとつ上の英語を")}
   </section>`);
-
-  document.getElementById("root").innerHTML = slides.join("");
+  return out;
 }
 
-// Shrink long headwords so they stay within two lines.
+// Story for day D: answers to the previous post's quiz, plus a pointer to today's post.
+function storyFor(prev, today, cfg) {
+  const quizzes = prev.quizzes || (prev.quiz ? [prev.quiz] : []);
+  const qa = quizzes.map(q => {
+    const idx = "ABCD".indexOf(q.answer);
+    const filled = esc(q.sentence).replace(/_{2,}/, `<mark>${esc(q.options[idx])}</mark>`);
+    return `<div class="q"><p>${filled}</p>
+      <ul class="opts">${q.options.map((o, j) => `<li class="${j === idx ? "ok" : ""}"><b>${"ABCD"[j]}</b>${esc(o)}</li>`).join("")}</ul>
+      ${q.why ? `<p class="why">${esc(q.why)}</p>` : ""}</div>`;
+  }).join("");
+  const nextLine = today
+    ? `今日は <b>${esc(kindTitle(today))}</b><small>${esc(today.theme.ja)} ・ 夜に投稿します</small>`
+    : `フォローして毎日ひとつ上の英語を`;
+  return `<section class="story k-${prev.kind}">
+    <div class="label">Yesterday's quiz · ${md(prev.date)}</div>
+    <h1>Answer${quizzes.length > 1 ? "s" : ""}</h1><p>昨日のクイズの答え</p>
+    <div class="qa">${qa}</div>
+    <div class="next">${nextLine}</div>
+  </section>`;
+}
+
 function fit() {
   document.querySelectorAll(".fit").forEach(el => {
     let size = 128;
     el.style.fontSize = size + "px";
-    const maxH = () => size * 1.02 * 2 + 4;
-    while (size > 64 && (el.scrollHeight > maxH() || el.scrollWidth > el.clientWidth)) {
+    while (size > 64 && (el.scrollHeight > size * 1.02 * 2 + 4 || el.scrollWidth > el.clientWidth)) {
       size -= 4; el.style.fontSize = size + "px";
     }
   });
 }
 
-window.renderPost = async (post, cfg) => { render(post, cfg); await document.fonts.ready; fit(); };
+window.renderAll = async ({ post, cfg, week, prev }) => {
+  const parts = slidesFor(post, cfg, week || []);
+  let html = parts.join("");
+  if (prev) html += storyFor(prev, post, cfg);
+  document.getElementById("root").innerHTML = html;
+  await document.fonts.ready;
+  fit();
+  // Report anything that spills past its frame so the renderer can warn.
+  const overflow = [];
+  document.querySelectorAll(".slide, .story").forEach((s, i) => {
+    const r = s.getBoundingClientRect();
+    s.querySelectorAll("*").forEach(el => {
+      const e = el.getBoundingClientRect();
+      if (e.bottom > r.bottom + 1 || e.right > r.right + 1) overflow.push(`${s.className.split(" ")[0]} #${i + 1}: ${el.tagName.toLowerCase()}.${el.className}`);
+    });
+  });
+  return overflow;
+};
 </script>
 </body>
 </html>

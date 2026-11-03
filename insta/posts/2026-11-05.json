@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "no": 2,
+  "kind": "phrasal",
+  "status": "draft",
+  "theme": { "en": "Plans and schedules", "ja": "予定・計画の話で使う句動詞" },
+  "items": [
+    {
+      "term": "pencil in",
+      "ipa": "/ˌpɛnsəl ˈɪn/",
+      "pos": "phrasal verb",
+      "ja": "（仮に）予定を入れる",
+      "definition": "To arrange something for a time, knowing the plan might change later.",
+      "example": "Let's **pencil in** a meeting for Thursday afternoon.",
+      "example_ja": "とりあえず木曜の午後に打ち合わせを入れておこう。",
+      "note": "鉛筆で書く＝あとで消せる、というイメージ。"
+    },
+    {
+      "term": "iron out",
+      "ipa": "/ˌaɪərn ˈaʊt/",
+      "pos": "phrasal verb",
+      "ja": "（問題・細かい点を）解決する、詰める",
+      "definition": "To solve the small problems or disagreements that remain in a plan.",
+      "example": "We still need to **iron out** a few details before the launch.",
+      "example_ja": "発売前に、まだいくつか細かい点を詰める必要がある。",
+      "note": "iron out the kinks（不具合をなくす）の形もよく使います。"
+    },
+    {
+      "term": "fall through",
+      "ipa": "/ˌfɔl ˈθru/",
+      "pos": "phrasal verb",
+      "ja": "（計画・取引が）だめになる、立ち消えになる",
+      "definition": "If a plan or deal falls through, it fails to happen.",
+      "example": "Our trip **fell through** at the last minute.",
+      "example_ja": "旅行の計画が直前でだめになった。",
+      "note": "主語になるのは計画や取引。人は主語にしません。"
+    },
+    {
+      "term": "move up",
+      "ipa": "/ˌmuv ˈʌp/",
+      "pos": "phrasal verb",
+      "ja": "（予定を）前倒しにする",
+      "definition": "To change an event to an earlier date or time.",
+      "example": "Can we **move** the deadline **up** to Friday?",
+      "example_ja": "締め切りを金曜に前倒しできますか？",
+      "note": "イギリス英語では bring forward が一般的です。"
+    },
+    {
+      "term": "mull over",
+      "ipa": "/ˌmʌl ˈoʊvər/",
+      "pos": "phrasal verb",
+      "ja": "じっくり考える、熟考する",
+      "definition": "To think carefully about something for a period of time before deciding.",
+      "example": "Let me **mull it over** and get back to you tomorrow.",
+      "example_ja": "少し考えさせてください。明日お返事します。",
+      "note": "代名詞は間に入れるのが自然：mull it over"
+    }
+  ],
+  "quiz": {
+    "sentence": "The deal ____ because the client changed their mind.",
+    "options": ["penciled in", "moved up", "fell through"],
+    "answer": "C",
+    "why": "fall through＝計画や取引がだめになる。過去形は fell through。"
+  },
+  "caption": "予定・計画の話で使える句動詞5つ 📅\n\n1. pencil in｜（仮に）予定を入れる\n2. iron out｜細かい点を詰める\n3. fall through｜（計画が）だめになる\n4. move up｜前倒しにする\n5. mull over｜じっくり考える\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #句動詞 #英語勉強 #大人の英語 #ビジネス英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #phrasalverbs #learnenglish #advancedenglish #englishvocabulary"
+}

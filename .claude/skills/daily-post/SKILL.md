@@ -1,23 +1,42 @@
 ---
 name: daily-post
-description: Create the day's Instagram carousel for the English-learning account (phrasal verbs, idioms, C1–C2 words). Use when the user asks for today's post, the next post, or a post on a given theme or date.
+description: Create one day's Instagram post for the English-learning account (phrasal verbs, idioms, C1–C2 words, Sunday review), including story and reel. Use when the user asks for today's post, a post for a given date, or to fix a post.
 ---
 
-# Daily Instagram post
+# One day's post
 
-Each post is one JSON file in `insta/posts/<YYYY-MM-DD>.json`. `insta/render.js` turns it into 1080x1350 PNG slides plus `caption.txt` in `insta/out/<date>/`. Do not change `insta/template.html` unless the user asks for a design change.
+The account teaches intermediate-to-advanced (B2–C2) Japanese learners, in American English.
+Each post is `insta/posts/<YYYY-MM-DD>.json`. `node insta/render.js <date>` writes `insta/out/<date>/`:
+`01.jpg…` (carousel), `story.jpg` (answer to the previous day's quiz), `reel.mp4`, `caption.txt`, `alt.txt`.
+Do not change `insta/template.html` unless the user asks for a design change.
 
-## Steps
+## Before writing
 
-1. Pick the date (today unless the user names one) and the next `no` (highest `no` in `insta/posts/` + 1).
-2. Collect every `term` already used in `insta/posts/*.json`. Never repeat one.
-3. Choose a theme (the user's, or a fresh everyday/work/emotion/travel topic not used recently).
-4. Write 5 items. Default mix: 2 `phrasal`, 2 `idiom`, 1 `word` (rotate to 1/2/2 or 2/1/2 on some days). `word` items need `level` of `C1` or `C2`.
-5. Write the JSON in the same shape as the existing posts:
-   - `term`, `ipa` (General American, optional for long idioms), `pos`, `ja` (short Japanese meaning), `definition` (one plain English sentence, under ~110 characters), `example` (wrap the target words in `**...**`, under ~90 characters), `example_ja`, `note` (one short Japanese tip: usage, origin, related forms; under ~45 characters).
-   - `quiz`: one fill-in-the-blank sentence with 3 options from today's items. Put the correct answer at a random position and set `answer` to its letter.
-   - `caption`: Japanese hook line, numbered list `term｜meaning`, a line asking for quiz answers in comments, a save reminder, the quiz answer after a few `.` lines, then 10–15 hashtags (mix Japanese and English).
-6. Check accuracy: meanings, IPA, register and the example's grammar must be correct and natural. Avoid absolute "× wrong" claims unless the usage is truly ungrammatical.
-7. Run `node insta/render.js insta/posts/<date>.json`.
-8. Look at every slide image. If a headword, example or tip is cut off or crowds the footer, shorten the text and render again.
-9. Commit the JSON and the `insta/out/<date>/` folder, push, then send the PNGs and `caption.txt` to the user with SendUserFile.
+1. Read `insta/learnings.md` and `insta/feedback.md` and follow them. They override the defaults below.
+2. Run `node insta/schedule.js <date> 1` to get the kind (from the weekday rotation in `insta/lib.js`) and the post number.
+3. Collect every `term` in `insta/posts/*.json`. Never repeat one.
+
+## Content rules (kind = phrasal / idiom / word)
+
+- 5 items, all of the day's kind. Pick a theme that ties them together (work, emotions, travel, money, relationships, news…) and has not been used in the last 3 weeks.
+- Level: B2+ only. Skip beginner items such as give up, look for, piece of cake. `word` posts use the level from the rotation (C1 on Wednesday, C2 on Saturday).
+- Per item: `term`, `ipa` (General American; may be omitted for long idioms), `pos`, `ja` (short Japanese meaning), `definition` (one plain English sentence, ≤ ~110 chars), `example` (original sentence, target wrapped in `**…**`, ≤ ~90 chars; separable phrasal verbs may mark both parts, e.g. `**move** the deadline **up**`), `example_ja`, `note` (one Japanese tip on usage, origin, register or a related form, ≤ ~45 chars).
+- `quiz`: one fill-in-the-blank sentence (`____`) with 3 options taken from today's items. Put the answer at a random letter, set `answer`, and add `why` (one short Japanese line).
+- `caption`: Japanese hook line, numbered `term｜meaning` list, ask for quiz answers in the comments, say the answer comes in tomorrow morning's story, a save reminder, three `.` lines, then 12–15 hashtags mixing Japanese and English.
+- `status`: always `"draft"` when you write or change a post. Only the user's OK makes it `"approved"`.
+- Write original examples. Do not copy dictionary sentences.
+
+## Sunday review (kind = review)
+
+- No `items`. The template pulls Monday–Saturday of the same week automatically.
+- `theme` summarizes the week. `quizzes`: 3 questions, each from a different day's post, same shape as `quiz`.
+
+## Check
+
+1. Verify meanings, IPA, collocations and example grammar. Avoid absolute "× wrong" claims unless the usage is truly ungrammatical.
+2. `node insta/render.js <date>`. It warns about anything that spills off a slide (exit code 2). Fix by shortening the text.
+3. Look at every slide and the story. Fix anything cramped or cut off and render again.
+
+## Fixing a post after feedback
+
+Apply the change, keep `status` as `"draft"` until the user OKs it, re-render, and add a one-line general lesson to `insta/feedback.md` if the feedback applies to future posts (e.g. "examples should be under 12 words").
