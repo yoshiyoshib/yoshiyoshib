@@ -1,19 +1,21 @@
 #!/usr/bin/env node
-// Publishes an approved post through the official Instagram API (Instagram Login, business/creator account).
-// Usage: node insta/publish.js feed|story [--date YYYY-MM-DD] [--dry-run]
+// Publishes an approved post through the official Instagram Graph API (professional account linked to a Facebook Page).
+// Usage: node insta/publish.js feed|story|check|find-id [--date YYYY-MM-DD] [--dry-run]
 //   feed  : carousel (01.jpg…) and, on reel weekdays, reel.mp4 — run in the evening
 //   story : story.jpg (yesterday's quiz answer) — run in the morning
+//   find-id : list the Instagram account IDs the token can reach (needs IG_ACCESS_TOKEN only)
+//   check : confirm IG_USER_ID + IG_ACCESS_TOKEN work and show the account name
 // Env: IG_USER_ID, IG_ACCESS_TOKEN, MEDIA_BASE_URL (optional; defaults to raw GitHub URLs at the current commit)
 // Only posts whose JSON has "status": "approved" are published. Results are logged to insta/published.json.
 const fs = require("fs");
 const path = require("path");
-const { DIR, config, loadPost, todayJST, weekday } = require("./lib");
+const { API, DIR, config, loadPost, todayJST, weekday } = require("./lib");
 
 const args = process.argv.slice(2);
 const mode = args[0];
 const date = args.includes("--date") ? args[args.indexOf("--date") + 1] : todayJST();
-const dry = args.includes("--dry-run") || process.env.DRY_RUN === "true";
-const API = `https://graph.instagram.com/${process.env.IG_API_VERSION || "v23.0"}`;
+// check / find-id only read data, so they always call the real API.
+const dry = !["check", "find-id"].includes(mode) && (args.includes("--dry-run") || process.env.DRY_RUN === "true");
 const { IG_USER_ID, IG_ACCESS_TOKEN } = process.env;
 const LOG = path.join(DIR, "published.json");
 
@@ -54,7 +56,25 @@ async function publish(creationId, label) {
 }
 
 (async () => {
-  if (!["feed", "story"].includes(mode)) { console.error("Usage: node insta/publish.js feed|story [--date D] [--dry-run]"); process.exit(1); }
+  if (!["feed", "story", "check", "find-id"].includes(mode)) { console.error("Usage: node insta/publish.js feed|story|check|find-id [--date D] [--dry-run]"); process.exit(1); }
+  if (mode === "find-id") {
+    if (!IG_ACCESS_TOKEN) { console.error("IG_ACCESS_TOKEN is not set."); process.exit(1); }
+    const { data } = await api("GET", "me/accounts", { fields: "name,instagram_business_account{id,username}" });
+    if (!data.length) console.log("No Facebook Pages are assigned to this token. Assign the Page to the system user and regenerate the token.");
+    for (const pg of data) {
+      const ig = pg.instagram_business_account;
+      console.log(`Page "${pg.name}": ${ig ? `Instagram @${ig.username} → IG_USER_ID = ${ig.id}` : "no Instagram account linked"}`);
+    }
+    return;
+  }
+  if (mode === "check") {
+    if (!IG_USER_ID || !IG_ACCESS_TOKEN) { console.error("Set both IG_USER_ID and IG_ACCESS_TOKEN."); process.exit(1); }
+    const me = await api("GET", IG_USER_ID, { fields: "username,followers_count,media_count" });
+    console.log(`OK: @${me.username} · followers ${me.followers_count} · posts ${me.media_count}`);
+    const lim = await api("GET", `${IG_USER_ID}/content_publishing_limit`, { fields: "quota_usage,config" });
+    console.log("publishing quota:", JSON.stringify(lim.data?.[0] || lim));
+    return;
+  }
   if (!dry && (!IG_USER_ID || !IG_ACCESS_TOKEN)) { console.log("::warning::IG_USER_ID / IG_ACCESS_TOKEN are not set. Skipping."); return; }
   if (!base) { console.error("MEDIA_BASE_URL is not set and this is not running in GitHub Actions."); process.exit(1); }
 

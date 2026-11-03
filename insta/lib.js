@@ -33,4 +33,7 @@ const slotFor = date => ROTATION[weekday(date)];
 // The Monday–Saturday posts that a Sunday review covers.
 const weekFor = sunday => [6, 5, 4, 3, 2, 1].map(n => loadPost(addDays(sunday, -n))).filter(Boolean);
 
-module.exports = { DIR, POSTS, ROTATION, config, postPath, loadPost, allPosts, addDays, weekday, todayJST, slotFor, weekFor };
+// Facebook-login route: works with a non-expiring system user token from Meta Business settings.
+const API = `${process.env.IG_GRAPH_HOST || "https://graph.facebook.com"}/${process.env.IG_API_VERSION || "v23.0"}`;
+
+module.exports = { API, DIR, POSTS, ROTATION, config, postPath, loadPost, allPosts, addDays, weekday, todayJST, slotFor, weekFor };

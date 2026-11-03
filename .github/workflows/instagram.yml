@@ -8,9 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "feed / story / metrics"
+        description: "What to run"
         required: true
-        default: feed
+        default: check
+        type: choice
+        options: [check, find-id, feed, story, metrics]
       date:
         description: "YYYY-MM-DD (JST). Empty = today"
         required: false
@@ -47,6 +49,7 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
           DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
         run: |
           MODE="${{ steps.mode.outputs.mode }}"

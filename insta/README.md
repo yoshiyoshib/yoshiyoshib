@@ -33,13 +33,17 @@
 
 ## 自動投稿の設定（最初に 1 回だけ）
 
-1. Instagram アカウントを **プロアカウント（ビジネスまたはクリエイター）** に切り替える
-2. [Meta for Developers](https://developers.facebook.com/) でアプリを作り、**Instagram API（Instagram ログイン）** を追加する
-3. 権限 `instagram_business_basic`、`instagram_business_content_publish`、`instagram_business_manage_insights` でアクセストークン（長期）を発行する
-4. GitHub のリポジトリ → Settings → Secrets and variables → Actions に次の 2 つを登録する
-   - `IG_USER_ID` … Instagram のユーザー ID
-   - `IG_ACCESS_TOKEN` … 長期アクセストークン（約 60 日で期限切れになるので更新が必要）
-5. GitHub の Actions タブ →「Instagram autopost」→「Run workflow」で、`dry_run` にチェックを入れたまま試す
+詳しいチェック式の手順書：https://claude.ai/artifact/1Va4Tk7fY8DFs4AwfTseTr
+
+アクセスキーは **期限のないシステムユーザーのトークン** を使います（Facebook ログイン経由の Instagram Graph API）。
+
+1. Instagram をプロアカウントにし、Facebook ページと連携する
+2. Meta のビジネスポートフォリオにページと Instagram を追加する
+3. 開発者アプリ（種類：ビジネス）を作り、Instagram（Facebook ログインを使った API 設定）を追加する
+4. システムユーザーを作り、アプリ・ページ・Instagram を割り当て、有効期限「なし」でトークンを生成する
+   - 権限：`instagram_basic` `instagram_content_publish` `instagram_manage_insights` `pages_show_list` `pages_read_engagement` `business_management`
+5. GitHub の Secrets に `IG_ACCESS_TOKEN` を登録 → Actions で mode `find-id` を実行 → 表示された ID を `IG_USER_ID` として登録
+6. mode `check` で接続確認、mode `feed` を `dry_run` のまま実行して予行演習
 
 設定するまでは、自動投稿は何もせずに終わります（エラーにはなりません）。
 

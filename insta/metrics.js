@@ -4,9 +4,7 @@
 // Env: IG_ACCESS_TOKEN
 const fs = require("fs");
 const path = require("path");
-const { DIR, loadPost } = require("./lib");
-
-const API = `https://graph.instagram.com/${process.env.IG_API_VERSION || "v23.0"}`;
+const { API, DIR, loadPost } = require("./lib");
 const TOKEN = process.env.IG_ACCESS_TOKEN;
 const LOG = path.join(DIR, "published.json");
 const OUT = path.join(DIR, "metrics", "latest.json");
