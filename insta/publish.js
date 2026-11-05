@@ -9,7 +9,7 @@
 // Only posts whose JSON has "status": "approved" are published. Results are logged to insta/published.json.
 const fs = require("fs");
 const path = require("path");
-const { API, DIR, config, loadPost, todayJST, weekday } = require("./lib");
+const { API, DIR, config, loadPost, todayJST, weekday, addDays } = require("./lib");
 
 const args = process.argv.slice(2);
 const mode = args[0];
@@ -78,16 +78,22 @@ async function publish(creationId, label) {
   if (!dry && (!IG_USER_ID || !IG_ACCESS_TOKEN)) { console.log("::warning::IG_USER_ID / IG_ACCESS_TOKEN are not set. Skipping."); return; }
   if (!base) { console.error("MEDIA_BASE_URL is not set and this is not running in GitHub Actions."); process.exit(1); }
 
-  const post = loadPost(date);
-  if (!post) { console.log(`::warning::No post for ${date}. Nothing to publish.`); return; }
-  if (post.status !== "approved" && !dry) { console.log(`::warning::${date} is "${post.status || "draft"}", not approved. Skipping.`); return; }
-
   const log = fs.existsSync(LOG) ? JSON.parse(fs.readFileSync(LOG, "utf8")) : {};
-  const entry = log[date] || { kind: post.kind, no: post.no };
+  const post = loadPost(date);
   const outDir = path.join(DIR, "out", date);
-  const caption = fs.readFileSync(path.join(outDir, "caption.txt"), "utf8").trim();
 
   if (mode === "feed") {
+    if (!post) { console.log(`::warning::No post for ${date}. Nothing to publish.`); return; }
+    if (post.status !== "approved" && !dry) { console.log(`::warning::${date} is "${post.status || "draft"}", not approved. Skipping.`); return; }
+  } else {
+    // The morning story answers yesterday's quiz, so it goes out only if yesterday's post was published.
+    const prevDate = addDays(date, -1);
+    if (!log[prevDate]?.feed && !dry) { console.log(`::warning::${prevDate} was not published, so there is no quiz to answer. Skipping.`); return; }
+  }
+  const entry = log[date] || (post ? { kind: post.kind, no: post.no } : { story_only: true });
+
+  if (mode === "feed") {
+    const caption = fs.readFileSync(path.join(outDir, "caption.txt"), "utf8").trim();
     if (!entry.feed) {
       const slides = fs.readdirSync(outDir).filter(f => /^\d\d\.jpg$/.test(f)).sort();
       const children = [];

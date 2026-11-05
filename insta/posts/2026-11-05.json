@@ -2,8 +2,11 @@
   "date": "2026-11-05",
   "no": 2,
   "kind": "phrasal",
-  "status": "draft",
-  "theme": { "en": "Plans and schedules", "ja": "予定・計画の話で使う句動詞" },
+  "status": "approved",
+  "theme": {
+    "en": "Plans and schedules",
+    "ja": "予定・計画の話で使う句動詞"
+  },
   "items": [
     {
       "term": "pencil in",
@@ -58,7 +61,11 @@
   ],
   "quiz": {
     "sentence": "The deal ____ because the client changed their mind.",
-    "options": ["penciled in", "moved up", "fell through"],
+    "options": [
+      "penciled in",
+      "moved up",
+      "fell through"
+    ],
     "answer": "C",
     "why": "fall through＝計画や取引がだめになる。過去形は fell through。"
   },

@@ -254,6 +254,11 @@ function fit() {
   });
 }
 
+window.renderStoryOnly = async ({ prev, cfg }) => {
+  document.getElementById("root").innerHTML = storyFor(prev, null, cfg);
+  await document.fonts.ready;
+};
+
 window.renderAll = async ({ post, cfg, week, prev }) => {
   const parts = slidesFor(post, cfg, week || []);
   let html = parts.join("");

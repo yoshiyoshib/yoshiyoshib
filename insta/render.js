@@ -55,9 +55,21 @@ function altText(post) {
   for (const arg of args) {
     const date = path.basename(arg, ".json");
     const post = loadPost(date);
-    if (!post) { console.error(`No post for ${date}`); warnings++; continue; }
-    const week = post.kind === "review" ? weekFor(date) : null;
     const prev = loadPost(addDays(date, -1));
+    if (!post && !prev) { console.error(`No post for ${date} or the day before`); warnings++; continue; }
+    if (!post) {
+      // No post today: still make the morning story that answers yesterday's quiz.
+      const outDir = path.join(DIR, "out", date);
+      fs.mkdirSync(outDir, { recursive: true });
+      await page.goto("file://" + path.join(DIR, "template.html"));
+      await page.waitForLoadState("networkidle");
+      await page.evaluate(a => window.renderStoryOnly(a), { prev, cfg });
+      await page.waitForLoadState("networkidle");
+      await (await page.$(".story")).screenshot({ path: path.join(outDir, "story.jpg"), type: "jpeg", quality: 92 });
+      console.log(`${date}: story only (answer to ${prev.date}) → ${path.relative(process.cwd(), outDir)}`);
+      continue;
+    }
+    const week = post.kind === "review" ? weekFor(date) : null;
     const outDir = path.join(DIR, "out", date);
     fs.rmSync(outDir, { recursive: true, force: true });
     fs.mkdirSync(outDir, { recursive: true });
