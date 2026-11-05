@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "no": 3,
+  "kind": "idiom",
+  "status": "approved",
+  "theme": {
+    "en": "Money and spending",
+    "ja": "お金・出費の話で使うイディオム"
+  },
+  "items": [
+    {
+      "term": "cost an arm and a leg",
+      "pos": "idiom",
+      "ja": "とんでもなく高くつく",
+      "definition": "To be extremely expensive.",
+      "example": "Fixing the car is going to **cost an arm and a leg**.",
+      "example_ja": "車の修理には、とんでもなくお金がかかりそうだ。",
+      "note": "主語は物やサービス。It cost me an arm and a leg. の形も。"
+    },
+    {
+      "term": "tighten your belt",
+      "pos": "idiom",
+      "ja": "出費を切り詰める",
+      "definition": "To spend less money because you have less than before.",
+      "example": "With prices rising, we all need to **tighten our belts**.",
+      "example_ja": "物価が上がっているので、みんな出費を切り詰める必要がある。",
+      "note": "belt-tightening（緊縮）という名詞の形もよく使います。"
+    },
+    {
+      "term": "break the bank",
+      "pos": "idiom",
+      "ja": "大金がかかる（否定文で「そこまで高くない」）",
+      "definition": "To cost more than you can afford. Usually used in negative sentences.",
+      "example": "A weekend trip doesn't have to **break the bank**.",
+      "example_ja": "週末旅行に大金をかける必要はない。",
+      "note": "won't break the bank＝お財布にやさしい、の意味で多用。"
+    },
+    {
+      "term": "foot the bill",
+      "ipa": "/ˌfʊt ðə ˈbɪl/",
+      "pos": "idiom",
+      "ja": "費用を負担する",
+      "definition": "To pay for something, often something expensive.",
+      "example": "The company will **foot the bill** for your training.",
+      "example_ja": "研修の費用は会社が負担します。",
+      "note": "似た表現に pick up the tab（特に飲食代を払う）があります。"
+    },
+    {
+      "term": "make ends meet",
+      "ipa": "/ˌmeɪk ˌɛndz ˈmit/",
+      "pos": "idiom",
+      "ja": "なんとか生活をやりくりする",
+      "definition": "To have just enough money to pay for the things you need.",
+      "example": "She works two jobs to **make ends meet**.",
+      "example_ja": "彼女は生活をやりくりするために、仕事を2つ掛け持ちしている。",
+      "note": "「ぎりぎり」「苦しい」という含みがあります。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Don't worry about the cost — my parents offered to ____.",
+    "options": [
+      "make ends meet",
+      "foot the bill",
+      "tighten their belts"
+    ],
+    "answer": "B",
+    "why": "foot the bill＝（誰かの分の）費用を払う。"
+  },
+  "caption": "お金・出費の話で使えるイディオム5つ 💸\n\n1. cost an arm and a leg｜とんでもなく高くつく\n2. tighten your belt｜出費を切り詰める\n3. break the bank｜大金がかかる\n4. foot the bill｜費用を負担する\n5. make ends meet｜なんとかやりくりする\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英語イディオム #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #英語表現 #idioms #learnenglish #advancedenglish #englishidioms"
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-08",
+  "no": 5,
+  "kind": "review",
+  "status": "approved",
+  "theme": {
+    "en": "This week's expressions",
+    "ja": "今週の表現をまとめて復習"
+  },
+  "quizzes": [
+    {
+      "sentence": "The trip was great, and it didn't ____.",
+      "options": [
+        "break the bank",
+        "make ends meet",
+        "foot the bill"
+      ],
+      "answer": "A",
+      "why": "not break the bank＝そこまで高くない。"
+    },
+    {
+      "sentence": "The rumor was ____ — everyone had forgotten it by Monday.",
+      "options": [
+        "intransigent",
+        "ephemeral",
+        "ubiquitous"
+      ],
+      "answer": "B",
+      "why": "ephemeral＝つかの間の、すぐ消える。"
+    },
+    {
+      "sentence": "Let's ____ a call for Tuesday at 3 — we can always move it if something comes up.",
+      "options": [
+        "fall through",
+        "mull over",
+        "pencil in"
+      ],
+      "answer": "C",
+      "why": "pencil in＝とりあえず予定を入れておく。"
+    }
+  ],
+  "caption": "今週の表現をまとめて復習 ✍️\n\n木｜予定・計画の句動詞\n金｜お金・出費のイディオム\n土｜ニュースで見かけるC2単語\n\n最後のスライドに3問のクイズがあります。何問わかったか、コメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n見逃した日の投稿は、保存しておくと週末にまとめて復習できます。\n\n.\n.\n.\n#英語学習 #英語勉強 #英語復習 #句動詞 #英語イディオム #英単語 #大人の英語 #英会話 #英語上級 #英語好きな人と繋がりたい #learnenglish #englishquiz #advancedenglish"
+}

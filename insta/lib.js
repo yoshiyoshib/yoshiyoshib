@@ -30,8 +30,8 @@ const weekday = date => new Date(date + "T00:00:00Z").getUTCDay();
 const todayJST = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 const slotFor = date => ROTATION[weekday(date)];
 
-// The Monday–Saturday posts that a Sunday review covers.
-const weekFor = sunday => [6, 5, 4, 3, 2, 1].map(n => loadPost(addDays(sunday, -n))).filter(Boolean);
+// The Monday–Saturday posts that a Sunday review covers (only ones that are approved to go out).
+const weekFor = sunday => [6, 5, 4, 3, 2, 1].map(n => loadPost(addDays(sunday, -n))).filter(p => p && p.status === "approved");
 
 // Facebook-login route: works with a non-expiring system user token from Meta Business settings.
 const API = `${process.env.IG_GRAPH_HOST || "https://graph.facebook.com"}/${process.env.IG_API_VERSION || "v23.0"}`;

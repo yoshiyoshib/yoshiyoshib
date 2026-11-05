@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-07",
+  "no": 4,
+  "kind": "word",
+  "level": "C2",
+  "status": "approved",
+  "theme": {
+    "en": "Words from the news",
+    "ja": "ニュースや議論で見かけるC2単語"
+  },
+  "items": [
+    {
+      "term": "ubiquitous",
+      "ipa": "/juˈbɪkwɪtəs/",
+      "pos": "adjective",
+      "ja": "どこにでもある、至るところにある",
+      "definition": "Seeming to be everywhere at the same time.",
+      "example": "Smartphones have become **ubiquitous** in daily life.",
+      "example_ja": "スマートフォンは、日常生活のどこにでもあるものになった。",
+      "note": "名詞は ubiquity。"
+    },
+    {
+      "term": "exacerbate",
+      "ipa": "/ɪɡˈzæsərˌbeɪt/",
+      "pos": "verb",
+      "ja": "（悪い状況を）さらに悪化させる",
+      "definition": "To make a bad situation even worse.",
+      "example": "The heat wave **exacerbated** the water shortage.",
+      "example_ja": "猛暑で水不足がさらに悪化した。",
+      "note": "make worse のかたい言い方。良い状況には使いません。"
+    },
+    {
+      "term": "ostensibly",
+      "ipa": "/ɑˈstɛnsəbli/",
+      "pos": "adverb",
+      "ja": "表向きは、建前としては",
+      "definition": "As it appears or is claimed, though this may not be the real reason.",
+      "example": "He left early, **ostensibly** to catch a train.",
+      "example_ja": "彼は、表向きは電車に乗るためと言って早めに帰った。",
+      "note": "「本当の理由は別にある」という含みがあります。"
+    },
+    {
+      "term": "intransigent",
+      "ipa": "/ɪnˈtrænzɪdʒənt/",
+      "pos": "adjective",
+      "ja": "頑として譲らない",
+      "definition": "Refusing to change your opinion or behavior.",
+      "example": "Both sides remained **intransigent**, so the talks collapsed.",
+      "example_ja": "双方が一歩も譲らず、交渉は決裂した。",
+      "note": "stubborn よりかたく、交渉や政治の話でよく使います。"
+    },
+    {
+      "term": "ephemeral",
+      "ipa": "/ɪˈfɛmərəl/",
+      "pos": "adjective",
+      "ja": "はかない、つかの間の",
+      "definition": "Lasting for only a very short time.",
+      "example": "Online trends are often **ephemeral**.",
+      "example_ja": "ネットの流行は、たいてい一時的なものだ。",
+      "note": "日常会話では short-lived の方がよく使われます。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Cutting staff will only ____ the delays we already have.",
+    "options": [
+      "ostensibly",
+      "intransigent",
+      "exacerbate"
+    ],
+    "answer": "C",
+    "why": "exacerbate＝すでに悪い状況をさらに悪くする。"
+  },
+  "caption": "ニュースや議論で見かけるC2レベルの単語5つ 📰\n\n1. ubiquitous｜どこにでもある\n2. exacerbate｜さらに悪化させる\n3. ostensibly｜表向きは\n4. intransigent｜頑として譲らない\n5. ephemeral｜はかない、つかの間の\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英単語 #英語勉強 #大人の英語 #英語上級 #英検1級 #TOEIC #IELTS #英語好きな人と繋がりたい #語彙力 #englishvocabulary #learnenglish #advancedenglish #C2english"
+}

@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "7 12 * * *"    # 21:07 JST — feed carousel (+ reel on reel days)
     - cron: "17 23 * * *"   # 08:17 JST — story with yesterday's quiz answer
-    - cron: "37 18 * * 0"   # Mon 03:37 JST — collect insights
+    - cron: "37 18 * * *"   # 03:37 JST daily — collect insights for the learning loop
   workflow_dispatch:
     inputs:
       mode:
@@ -42,7 +42,7 @@ jobs:
           case "${{ github.event.schedule }}" in
             "7 12 * * *")  echo "mode=feed" >> "$GITHUB_OUTPUT" ;;
             "17 23 * * *") echo "mode=story" >> "$GITHUB_OUTPUT" ;;
-            "37 18 * * 0") echo "mode=metrics" >> "$GITHUB_OUTPUT" ;;
+            "37 18 * * *") echo "mode=metrics" >> "$GITHUB_OUTPUT" ;;
             *)             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT" ;;
           esac
       - name: Run

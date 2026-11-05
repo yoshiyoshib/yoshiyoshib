@@ -23,7 +23,7 @@ Do not change `insta/template.html` unless the user asks for a design change.
 - Per item: `term`, `ipa` (General American; may be omitted for long idioms), `pos`, `ja` (short Japanese meaning), `definition` (one plain English sentence, ≤ ~110 chars), `example` (original sentence, target wrapped in `**…**`, ≤ ~90 chars; separable phrasal verbs may mark both parts, e.g. `**move** the deadline **up**`), `example_ja`, `note` (one Japanese tip on usage, origin, register or a related form, ≤ ~45 chars).
 - `quiz`: one fill-in-the-blank sentence (`____`) with 3 options taken from today's items. Put the answer at a random letter, set `answer`, and add `why` (one short Japanese line).
 - `caption`: Japanese hook line, numbered `term｜meaning` list, ask for quiz answers in the comments, say the answer comes in tomorrow morning's story, a save reminder, three `.` lines, then 12–15 hashtags mixing Japanese and English.
-- `status`: always `"draft"` when you write or change a post. Only the user's OK makes it `"approved"`.
+- `status`: write new posts as `"draft"`. The `daily-loop` skill sets `"approved"` after the independent check. A post the user asked to stop stays `"draft"`.
 - Write original examples. Do not copy dictionary sentences.
 
 ## Sunday review (kind = review)
@@ -39,4 +39,4 @@ Do not change `insta/template.html` unless the user asks for a design change.
 
 ## Fixing a post after feedback
 
-Apply the change, keep `status` as `"draft"` until the user OKs it, re-render, and add a one-line general lesson to `insta/feedback.md` if the feedback applies to future posts (e.g. "examples should be under 12 words").
+Apply the change, re-render, push, and add a one-line general lesson to `insta/feedback.md` if the feedback applies to future posts (e.g. "examples should be under 12 words").
