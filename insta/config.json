@@ -6,5 +6,6 @@
   "english": "US",
   "post_time_jst": "21:00",
   "story_time_jst": "08:00",
-  "reel_weekdays": [2, 4, 6]
+  "reel_weekdays": [],
+  "reel_note": "Reels paused by request (2026-11-05). Videos are still rendered; set e.g. [2,4,6] to resume."
 }
