@@ -25,16 +25,27 @@ jobs:
       run:
         working-directory: insta
     steps:
+      - name: Check for API key
+        id: key
+        working-directory: .
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::notice::ANTHROPIC_API_KEY is not set; Claude chat makes the posts instead."; echo "ok=false" >> "$GITHUB_OUTPUT"; else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v5
+        if: steps.key.outputs.ok == 'true'
       - uses: actions/setup-node@v5
+        if: steps.key.outputs.ok == 'true'
         with:
           node-version: 24
       - name: Install
+        if: steps.key.outputs.ok == 'true'
         run: |
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
           command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
       - name: Write posts with Claude
+        if: steps.key.outputs.ok == 'true'
         id: gen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -52,7 +63,7 @@ jobs:
           done
           node render.js $(echo $DATES | tr ' ' '\n' | sort -u)
       - name: Save
-        if: always()
+        if: always() && steps.key.outputs.ok == 'true'
         working-directory: .
         run: |
           git config user.name "github-actions[bot]"

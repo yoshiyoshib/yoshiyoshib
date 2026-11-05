@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: instagram
@@ -65,4 +66,19 @@ jobs:
             git commit -m "Instagram: ${{ steps.mode.outputs.mode }} log"
             git pull --rebase
             git push
+          fi
+      - name: Warn when the post stock runs low
+        if: steps.mode.outputs.mode == 'story'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          MISSING=$(node -e '
+            const { addDays, todayJST, loadPost } = require("./insta/lib");
+            const out = [1, 2].map(n => addDays(todayJST(), n)).filter(d => (loadPost(d) || {}).status !== "approved");
+            console.log(out.join(" "));')
+          TITLE="投稿のストックが切れそうです"
+          if [ -n "$MISSING" ] && [ -z "$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number')" ]; then
+            gh issue create --title "$TITLE" --body "@${{ github.repository_owner }} 次の日の投稿がまだありません：$MISSING
+
+          Claude のチャットで「投稿を作って」と送ってください。チャットが消えていたら、新しいチャットで「yoshiyoshib/yoshiyoshib の Instagram 投稿の続きをやって」と送れば再開できます（手順は .claude/skills/daily-loop/SKILL.md）。"
           fi
