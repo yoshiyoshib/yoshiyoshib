@@ -60,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add insta/published.json insta/metrics 2>/dev/null || true
+          for p in insta/published.json insta/metrics; do if [ -e "$p" ]; then git add "$p"; fi; done
           if ! git diff --cached --quiet; then
             git commit -m "Instagram: ${{ steps.mode.outputs.mode }} log"
             git pull --rebase
