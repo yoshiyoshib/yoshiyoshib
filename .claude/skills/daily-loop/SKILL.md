@@ -5,6 +5,10 @@ description: Daily autonomous loop for the English Instagram account (@articulat
 
 # Daily loop
 
+> Normally the GitHub Actions workflow `Instagram daily content` (`insta/generate.mjs`, 14:41 JST) does steps 2–4 by itself.
+> This chat run comes later as a backup: if `node insta/schedule.js <tomorrow> 3` shows nothing `missing`, skip to step 5 and only report.
+> If days are missing, check that workflow's latest run for the error, tell the user, then fill the gap with the steps below.
+
 The account posts every day with no manual approval. GitHub Actions publishes whatever is `"approved"`
 (feed 21:07 JST, story 08:17 JST) and collects insights daily at 03:37 JST. This loop keeps that pipeline fed
 and gets a little better each day.

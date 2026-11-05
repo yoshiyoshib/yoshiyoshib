@@ -1,0 +1,65 @@
+name: Instagram daily content
+
+on:
+  schedule:
+    - cron: "41 5 * * *"    # 14:41 JST — learn from numbers, write the next 3 days, render
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days ahead to fill"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: insta
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Install
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+      - name: Write posts with Claude
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          node generate.mjs --days "${{ inputs.days || '3' }}" | tee gen.log
+          echo "dates=$(grep '^WROTE ' gen.log | cut -d' ' -f2 | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
+      - name: Render images
+        if: always() && steps.gen.outputs.dates != ''
+        run: |
+          # Render each new day plus the day after it (its morning story answers the new day's quiz).
+          DATES=""
+          for d in ${{ steps.gen.outputs.dates }}; do
+            DATES="$DATES $d $(date -u -d "$d +1 day" +%F)"
+          done
+          node render.js $(echo $DATES | tr ' ' '\n' | sort -u)
+      - name: Save
+        if: always()
+        working-directory: .
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add insta/posts insta/out insta/learnings.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Instagram: daily content ${{ steps.gen.outputs.dates }}"
+            git pull --rebase
+            git push
+          fi
