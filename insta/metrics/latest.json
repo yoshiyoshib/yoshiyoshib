@@ -1,0 +1,57 @@
+{
+  "2026-11-05": {
+    "kind": "phrasal",
+    "theme": "予定・計画の話で使う句動詞",
+    "terms": [
+      "pencil in",
+      "iron out",
+      "fall through",
+      "move up",
+      "mull over"
+    ],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 1,
+      "comments": 0,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0
+    },
+    "reel": {
+      "reach": 7,
+      "views": 7,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0
+    },
+    "collected": "2026-11-05T23:50:26.370Z"
+  },
+  "2026-11-06": {
+    "kind": "idiom",
+    "theme": "お金・出費の話で使うイディオム",
+    "terms": [
+      "cost an arm and a leg",
+      "tighten your belt",
+      "break the bank",
+      "foot the bill",
+      "make ends meet"
+    ],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+    },
+    "collected": "2026-11-05T23:50:26.626Z"
+  }
+}
