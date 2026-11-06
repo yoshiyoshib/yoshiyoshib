@@ -2,8 +2,12 @@ name: Instagram autopost
 
 on:
   schedule:
-    - cron: "7 12 * * *"    # 21:07 JST — feed carousel (+ reel on reel days)
+    # Scheduled runs can start late, so each slot has backups; publishing is idempotent (logged in published.json).
+    - cron: "7 12 * * *"    # 21:07 JST — feed carousel
+    - cron: "37 12 * * *"   # 21:37 JST — feed backup
+    - cron: "7 13 * * *"    # 22:07 JST — feed backup
     - cron: "17 23 * * *"   # 08:17 JST — story with yesterday's quiz answer
+    - cron: "47 23 * * *"   # 08:47 JST — story backup
     - cron: "37 18 * * *"   # 03:37 JST daily — collect insights for the learning loop
   workflow_dispatch:
     inputs:
@@ -41,8 +45,8 @@ jobs:
         id: mode
         run: |
           case "${{ github.event.schedule }}" in
-            "7 12 * * *")  echo "mode=feed" >> "$GITHUB_OUTPUT" ;;
-            "17 23 * * *") echo "mode=story" >> "$GITHUB_OUTPUT" ;;
+            "7 12 * * *"|"37 12 * * *"|"7 13 * * *") echo "mode=feed" >> "$GITHUB_OUTPUT" ;;
+            "17 23 * * *"|"47 23 * * *") echo "mode=story" >> "$GITHUB_OUTPUT" ;;
             "37 18 * * *") echo "mode=metrics" >> "$GITHUB_OUTPUT" ;;
             *)             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT" ;;
           esac

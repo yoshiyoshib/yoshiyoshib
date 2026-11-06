@@ -13,7 +13,12 @@ const { API, DIR, config, loadPost, todayJST, weekday, addDays } = require("./li
 
 const args = process.argv.slice(2);
 const mode = args[0];
-const date = args.includes("--date") ? args[args.indexOf("--date") + 1] : todayJST();
+// Which day's post is due. GitHub's scheduled runs can start hours late, so the date comes from
+// "JST now minus the slot's hour": a feed run (slot 21:00) at 04:52 the next morning still means
+// yesterday's post (posted late, never the next day's post early). Stories have an 08:00 slot.
+const SLOT_HOUR = { feed: 20, story: 7 };
+const dueDate = m => new Date(Date.now() + (9 - (SLOT_HOUR[m] ?? 0)) * 3600e3).toISOString().slice(0, 10);
+const date = args.includes("--date") ? args[args.indexOf("--date") + 1] : dueDate(mode);
 // check / find-id only read data, so they always call the real API.
 const dry = !["check", "find-id"].includes(mode) && (args.includes("--dry-run") || process.env.DRY_RUN === "true");
 const { IG_USER_ID, IG_ACCESS_TOKEN } = process.env;
