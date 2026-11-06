@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-09",
+  "no": 6,
+  "kind": "phrasal",
+  "status": "approved",
+  "theme": {
+    "en": "Relationships",
+    "ja": "人間関係の話で使う句動詞"
+  },
+  "items": [
+    {
+      "term": "warm up to",
+      "ipa": "/ˌwɔrm ˈʌp tu/",
+      "pos": "phrasal verb",
+      "ja": "（人に）だんだん打ち解ける",
+      "definition": "To gradually start to like someone or feel comfortable with them.",
+      "example": "The kids took a while to **warm up to** their new teacher.",
+      "example_ja": "子どもたちが新しい先生に打ち解けるまで、少し時間がかかった。",
+      "note": "warm up（準備運動する）とは別の意味です。"
+    },
+    {
+      "term": "drift apart",
+      "ipa": "/ˌdrɪft əˈpɑrt/",
+      "pos": "phrasal verb",
+      "ja": "（だんだん）疎遠になる",
+      "definition": "To slowly become less close to someone over time.",
+      "example": "We **drifted apart** after she moved to Osaka.",
+      "example_ja": "彼女が大阪に引っ越してから、私たちは疎遠になった。",
+      "note": "けんかではなく、自然に離れていくイメージです。"
+    },
+    {
+      "term": "patch up",
+      "ipa": "/ˌpætʃ ˈʌp/",
+      "pos": "phrasal verb",
+      "ja": "（関係を）修復する、仲直りする",
+      "definition": "To end an argument and become friendly again.",
+      "example": "They finally **patched things up** after a long talk.",
+      "example_ja": "長い話し合いのあと、二人はようやく仲直りした。",
+      "note": "patch things up の形が定番です。"
+    },
+    {
+      "term": "talk down to",
+      "ipa": "/ˌtɔk ˈdaʊn tu/",
+      "pos": "phrasal verb",
+      "ja": "見下した話し方をする",
+      "definition": "To speak to someone as if they were less intelligent than you.",
+      "example": "I hate it when managers **talk down to** new staff.",
+      "example_ja": "上司が新人を見下したように話すのは嫌だ。",
+      "note": "似た表現に patronize（恩着せがましく接する）があります。"
+    },
+    {
+      "term": "stand up for",
+      "ipa": "/ˌstænd ˈʌp fɔr/",
+      "pos": "phrasal verb",
+      "ja": "（人を）かばう、擁護する",
+      "definition": "To defend or support someone when others criticize them.",
+      "example": "Thanks for **standing up for** me in the meeting.",
+      "example_ja": "会議でかばってくれてありがとう。",
+      "note": "stand up to＋人 は「〜に立ち向かう」で別の意味。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Over the years, the two old friends had slowly ____.",
+    "options": [
+      "patched up",
+      "drifted apart",
+      "warmed up to"
+    ],
+    "answer": "B",
+    "why": "drift apart＝時間とともに自然に疎遠になる。"
+  },
+  "caption": "人間関係の話で使える句動詞5つ 🤝\n\n1. warm up to｜だんだん打ち解ける\n2. drift apart｜疎遠になる\n3. patch up｜仲直りする\n4. talk down to｜見下した話し方をする\n5. stand up for｜かばう、擁護する\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #句動詞 #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #英語表現 #phrasalverbs #learnenglish #advancedenglish #englishvocabulary"
+}
