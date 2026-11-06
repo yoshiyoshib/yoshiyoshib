@@ -25,11 +25,11 @@
       "views": 7,
       "saved": 0,
       "shares": 0,
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "total_interactions": 0
+      "total_interactions": 1
     },
-    "collected": "2026-11-05T23:50:26.370Z"
+    "collected": "2026-11-06T23:29:00.808Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -46,12 +46,15 @@
       "views": 0,
       "saved": 0,
       "shares": 0,
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "total_interactions": 0,
+      "total_interactions": 1,
       "follows": 0,
       "profile_visits": 0
     },
-    "collected": "2026-11-05T23:50:26.626Z"
+    "story": {
+      "error": "17901437292672681: (#10) Not enough viewers for the media to show insights"
+    },
+    "collected": "2026-11-06T23:29:01.730Z"
   }
 }
