@@ -124,7 +124,9 @@ async function publish(creationId, label) {
     }
   }
 
-  if (!dry) {
+  // Write the log only when something new went out (skipped runs leave no commit).
+  const changed = ["feed", "reel", "story"].some(k => entry[k] && entry[k] !== (log[date] || {})[k]);
+  if (!dry && changed) {
     entry.updated = new Date().toISOString();
     log[date] = entry;
     fs.writeFileSync(LOG, JSON.stringify(log, null, 2) + "\n");
