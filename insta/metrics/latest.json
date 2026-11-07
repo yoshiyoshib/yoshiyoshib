@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-06T23:29:00.808Z"
+    "collected": "2026-11-07T22:15:25.720Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -53,8 +53,35 @@
       "profile_visits": 0
     },
     "story": {
-      "error": "17901437292672681: (#10) Not enough viewers for the media to show insights"
+      "error": "17901437292672681: Unsupported get request. Object with ID '17901437292672681' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     },
-    "collected": "2026-11-06T23:29:01.730Z"
+    "collected": "2026-11-07T22:15:26.401Z"
+  },
+  "2026-11-07": {
+    "kind": "word",
+    "level": "C2",
+    "theme": "ニュースや議論で見かけるC2単語",
+    "terms": [
+      "ubiquitous",
+      "exacerbate",
+      "ostensibly",
+      "intransigent",
+      "ephemeral"
+    ],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+    },
+    "story": {
+      "error": "18091406912260591: (#10) Not enough viewers for the media to show insights"
+    },
+    "collected": "2026-11-07T22:15:27.684Z"
   }
 }
