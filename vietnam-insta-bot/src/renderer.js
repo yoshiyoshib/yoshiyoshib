@@ -121,7 +121,9 @@ async function launchBrowser() {
   if (proxy) args.push(`--proxy-server=${proxy}`);
   return puppeteer.launch({
     headless: true,
-    executablePath: process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
+    executablePath: process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH ||
+      (fs.existsSync("/opt/pw-browsers/chromium") ? "/opt/pw-browsers/chromium" : undefined), // Claude Code のクラウド環境
+
     args,
   });
 }
@@ -191,4 +193,4 @@ function overflowFeedback(post, overflow) {
   });
 }
 
-module.exports = { renderPost, buildSlideHtml, overflowFeedback, markHtml, WIDTH, HEIGHT };
+module.exports = { renderPost, buildSlideHtml, overflowFeedback, markHtml, launchBrowser, waitFonts, esc, WIDTH, HEIGHT };

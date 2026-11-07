@@ -95,6 +95,10 @@ function codeCheck(post, dayCfg) {
     const total = len(`${c.hook}\n\n${c.summary}\n\n${c.hashtags.join(" ")}`);
     if (total > 2200) issues.push(`キャプション全体が ${total} 字（Instagram 上限 2200）`);
   }
+  if (dayCfg.requiresSource) {
+    const src = post.source || {};
+    if (!src.name || !/^https?:\/\//.test(src.url || "")) fatal.push("source（name と url）がない。ニュース要約には出典が必須");
+  }
   if (!post.audioScript) fatal.push("audioScript がない");
   else {
     if (/[぀-ヿ一-鿿]/.test(post.audioScript)) issues.push("audioScript に日本語が混ざっている（ベトナム語のみにする）");
@@ -112,6 +116,7 @@ const EVAL_SYSTEM = `あなたはハノイ国家大学で20年教えてきた、
 1. tone_marks（声調記号の完全性）: 全ベトナム語の声調・字母（ă â ê ô ơ ư đ）が正しいか。綴り誤り・記号欠落・文字化け（? □）・不自然な表記は1箇所ごとに大きく減点。
 2. depth（情報深度）: 表面的・初歩的すぎないか。文法的な理由・語源・ニュアンス・使用場面・地域差が具体的に書かれているか。「〜という意味です」だけの説明は減点。
 3. translation（日本語訳の正確性）: 誤訳、直訳による不自然な日本語、ニュアンスの取り違え、ベトナム語として不自然な例文。
+   ニュース要約（source あり）は、数値・固有名詞・日付が元記事と食い違っていたら1箇所ごとに大きく減点。記事の文をほぼそのまま写している場合も減点（自分の言葉で要約すること）。
 4. density（文字数・密度）: スマホで読める量か。1枚に詰め込みすぎ・逆に内容が薄すぎるスライド、構成の偏り。
 
 # 出力（JSON のみ）
@@ -199,4 +204,4 @@ async function runQualityLoop(dayCfg, { learnings, recentTopics, seed, maxRetrie
   return { ...best, history, lessons: [...lessons] };
 }
 
-module.exports = { runQualityLoop, evaluate, codeCheck, PASS_SCORE, MAX_LOOPS };
+module.exports = { runQualityLoop, evaluate, codeCheck, EVAL_SYSTEM, PASS_SCORE, MAX_LOOPS };

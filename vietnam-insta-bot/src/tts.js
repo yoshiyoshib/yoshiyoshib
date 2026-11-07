@@ -69,25 +69,35 @@ async function synthesize(text, outFile, { voice, rate = process.env.TTS_RATE ||
   return outFile;
 }
 
+/** スライドごとの読み上げテキスト（リールの各場面の音声になる） */
+function slideSpeech(slide) {
+  switch (slide.type) {
+    case "cover": return /\p{Script=Latin}{2,}/u.test(slide.title || "") ? slide.title : "";
+    case "text_with_translation": return slide.vietnameseText || "";
+    case "vocabulary": return (slide.items || []).map((it) => it.word).join(".\n");
+    case "grammar_breakdown": return slide.targetSentence || "";
+    default: return "";
+  }
+}
+
 /**
- * 投稿全体の音声（audioScript）と、本文スライドごとの音声を生成
- * @returns {{ full: string, slides: string[] }}
+ * 投稿全体の音声（audioScript）と、スライドごとの音声を生成
+ * @returns {{ full: string, slides: (string|null)[] }}  slides[i] は i 枚目の音声（読む文がなければ null）
  */
 async function synthesizePost(post, outDir, opts = {}) {
   const full = await synthesize(post.audioScript, path.join(outDir, "audio.mp3"), opts);
   const slides = [];
   if (opts.perSlide !== false) {
     for (const [i, s] of post.slides.entries()) {
-      const text = s.vietnameseText || s.targetSentence;
-      if (!text) continue;
-      const f = path.join(outDir, "audio", `slide-${String(i + 1).padStart(2, "0")}.mp3`);
-      slides.push(await synthesize(text, f, opts));
+      const text = cleanForSpeech(slideSpeech(s));
+      if (!text) { slides.push(null); continue; }
+      slides.push(await synthesize(text, path.join(outDir, "audio", `slide-${String(i + 1).padStart(2, "0")}.mp3`), opts));
     }
   }
   return { full, slides };
 }
 
-module.exports = { synthesize, synthesizePost, cleanForSpeech, VOICES };
+module.exports = { synthesize, synthesizePost, cleanForSpeech, slideSpeech, VOICES };
 
 // CLI: node src/tts.js "Xin chào các bạn" out.mp3 [female|male]
 if (require.main === module) {

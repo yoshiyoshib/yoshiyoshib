@@ -2,13 +2,15 @@
   "name": "vietnam-insta-bot",
   "version": "1.0.0",
   "private": true,
-  "description": "ベトナム語学習Instagramの完全自動運用（生成→評価ループ→描画→音声→投稿→学習ログ）",
+  "description": "ベトナム語学習Instagramの自動運用（Claude が生成⇄評価 → 描画 → 音声・リール → 投稿 → 学習ログ）",
   "type": "commonjs",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "start": "node src/index.js",
-    "dry": "node src/index.js --dry-run",
-    "render:sample": "node src/index.js --sample --day sunday --skip-tts --skip-upload",
+    "status": "node src/index.js status",
+    "check": "node src/index.js check",
+    "sample": "node src/index.js sample",
     "check:ig": "node src/uploader.js check"
   },
   "dependencies": {

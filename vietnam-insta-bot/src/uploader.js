@@ -57,10 +57,13 @@ async function waitReady(containerId, label, { dry } = {}) {
 }
 
 /** キャプション文字列を組み立てる（上限 2200 字・ハッシュタグ 30 個） */
-function buildCaption(caption) {
+function buildCaption(caption, { source, reel = false } = {}) {
   const tags = [...new Set(caption.hashtags || [])].slice(0, 30).join(" ");
-  const text = `${caption.hook}\n\n${caption.summary}\n\n🔖 保存して何度も復習しよう\n\n${tags}`;
-  return [...text].slice(0, 2200).join("");
+  const src = source?.name ? `\n\n📰 出典：${source.name}${source.date ? `（${source.date}）` : ""}\n${source.url}\n※ 記事を学習用に要約・再構成したものです` : "";
+  const body = reel
+    ? `${caption.hook}\n\n🔊 ネイティブ音声つき。全訳・語彙・構文解説は同じ日のカルーセル投稿で👆`
+    : `${caption.hook}\n\n${caption.summary}\n\n🔖 保存して何度も復習しよう`;
+  return [...`${body}${src}\n\n${tags}`].slice(0, 2200).join("");
 }
 
 /**
@@ -68,7 +71,7 @@ function buildCaption(caption) {
  * @param imageUrls 公開URL（JPEG）2〜10件
  * @returns {{ mediaId: string, permalink?: string, children: string[] }}
  */
-async function publishCarousel(imageUrls, caption, { dry = process.env.DRY_RUN === "true" } = {}) {
+async function publishCarousel(imageUrls, caption, { dry = process.env.DRY_RUN === "true", source } = {}) {
   if (imageUrls.length < 2 || imageUrls.length > 10) throw new Error(`カルーセルは 2〜10 枚（現在 ${imageUrls.length} 枚）`);
   const id = dry ? "IG_USER" : creds().id;
 
@@ -86,7 +89,7 @@ async function publishCarousel(imageUrls, caption, { dry = process.env.DRY_RUN =
 
   // 2) カルーセル親コンテナ
   const { id: carouselId } = await withRetry(
-    () => graph("POST", `${id}/media`, { media_type: "CAROUSEL", children: children.join(","), caption: buildCaption(caption) }, { dry }),
+    () => graph("POST", `${id}/media`, { media_type: "CAROUSEL", children: children.join(","), caption: buildCaption(caption, { source }) }, { dry }),
     "carousel",
   );
   await waitReady(carouselId, "carousel", { dry });
@@ -99,10 +102,25 @@ async function publishCarousel(imageUrls, caption, { dry = process.env.DRY_RUN =
   return { mediaId, permalink, children };
 }
 
+/** リール投稿（動画の処理に時間がかかるので waitReady で待つ） */
+async function publishReel(videoUrl, caption, { dry = process.env.DRY_RUN === "true", source } = {}) {
+  const id = dry ? "IG_USER" : creds().id;
+  const { id: cid } = await withRetry(
+    () => graph("POST", `${id}/media`, { media_type: "REELS", video_url: videoUrl, caption: buildCaption(caption, { source, reel: true }), share_to_feed: "true" }, { dry }),
+    "reel",
+  );
+  await waitReady(cid, "reel", { dry });
+  const { id: mediaId } = await withRetry(() => graph("POST", `${id}/media_publish`, { creation_id: cid }, { dry }), "reel publish");
+  let permalink;
+  if (!dry) ({ permalink } = await graph("GET", mediaId, { fields: "permalink" }).catch(() => ({})));
+  console.log(`  [upload] リールを公開しました: ${mediaId}${permalink ? ` ${permalink}` : ""}`);
+  return { mediaId, permalink };
+}
+
 /** 投稿のインサイト（学習ログ用）。権限がなければ null */
-async function getInsights(mediaId) {
+async function getInsights(mediaId, metric = "reach,saved,shares,likes,comments,total_interactions") {
   try {
-    const { data } = await graph("GET", `${mediaId}/insights`, { metric: "reach,saved,shares,likes,comments,total_interactions" });
+    const { data } = await graph("GET", `${mediaId}/insights`, { metric });
     return Object.fromEntries(data.map((m) => [m.name, m.values?.[0]?.value ?? m.total_value?.value ?? 0]));
   } catch (e) {
     console.warn(`  [insights] ${mediaId}: ${e.message.slice(0, 160)}`);
@@ -119,7 +137,7 @@ async function check() {
   console.log("publishing quota:", JSON.stringify(lim.data?.[0] || lim));
 }
 
-module.exports = { publishCarousel, buildCaption, getInsights, check };
+module.exports = { publishCarousel, publishReel, buildCaption, getInsights, check };
 
 if (require.main === module) {
   if (process.argv[2] === "check") check().catch((e) => { console.error(e.message); process.exit(1); });

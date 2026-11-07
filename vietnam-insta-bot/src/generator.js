@@ -1,5 +1,7 @@
 // Generator: LLM を呼び出して1日分の教材 JSON を作る
-// LLM_PROVIDER=gemini（無料枠, 既定）| anthropic
+// 通常運用では Claude Code の定期実行（サブスク内・API 不要）が .claude/skills/vietnam-daily の手順で生成・評価する。
+// このファイルの LLM 呼び出しは API キーで完全自動化したい場合のオプション（LLM_PROVIDER=anthropic | gemini）。
+// プロンプト（buildSystemPrompt / buildUserPrompt）はどちらの経路でも共通で使う。
 const { LIMITS } = require("../config/schedule");
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -56,7 +58,7 @@ async function callAnthropic({ system, user, model }) {
 
 /** LLM を呼んで JSON を返す。429/5xx と JSON 破損は指数バックオフで再試行。 */
 async function callLLM({ system, user, role = "generator", temperature = 0.7 }) {
-  const provider = (process.env.LLM_PROVIDER || "gemini").toLowerCase();
+  const provider = (process.env.LLM_PROVIDER || "anthropic").toLowerCase();
   const model =
     provider === "anthropic"
       ? process.env.ANTHROPIC_MODEL || "claude-opus-5-5"
@@ -115,6 +117,7 @@ const SCHEMA_DOC = `{
       "breakdown": [ { "part": "主語", "text": "…", "explanation": "…" } ], "translation": "文全体の訳(任意)" }
   ],
   "caption": { "hook": "冒頭1行のフック", "summary": "要約・解説(300〜600字)", "hashtags": ["#ベトナム語", "..."] },
+  "source": { "name": "媒体名", "url": "記事URL", "date": "YYYY-MM-DD" },   ← 日曜（ニュース要約）のみ必須。他の曜日は省略
   "audioScript": "音声合成用。ベトナム語の文だけを、読み上げ順に改行区切りで（<mark> などのタグや日本語は含めない）"
 }`;
 
@@ -133,7 +136,7 @@ Instagram カルーセル（1080x1350px, 最大${LIMITS.maxSlides}枚）用の�
    語彙 ${LIMITS.vocabItems} 項目（意味 ${LIMITS.vocabMeaning} 字・用法 ${LIMITS.vocabNote} 字）/ 構文分解 ${LIMITS.breakdownItems} 要素（説明 ${LIMITS.breakdownExplanation} 字）。
    多い場合はスライドを分けるか要約する。
 4. 品詞 pos は「名・動・形・副・前・接・助・類別・代・文末」など短い略号。
-5. 実在しない統計・日付・固有名詞の捏造は禁止。ニュース風文章は一般的事実に基づくオリジナル文。
+5. 実在しない統計・日付・固有名詞の捏造は禁止。ニュースを扱う場合は実在記事の内容を自分の言葉で要約し（文の丸写し禁止）、source に出典を書く。
 6. hashtags は 8〜15 個、必ず次を含める: ${dayCfg.hashtags.join(" ")}
 
 # 出力 JSON スキーマ（このキー構成を厳守、余計なキーを足さない）
@@ -179,4 +182,4 @@ async function generate(dayCfg, { learnings, previous, feedback, recentTopics } 
   return post;
 }
 
-module.exports = { generate, callLLM, parseJson, normalizeDeep, buildSystemPrompt };
+module.exports = { generate, callLLM, parseJson, normalizeDeep, buildSystemPrompt, buildUserPrompt };

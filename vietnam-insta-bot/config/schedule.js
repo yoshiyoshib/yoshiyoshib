@@ -95,11 +95,12 @@ const SCHEDULE = {
   0: {
     day: "sunday",
     theme: "reading",
-    title: "現地ニュース長文精読",
+    title: "現地ニュース要約で長文精読",
     themeColor: "#1E3A8A",
     accentColor: "#FCD34D",
     focus:
-      "ベトナムの社会・経済・文化に関するニュース風の長文（実在記事のコピーは禁止。一般的な事実に基づくオリジナル文章で、日付や数値の捏造をしない）。3パラグラフに分けて text_with_translation に1つずつ入れ、重要語を <mark> で囲む。語彙表と、最も難しい1文の構文分解を付ける。",
+      "直近1週間のベトナム国内の実在ニュース（VnExpress, Tuổi Trẻ, Thanh Niên, VietnamPlus など）を1本選び、その内容を自分の言葉で書き直したベトナム語の要約文（記事の文をそのまま写さない）。3パラグラフに分けて text_with_translation に1つずつ入れ、重要語を <mark> で囲む。語彙表と、最も難しい1文の構文分解を付ける。数値・固有名詞・日付は元記事どおりにし、推測で足さない。出典を source に必ず入れる。政治的に対立の激しい話題・事件事故の被害者が特定される話題は避け、経済・社会・文化・観光・テクノロジーを優先する。",
+    requiresSource: true,
     slidePlan: [
       "cover",
       "text_with_translation",

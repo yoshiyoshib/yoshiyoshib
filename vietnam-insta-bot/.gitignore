@@ -3,3 +3,5 @@ node_modules/
 output/**/*.png
 output/**/*.mp3
 output/**/*.html
+output/**/reel/
+output/sample/

@@ -53,7 +53,7 @@ function promptContext() {
     .sort((a, b) => b.metrics.saved - a.metrics.saved).slice(0, 3);
   if (top.length) {
     out.push("", "## 保存が多かった投稿（この方向性を参考に）",
-      ...top.map((p) => `- ${p.day} 「${p.topic}」 保存${p.metrics.saved} / リーチ${p.metrics.reach ?? "-"}`));
+      ...top.map((p) => `- ${p.day} 「${p.topic}」 保存${p.metrics.saved} / リーチ${p.metrics.reach ?? "-"} / リール再生${p.reelMetrics?.views ?? "-"}`));
   }
   return out.join("\n");
 }
@@ -100,15 +100,17 @@ function savePublished(list) {
 /** 24時間以上たってインサイト未取得の投稿について数字を取り、パフォーマンス表に書く */
 async function collectMetrics(getInsights) {
   const list = loadPublished();
-  const due = list.filter((p) => !p.metrics && !String(p.mediaId).startsWith("dry_") && Date.now() - Date.parse(p.publishedAt) > 24 * 3600e3);
+  const old = (x) => x?.mediaId && Date.now() - Date.parse(x.publishedAt) > 24 * 3600e3;
+  const due = list.filter((p) => (old(p.feed) && !p.metrics) || (old(p.reel) && !p.reelMetrics));
   if (!due.length) return;
   let md = read();
   let rows = section(md, "PERF");
   for (const p of due) {
-    const m = await getInsights(p.mediaId);
-    if (!m) continue;
-    p.metrics = m;
-    rows += `| ${p.date} | ${p.day} | ${p.topic} | ${m.reach ?? "-"} | ${m.saved ?? "-"} | ${m.shares ?? "-"} | ${m.likes ?? "-"} | ${m.comments ?? "-"} |\n`;
+    if (old(p.feed) && !p.metrics) p.metrics = await getInsights(p.feed.mediaId);
+    if (old(p.reel) && !p.reelMetrics) p.reelMetrics = await getInsights(p.reel.mediaId, "reach,saved,shares,likes,comments,views");
+    if (!p.metrics) continue;
+    const m = p.metrics;
+    rows += `| ${p.date} | ${p.day} | ${p.topic} | ${m.reach ?? "-"} | ${m.saved ?? "-"} | ${m.shares ?? "-"} | ${m.likes ?? "-"} | ${m.comments ?? "-"} | ${p.reelMetrics?.views ?? "-"} |\n`;
   }
   md = replaceSection(md, "PERF", rows);
   fs.writeFileSync(LOG, md);
