@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-10",
+  "no": 7,
+  "kind": "idiom",
+  "status": "approved",
+  "theme": {
+    "en": "Getting work done",
+    "ja": "仕事を進めるときのイディオム"
+  },
+  "items": [
+    {
+      "term": "cut corners",
+      "ipa": "/ˌkʌt ˈkɔrnərz/",
+      "pos": "idiom",
+      "ja": "手を抜く、手順を省く",
+      "definition": "To do something in the quickest or cheapest way, often lowering quality or ignoring rules.",
+      "example": "We can't **cut corners** on safety testing.",
+      "example_ja": "安全性のテストで手を抜くわけにはいかない。",
+      "note": "悪い意味で使います。"
+    },
+    {
+      "term": "go the extra mile",
+      "pos": "idiom",
+      "ja": "期待以上の努力をする、ひと手間かける",
+      "definition": "To make more effort than is expected of you.",
+      "example": "She always **goes the extra mile** for her clients.",
+      "example_ja": "彼女はいつも、顧客のために期待以上のことをする。",
+      "note": "ほめ言葉として使うことが多いです。"
+    },
+    {
+      "term": "back to square one",
+      "pos": "idiom",
+      "ja": "振り出しに戻って",
+      "definition": "Back at the starting point because an attempt has failed, so you have to start again.",
+      "example": "The test failed, so we're **back to square one**.",
+      "example_ja": "テストがうまくいかなかったので、振り出しに戻ってしまった。",
+      "note": "似た表現に back to the drawing board があります。"
+    },
+    {
+      "term": "the ball is in your court",
+      "pos": "idiom",
+      "ja": "次はあなたが動く番だ、あとはあなた次第",
+      "definition": "It is now your turn to take action or make a decision.",
+      "example": "We've sent our offer, so **the ball is in their court**.",
+      "example_ja": "こちらの提案は送ったので、あとは向こう次第だ。",
+      "note": "your / their / my など、人を変えて使います。"
+    },
+    {
+      "term": "on the same page",
+      "pos": "idiom",
+      "ja": "認識が一致して、足並みがそろって",
+      "definition": "Having the same understanding or agreement about something.",
+      "example": "Let's review the plan so we're all **on the same page**.",
+      "example_ja": "全員の認識をそろえるために、計画を見直そう。",
+      "note": "get everyone on the same page の形もよく使います。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Let's make sure everyone is ____ about the deadline.",
+    "options": [
+      "cutting corners",
+      "back to square one",
+      "on the same page"
+    ],
+    "answer": "C",
+    "why": "on the same page＝認識が一致している。"
+  },
+  "caption": "仕事を進めるときに使えるイディオム5つ 💼\n\n1. cut corners｜手を抜く\n2. go the extra mile｜期待以上の努力をする\n3. back to square one｜振り出しに戻って\n4. the ball is in your court｜次はあなた次第\n5. on the same page｜認識が一致して\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英語イディオム #英語勉強 #大人の英語 #ビジネス英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #idioms #learnenglish #advancedenglish #englishidioms"
+}
