@@ -1,0 +1,5 @@
+node_modules/
+.env
+output/**/*.png
+output/**/*.mp3
+output/**/*.html
