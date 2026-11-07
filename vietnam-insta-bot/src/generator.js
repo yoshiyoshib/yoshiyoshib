@@ -20,7 +20,8 @@ async function callGemini({ system, user, model, temperature }) {
   });
   const json = await res.json().catch(() => ({}));
   if (!res.ok) {
-    const err = new Error(`Gemini ${res.status}: ${JSON.stringify(json.error || json).slice(0, 400)}`);
+    const hint = res.status === 404 ? `（モデル「${model}」が使えません。GEMINI_MODEL を現行のモデル名に変更してください）` : "";
+    const err = new Error(`Gemini ${res.status}${hint}: ${JSON.stringify(json.error || json).slice(0, 400)}`);
     err.status = res.status;
     throw err;
   }
@@ -59,7 +60,7 @@ async function callLLM({ system, user, role = "generator", temperature = 0.7 }) 
   const model =
     provider === "anthropic"
       ? process.env.ANTHROPIC_MODEL || "claude-opus-5-5"
-      : (role === "evaluator" && process.env.GEMINI_EVAL_MODEL) || process.env.GEMINI_MODEL || "gemini-2.5-flash";
+      : (role === "evaluator" && process.env.GEMINI_EVAL_MODEL) || process.env.GEMINI_MODEL || "gemini-flash-latest";
   const fn = provider === "anthropic" ? callAnthropic : callGemini;
 
   let lastErr;

@@ -20,7 +20,8 @@ function vietnameseIssues(text, where) {
   if (/\p{L}[?？]\p{L}/u.test(plain)) issues.push(`${where}: 単語の途中に「?」があり文字化けの疑い`);
   if (/[□■�]/.test(plain)) issues.push(`${where}: 文字化け記号（□/�）が含まれる`);
   if (/\p{M}/u.test(plain)) issues.push(`${where}: 結合文字（NFD）が残っており声調記号の描画が崩れる`);
-  const syllables = plain.toLowerCase().match(/\p{L}+/gu) || [];
+  // 日本語（○✕の注記など）が混ざっても誤判定しないよう、ラテン文字の音節だけで割合を出す
+  const syllables = plain.toLowerCase().match(/\p{Script=Latin}+/gu) || [];
   if (syllables.length >= 8) {
     const marked = syllables.filter((s) => VI_SPECIFIC.test(s)).length;
     if (marked / syllables.length < 0.3)
