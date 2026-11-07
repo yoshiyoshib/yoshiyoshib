@@ -1,0 +1,86 @@
+/* 4:5（1080x1350px）固定。フォントは各テンプレートの <link> で Google Fonts から読み込む */
+:root {
+  --theme: #1E3A8A;
+  --accent: #FCD34D;
+  --ink: #111827;
+  --muted: #4B5563;
+  --paper: #FFFDF8;
+  --line: #E5E7EB;
+  --vi: 'Be Vietnam Pro', 'Noto Sans JP', sans-serif;
+  --ja: 'Noto Sans JP', 'Be Vietnam Pro', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: var(--paper); }
+body { font-family: var(--ja); color: var(--ink); -webkit-font-smoothing: antialiased; font-feature-settings: "palt" 0; }
+
+/* 声調記号（上: sắc/huyền/hỏi/ngã、下: nặng）の欠け防止に line-height は 1.7 以上 */
+.slide {
+  width: 1080px; height: 1350px; overflow: hidden;
+  display: flex; flex-direction: column;
+  padding: 64px 72px 56px;
+  line-height: 1.75;
+  background: var(--paper);
+  position: relative;
+}
+.slide::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 14px; background: var(--theme); }
+
+.top { display: flex; align-items: center; gap: 18px; font: 600 26px/1.7 var(--vi); color: var(--muted); flex: none; }
+.top .brand { color: var(--theme); font-weight: 800; letter-spacing: .02em; }
+.top .tag { background: var(--theme); color: #fff; border-radius: 999px; padding: 0 20px; font-size: 22px; }
+.top .page { margin-left: auto; font-variant-numeric: tabular-nums; }
+
+.heading { font: 800 46px/1.7 var(--ja); color: var(--theme); margin: 28px 0 8px; flex: none; }
+
+/* 自動縮小の対象。中身は em 指定なので、ここの font-size を下げると全体が縮む */
+.fit { flex: 1 1 auto; min-height: 0; overflow: hidden; font-size: 34px; line-height: 1.75; padding-top: 6px; }
+
+.foot { flex: none; display: flex; justify-content: space-between; margin-top: 24px; font: 600 22px/1.7 var(--ja); color: var(--muted); }
+.foot .save { color: var(--theme); }
+
+mark { background: linear-gradient(transparent 55%, var(--accent) 55%); color: inherit; font-weight: 800; padding: 0 .08em; }
+
+/* ---------- 表紙 ---------- */
+.cover { background: var(--theme); color: #fff; justify-content: center; }
+.cover::before { display: none; }
+.cover .top { position: absolute; top: 64px; left: 72px; right: 72px; color: rgba(255,255,255,.8); }
+.cover .top .brand { color: #fff; }
+.cover .top .tag { background: var(--accent); color: var(--ink); }
+.cover .badge { display: inline-block; align-self: flex-start; background: var(--accent); color: var(--ink);
+  font: 800 34px/1.7 var(--ja); padding: 4px 28px; border-radius: 12px; margin-bottom: 40px; }
+.cover .title { font-family: var(--vi); font-weight: 800; font-size: 1em; line-height: 1.7; letter-spacing: -.01em; word-break: keep-all; overflow-wrap: anywhere; }
+.cover .subtitle { font: 600 40px/1.75 var(--ja); margin-top: 32px; color: rgba(255,255,255,.88); }
+.cover .fit { flex: 0 1 auto; max-height: 980px; font-size: 92px; } /* 表紙はタイトルだけが em で縮む（badge/subtitle は px 固定） */
+.cover .swipe { position: absolute; right: 72px; bottom: 64px; font: 800 30px/1.7 var(--ja); color: var(--accent); }
+
+/* ---------- 本文 + 訳 ---------- */
+.vi { font-family: var(--vi); font-weight: 600; font-size: 1.18em; line-height: 1.8; white-space: pre-line; color: var(--ink); }
+.ja { font-family: var(--ja); font-size: .86em; line-height: 1.8; white-space: pre-line; color: var(--muted);
+  margin-top: .9em; padding-top: .8em; border-top: 3px dashed var(--line); }
+.note { margin-top: .9em; font-size: .74em; line-height: 1.75; background: color-mix(in srgb, var(--theme) 8%, white);
+  border-left: 8px solid var(--theme); padding: .6em .9em; border-radius: 0 14px 14px 0; white-space: pre-line; }
+.note::before { content: "POINT"; display: block; font: 800 .8em/1.7 var(--vi); color: var(--theme); letter-spacing: .1em; }
+
+/* ---------- 長文読解（日曜） ---------- */
+.reading .para-no { display: inline-block; font: 800 .7em/1.7 var(--vi); color: #fff; background: var(--theme);
+  border-radius: 10px; padding: 0 .6em; margin-bottom: .4em; }
+.reading .vi { font-weight: 400; font-size: 1.06em; line-height: 1.9; text-align: justify; }
+.reading .ja { font-size: .8em; }
+
+/* ---------- 語彙表 ---------- */
+.vocab { width: 100%; border-collapse: collapse; }
+.vocab td { padding: .45em .3em; border-bottom: 2px solid var(--line); vertical-align: top; line-height: 1.7; }
+.vocab .w { font: 800 1.05em/1.7 var(--vi); color: var(--theme); white-space: nowrap; padding-right: .5em; }
+.vocab .p { font-size: .6em; font-weight: 600; color: #fff; background: var(--theme); border-radius: 8px; padding: .05em .4em;
+  display: inline-block; vertical-align: .25em; margin-left: .4em; font-family: var(--ja); }
+.vocab .m { font-size: .86em; font-weight: 600; }
+.vocab .n { display: block; font-size: .66em; color: var(--muted); font-weight: 400; margin-top: .1em; }
+
+/* ---------- 構文分解 ---------- */
+.target { font: 800 1.1em/1.8 var(--vi); background: var(--theme); color: #fff; padding: .5em .8em; border-radius: 16px; }
+.target-ja { font-size: .74em; color: var(--muted); margin: .5em 0 .4em; }
+.bd { list-style: none; margin-top: .5em; }
+.bd li { display: grid; grid-template-columns: 4.6em 1fr; gap: .2em .7em; padding: .45em 0; border-bottom: 2px solid var(--line); }
+.bd .part { font: 800 .62em/1.7 var(--ja); color: var(--theme); background: color-mix(in srgb, var(--theme) 12%, white);
+  border-radius: 8px; text-align: center; align-self: start; padding: .2em 0; }
+.bd .text { font: 600 1em/1.7 var(--vi); }
+.bd .exp { grid-column: 2; font-size: .7em; color: var(--muted); line-height: 1.7; }

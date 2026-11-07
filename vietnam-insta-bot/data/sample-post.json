@@ -1,0 +1,65 @@
+{
+  "day": "sunday",
+  "theme": "reading",
+  "themeColor": "#1E3A8A",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Cà phê và nhịp sống Hà Nội",
+      "subtitle": "長文読解｜コーヒーから見るハノイの暮らし",
+      "badge": "第1回 本格長文読解"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第1段落",
+      "vietnameseText": "Ở Hà Nội, <mark>quán cà phê</mark> không chỉ là nơi uống nước mà còn là không gian để gặp gỡ, làm việc và <mark>tán gẫu</mark>. Từ sáng sớm, nhiều người đã ngồi trên những chiếc ghế nhựa thấp bên vỉa hè, nhâm nhi một ly cà phê đen.",
+      "japaneseText": "ハノイでは、カフェは飲み物を飲む場所であるだけでなく、人と会ったり、仕事をしたり、おしゃべりしたりする空間でもある。早朝から、多くの人が歩道の低いプラスチック椅子に腰かけ、ブラックコーヒーをちびちびと味わっている。",
+      "annotation": "không chỉ … mà còn …（〜だけでなく…も）は書き言葉・ニュースで頻出の相関構文。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第2段落",
+      "vietnameseText": "Nổi tiếng nhất có lẽ là <mark>cà phê trứng</mark>, món đồ uống ra đời vào những năm 1940 khi sữa tươi còn <mark>khan hiếm</mark>. Người ta dùng lòng đỏ trứng đánh bông với đường để thay thế sữa.",
+      "japaneseText": "最も有名なのはおそらくエッグコーヒーだろう。牛乳がまだ手に入りにくかった1940年代に生まれた飲み物だ。人々は牛乳の代わりに、卵黄を砂糖と一緒に泡立てて使った。",
+      "annotation": "có lẽ は推量の副詞で、文頭・述語の前に置く。khan hiếm は漢越語「艱稀」で、物資の不足に使う硬めの語。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第3段落",
+      "vietnameseText": "Ngày nay, dù các chuỗi cà phê hiện đại mọc lên khắp nơi, những quán nhỏ <mark>mang đậm</mark> phong cách cũ vẫn có chỗ đứng riêng trong lòng người Hà Nội.",
+      "japaneseText": "今日では、現代的なカフェチェーンがいたるところにできているものの、昔ながらの雰囲気を色濃く残す小さな店は、今もハノイの人々の心の中に独自の居場所を持っている。",
+      "annotation": "dù …, … vẫn …（〜にもかかわらず、依然として…）。vẫn を落とすと譲歩のニュアンスが弱まる。"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "重要語彙",
+      "items": [
+        { "word": "tán gẫu", "pos": "動", "meaning": "おしゃべりする・雑談する", "note": "口語。目的のない世間話に使う" },
+        { "word": "nhâm nhi", "pos": "動", "meaning": "ちびちび味わう", "note": "酒・コーヒーなどをゆっくり飲む様子" },
+        { "word": "khan hiếm", "pos": "形", "meaning": "（物資が）乏しい", "note": "漢越語「艱稀」。報道でよく使う" },
+        { "word": "đánh bông", "pos": "動", "meaning": "泡立てる", "note": "đánh（打つ）+ bông（綿）＝ふわふわにする" },
+        { "word": "mọc lên", "pos": "動", "meaning": "次々と現れる", "note": "本来は「生える」。店や建物の増加にも" },
+        { "word": "chỗ đứng", "pos": "名", "meaning": "立ち位置・居場所", "note": "có chỗ đứng＝地位を確立している" }
+      ]
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "構文分解",
+      "targetSentence": "Dù các chuỗi cà phê hiện đại mọc lên khắp nơi, những quán nhỏ vẫn có chỗ đứng riêng.",
+      "translation": "現代的なカフェチェーンがいたるところにできていても、小さな店は独自の居場所を持っている。",
+      "breakdown": [
+        { "part": "譲歩", "text": "Dù …", "explanation": "「〜だけれども」。後半の vẫn と呼応して対比を強める" },
+        { "part": "主語1", "text": "các chuỗi cà phê hiện đại", "explanation": "các（複数）+ chuỗi（チェーン）+ 修飾語は後ろ" },
+        { "part": "述語1", "text": "mọc lên khắp nơi", "explanation": "khắp nơi＝至る所に。場所の副詞句は述語の後" },
+        { "part": "主語2", "text": "những quán nhỏ", "explanation": "những は不特定の複数。các より限定性が弱い" },
+        { "part": "述語2", "text": "vẫn có chỗ đứng riêng", "explanation": "vẫn＝依然として。riêng は名詞の後ろで「独自の」" }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "☕ ハノイのカフェ文化を、ベトナム語の長文でじっくり読み解こう。",
+    "summary": "今週の長文はハノイのコーヒー文化。エッグコーヒーが生まれた背景から、今も愛される昔ながらの店まで。\n\n✅ không chỉ … mà còn …（〜だけでなく…も）\n✅ dù …, … vẫn …（〜にもかかわらず依然として）\n✅ các と những の違い\n\n音声に合わせて音読し、全訳と語彙表で答え合わせをしてください。",
+    "hashtags": ["#ベトナム語", "#ベトナム語学習", "#ベトナム語勉強", "#tiengviet", "#語学学習", "#ベトナム語長文", "#ベトナムニュース", "#精読", "#ハノイ", "#ベトナムコーヒー"]
+  },
+  "audioScript": "Ở Hà Nội, quán cà phê không chỉ là nơi uống nước mà còn là không gian để gặp gỡ, làm việc và tán gẫu. Từ sáng sớm, nhiều người đã ngồi trên những chiếc ghế nhựa thấp bên vỉa hè, nhâm nhi một ly cà phê đen.\nNổi tiếng nhất có lẽ là cà phê trứng, món đồ uống ra đời vào những năm 1940 khi sữa tươi còn khan hiếm. Người ta dùng lòng đỏ trứng đánh bông với đường để thay thế sữa.\nNgày nay, dù các chuỗi cà phê hiện đại mọc lên khắp nơi, những quán nhỏ mang đậm phong cách cũ vẫn có chỗ đứng riêng trong lòng người Hà Nội."
+}

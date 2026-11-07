@@ -1,0 +1,20 @@
+{
+  "name": "vietnam-insta-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ベトナム語学習Instagramの自動運用（Claude が生成⇄評価 → 描画 → 音声・リール → 投稿 → 学習ログ）",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "status": "node src/index.js status",
+    "check": "node src/index.js check",
+    "sample": "node src/index.js sample",
+    "check:ig": "node src/uploader.js check"
+  },
+  "dependencies": {
+    "dotenv": "16.4.7",
+    "puppeteer": "24.10.0"
+  }
+}

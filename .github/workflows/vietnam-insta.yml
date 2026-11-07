@@ -1,0 +1,107 @@
+name: Vietnamese Instagram autopost
+
+# 投稿だけを担当する（教材は Claude Code の定期実行が posts/<日付>.json に 3 日先まで作り置きする）
+# 20:07 JST に「画像・音声・リール作成 → commit → カルーセル + リール投稿」。定時実行は遅れることがあるので予備枠あり（投稿済みなら何もしない）
+on:
+  schedule:
+    - cron: "7 11 * * *"    # 20:07 JST
+    - cron: "37 11 * * *"   # 20:37 JST 予備
+    - cron: "7 12 * * *"    # 21:07 JST 予備
+    - cron: "17 19 * * *"   # 04:17 JST インサイト収集
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "実行内容"
+        type: choice
+        default: publish
+        options: [publish, metrics, check-ig]
+      date:
+        description: "YYYY-MM-DD（JST）。空なら当日"
+        required: false
+      dry_run:
+        description: "投稿 API を叩かない"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vietnam-insta
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: vietnam-insta-bot
+    env:
+      INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+      PAGE_ACCESS_TOKEN: ${{ secrets.PAGE_ACCESS_TOKEN }}
+      TTS_VOICE: ${{ vars.VI_TTS_VOICE || 'vi-VN-HoaiMyNeural' }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
+    steps:
+      - name: Pick mode
+        id: mode
+        working-directory: .
+        run: |
+          if [ "${{ github.event.schedule }}" = "17 19 * * *" ]; then MODE=metrics
+          elif [ -n "${{ github.event.schedule }}" ]; then MODE=publish
+          else MODE="${{ inputs.mode }}"; fi
+          DATE="${{ inputs.date }}"
+          [ -z "$DATE" ] && DATE=$(TZ=Asia/Tokyo date -d '19 hours ago' +%F)   # 20時台の枠。深夜にずれ込んでも前日分として扱う
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"; echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ -z "$INSTAGRAM_ACCOUNT_ID" ] && [ "$DRY_RUN" != "true" ]; then
+            echo "::notice::INSTAGRAM_ACCOUNT_ID が未設定のため何もしません"; echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v5
+        if: steps.mode.outputs.skip != 'true'
+      - uses: actions/setup-node@v5
+        if: steps.mode.outputs.skip != 'true'
+        with:
+          node-version: 22
+      - name: Check token
+        if: steps.mode.outputs.skip != 'true' && steps.mode.outputs.mode == 'check-ig'
+        run: npm ci --no-audit --no-fund --ignore-scripts && node src/uploader.js check
+      - name: Collect insights
+        if: steps.mode.outputs.skip != 'true' && steps.mode.outputs.mode == 'metrics'
+        run: npm ci --no-audit --no-fund --ignore-scripts && node src/index.js metrics
+      - uses: actions/setup-python@v6
+        if: steps.mode.outputs.skip != 'true' && steps.mode.outputs.mode == 'publish'
+        with:
+          python-version: "3.12"
+      - name: Install
+        if: steps.mode.outputs.skip != 'true' && steps.mode.outputs.mode == 'publish'
+        run: |
+          npm ci --no-audit --no-fund
+          pip install edge-tts
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+      - name: Images, audio, reel
+        id: prep
+        if: steps.mode.outputs.skip != 'true' && steps.mode.outputs.mode == 'publish'
+        run: node src/index.js prepare --date "${{ steps.mode.outputs.date }}"
+      - name: Commit media
+        if: steps.prep.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add output
+          git diff --cached --quiet || git commit -m "vietnam-insta: media for ${{ steps.mode.outputs.date }}"
+          for i in 1 2 3 4; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break; sleep $((2**i)); done
+      - name: Publish
+        if: steps.prep.outcome == 'success'
+        run: |
+          # Graph API は公開 URL のファイルを取りに来るので、push 済みコミットの raw URL を渡す
+          export MEDIA_BASE_URL="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/$(git rev-parse HEAD)/vietnam-insta-bot/output"
+          node src/index.js publish --date "${{ steps.mode.outputs.date }}"
+      - name: Commit records
+        if: always() && steps.mode.outputs.skip != 'true' && steps.mode.outputs.mode != 'check-ig'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "vietnam-insta: records ${{ steps.mode.outputs.date }}"
+          for i in 1 2 3 4; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break; sleep $((2**i)); done

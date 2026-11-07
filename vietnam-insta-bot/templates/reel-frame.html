@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{fontsUrl}}">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; }
+  body { background: {{themeColor}}; color: #fff; font-family: 'Noto Sans JP', 'Be Vietnam Pro', sans-serif; }
+  /* 上下はリールの UI（上部タブ・下部キャプション/ボタン）と重なるので、重要な情報は中央の 4:5 スライドに置く */
+  .top { height: 285px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 10px; padding-bottom: 26px; }
+  .badge { background: {{accentColor}}; color: #111827; font: 800 30px/1.7 'Noto Sans JP', sans-serif; padding: 0 26px; border-radius: 999px; }
+  .title { font: 800 40px/1.7 'Be Vietnam Pro', 'Noto Sans JP', sans-serif; max-width: 980px; text-align: center;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  img { display: block; width: 1080px; height: 1350px; }
+  .bottom { height: 285px; text-align: center; padding-top: 22px; font: 600 30px/1.7 'Noto Sans JP', sans-serif; color: rgba(255,255,255,.9); }
+</style>
+</head>
+<body>
+  <div class="top"><span class="badge">{{badge}}</span><div class="title">{{title}}</div></div>
+  <img src="{{{imgSrc}}}" alt="">
+  <div class="bottom">{{bottom}}</div>
+</body>
+</html>
