@@ -95,7 +95,8 @@ async function publish(creationId, label) {
     const prevDate = addDays(date, -1);
     if (!log[prevDate]?.feed && !dry) { console.log(`::warning::${prevDate} was not published, so there is no quiz to answer. Skipping.`); return; }
   }
-  const entry = log[date] || (post ? { kind: post.kind, no: post.no } : { story_only: true });
+  const before = { ...(log[date] || {}) };
+  const entry = { ...(log[date] || (post ? { kind: post.kind, no: post.no } : { story_only: true })) };
 
   if (mode === "feed") {
     const caption = fs.readFileSync(path.join(outDir, "caption.txt"), "utf8").trim();
@@ -125,7 +126,7 @@ async function publish(creationId, label) {
   }
 
   // Write the log only when something new went out (skipped runs leave no commit).
-  const changed = ["feed", "reel", "story"].some(k => entry[k] && entry[k] !== (log[date] || {})[k]);
+  const changed = ["feed", "reel", "story"].some(k => entry[k] && entry[k] !== before[k]);
   if (!dry && changed) {
     entry.updated = new Date().toISOString();
     log[date] = entry;
