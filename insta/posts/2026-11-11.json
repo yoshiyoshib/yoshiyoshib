@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-11",
+  "no": 8,
+  "kind": "word",
+  "level": "C1",
+  "status": "approved",
+  "theme": {
+    "en": "Describing feelings",
+    "ja": "気持ちを表すC1の形容詞"
+  },
+  "items": [
+    {
+      "term": "apprehensive",
+      "ipa": "/ˌæprɪˈhɛnsɪv/",
+      "pos": "adjective",
+      "ja": "（これから起こることが）不安な、心配な",
+      "definition": "Worried or nervous about something that is going to happen.",
+      "example": "I was **apprehensive** about speaking in front of so many people.",
+      "example_ja": "あんなに大勢の前で話すのは不安だった。",
+      "note": "be apprehensive about ～ の形でよく使います。"
+    },
+    {
+      "term": "elated",
+      "ipa": "/ɪˈleɪtɪd/",
+      "pos": "adjective",
+      "ja": "大喜びの、有頂天の",
+      "definition": "Extremely happy and excited, often because of good news.",
+      "example": "She was **elated** when she got the job offer.",
+      "example_ja": "内定の連絡をもらって、彼女は大喜びだった。",
+      "note": "very happy より強い、一時的な高揚感です。"
+    },
+    {
+      "term": "indignant",
+      "ipa": "/ɪnˈdɪɡnənt/",
+      "pos": "adjective",
+      "ja": "（不当な扱いに）憤慨した",
+      "definition": "Angry because something seems unfair.",
+      "example": "He was **indignant** at being blamed for the mistake.",
+      "example_ja": "ミスの責任を押しつけられて、彼は憤慨していた。",
+      "note": "「不公平だ」という怒り。名詞は indignation。"
+    },
+    {
+      "term": "wistful",
+      "ipa": "/ˈwɪstfəl/",
+      "pos": "adjective",
+      "ja": "（もう手に入らないものを思って）切なげな",
+      "definition": "Slightly sad because you are thinking about something you no longer have.",
+      "example": "She gave a **wistful** smile as she looked at the old photos.",
+      "example_ja": "古い写真を見ながら、彼女は少し切なげにほほえんだ。",
+      "note": "nostalgic より「寂しさ」の色が濃い言葉です。"
+    },
+    {
+      "term": "ambivalent",
+      "ipa": "/æmˈbɪvələnt/",
+      "pos": "adjective",
+      "ja": "複雑な気持ちの、気持ちが揺れている",
+      "definition": "Having mixed feelings about something.",
+      "example": "I feel **ambivalent** about moving abroad.",
+      "example_ja": "海外に引っ越すことについては、複雑な気持ちだ。",
+      "note": "「どうでもいい」の indifferent とは別の意味です。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Part of me wants the job and part of me doesn't. I'm ____.",
+    "options": [
+      "ambivalent",
+      "elated",
+      "indignant"
+    ],
+    "answer": "A",
+    "why": "ambivalent＝相反する気持ちがあって揺れている。"
+  },
+  "caption": "気持ちを表すC1レベルの形容詞5つ 💭\n\n1. apprehensive｜不安な\n2. elated｜大喜びの\n3. indignant｜憤慨した\n4. wistful｜切なげな\n5. ambivalent｜複雑な気持ちの\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英単語 #英語勉強 #大人の英語 #英語上級 #英検1級 #TOEIC #IELTS #英語好きな人と繋がりたい #語彙力 #englishvocabulary #learnenglish #advancedenglish #C1english"
+}
