@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-07T22:15:25.720Z"
+    "collected": "2026-11-08T22:26:08.609Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: Unsupported get request. Object with ID '17901437292672681' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     },
-    "collected": "2026-11-07T22:15:26.401Z"
+    "collected": "2026-11-08T22:26:09.083Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -80,8 +80,28 @@
       "profile_visits": 0
     },
     "story": {
-      "error": "18091406912260591: (#10) Not enough viewers for the media to show insights"
+      "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-07T22:15:27.684Z"
+    "collected": "2026-11-08T22:26:09.536Z"
+  },
+  "2026-11-08": {
+    "kind": "review",
+    "theme": "今週の表現をまとめて復習",
+    "terms": [],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+    },
+    "story": {
+      "error": "17920391178526780: (#10) Not enough viewers for the media to show insights"
+    },
+    "collected": "2026-11-08T22:26:10.347Z"
   }
 }
