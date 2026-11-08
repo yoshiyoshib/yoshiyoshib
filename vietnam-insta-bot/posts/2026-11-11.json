@@ -1,0 +1,120 @@
+{
+  "day": "wednesday",
+  "theme": "dialect",
+  "themeColor": "#7C3AED",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Bát hay chén? Bắc vs Nam",
+      "subtitle": "方言｜ハノイとホーチミン、同じ意味で違う言葉",
+      "badge": "第1回 南北ことば比較"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "北と南で違う日常語",
+      "items": [
+        {
+          "word": "bát / chén",
+          "pos": "名",
+          "meaning": "茶碗・お椀",
+          "note": "北: bát ／ 南: chén。北部の chén は小さな杯（chén trà）"
+        },
+        {
+          "word": "ốm / bệnh",
+          "pos": "形",
+          "meaning": "病気だ・具合が悪い",
+          "note": "北: ốm ／ 南: bệnh。南部で ốm は「やせている」"
+        },
+        {
+          "word": "vâng / dạ",
+          "pos": "感",
+          "meaning": "はい（丁寧な返事）",
+          "note": "北: vâng（dạ も使う）／ 南: dạ"
+        },
+        {
+          "word": "lợn / heo",
+          "pos": "名",
+          "meaning": "豚",
+          "note": "北: lợn ／ 南: heo。豚肉は thịt lợn / thịt heo"
+        },
+        {
+          "word": "dứa / thơm",
+          "pos": "名",
+          "meaning": "パイナップル",
+          "note": "北: dứa ／ 南: thơm（khóm とも）"
+        },
+        {
+          "word": "ngô / bắp",
+          "pos": "名",
+          "meaning": "トウモロコシ",
+          "note": "北: ngô ／ 南: bắp"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "同じ文を北部と南部で",
+      "vietnameseText": "Bắc: Hôm nay <mark>tôi</mark> bị <mark>ốm</mark>, ăn <mark>không</mark> hết <mark>bát</mark> cơm.\nNam: Bữa nay <mark>tui</mark> bị <mark>bệnh</mark>, ăn <mark>hổng</mark> hết <mark>chén</mark> cơm.",
+      "japaneseText": "今日は具合が悪くて、ご飯一杯も食べきれないよ。（北部・南部とも同じ意味）",
+      "annotation": "南部の話し言葉では tôi が tui、không が hổng、hôm nay が bữa nay になりやすい。ăn không hết は「食べきれない」の決まった語順。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "発音の違い",
+      "targetSentence": "Dì ơi, giờ này dì về rồi à?",
+      "translation": "おばさん、もうこの時間に帰ってきたの？",
+      "breakdown": [
+        {
+          "part": "d・gi",
+          "text": "Dì / giờ",
+          "explanation": "北: どちらも [z]（ザ行に近い）／ 南: どちらも [j]（ヤ行に近い）"
+        },
+        {
+          "part": "v",
+          "text": "về",
+          "explanation": "北: [v] ／ 南: [j] に近く「イェー」のように聞こえることが多い"
+        },
+        {
+          "part": "r",
+          "text": "rồi",
+          "explanation": "北: [z] で d・gi と同じ音 ／ 南: 舌を巻いた r の音（話者で差あり）"
+        },
+        {
+          "part": "声調",
+          "text": "hỏi・ngã",
+          "explanation": "北: 2つは別の声調 ／ 南: ほぼ合流して同じように発音される"
+        },
+        {
+          "part": "語末",
+          "text": "-n / -ng",
+          "explanation": "南部では語末の -n と -ng の区別が弱く、lớn が lớng のように聞こえる"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "市場で買い物（北と南）",
+      "vietnameseText": "Bắc: <mark>Vâng</mark>, cho <mark>cháu</mark> hai <mark>cân</mark> <mark>dứa</mark> ạ.\nNam: <mark>Dạ</mark>, cho <mark>con</mark> hai <mark>ký</mark> <mark>thơm</mark> nha.",
+      "japaneseText": "はい、パイナップルを2キロください。（北部・南部とも同じ意味）",
+      "annotation": "キロは北 cân・南 ký。年上の店員への一人称も北 cháu・南 con と変わる。文末は北部が ạ で丁寧に、南部は nha で柔らかくまとめることが多い。"
+    }
+  ],
+  "caption": {
+    "hook": "🍚 ハノイで「chén」をください、と言うと小さな杯が出てくるかも？ 北部弁と南部弁の違いをまとめました。",
+    "summary": "ベトナム語は北部（ハノイ）と南部（ホーチミン）で、日常語も発音もかなり違います。\n\n✅ 茶碗：北 bát ／ 南 chén\n✅ 病気：北 ốm ／ 南 bệnh（南部の ốm は「やせている」）\n✅ はい：北 vâng ／ 南 dạ\n✅ キロ：北 cân ／ 南 ký\n✅ 発音：d・gi・r は北部でどれもザ行、南部では d・gi がヤ行\n✅ 声調：hỏi と ngã は南部でほぼ同じ音\n\n教科書の多くは北部の標準語ですが、南部のドラマや旅行では南部の言い方が必須。両方セットで覚えると聞き取りが一気に楽になります。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#北部弁",
+      "#南部弁",
+      "#ハノイ",
+      "#ホーチミン",
+      "#ベトナム方言"
+    ]
+  },
+  "audioScript": "Hôm nay tôi bị ốm, ăn không hết bát cơm.\nBữa nay tui bị bệnh, ăn hổng hết chén cơm.\nDì ơi, giờ này dì về rồi à?\nVâng, cho cháu hai cân dứa ạ.\nDạ, cho con hai ký thơm nha.",
+  "status": "draft"
+}

@@ -1,0 +1,125 @@
+{
+  "day": "monday",
+  "theme": "etymology",
+  "themeColor": "#B91C1C",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Học 学 – gốc Hán Việt",
+      "subtitle": "漢越語｜「学」ひとつで語彙と発音ルールが広がる",
+      "badge": "第1回 漢越語ラボ"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "「学」＝ học を使ってみる",
+      "vietnameseText": "Em gái tôi là <mark>học sinh</mark> lớp 10, còn anh trai tôi là <mark>sinh viên</mark> năm hai.\nAnh ấy học <mark>khoa học</mark> máy tính ở một trường <mark>đại học</mark> tại Hà Nội.",
+      "japaneseText": "私の妹は高校1年生で、兄は大学2年生です。\n兄はハノイの大学でコンピューターサイエンスを学んでいます。",
+      "annotation": "học sinh（学生）は小〜高校生だけを指し、大学生は sinh viên（生員）。日本語の「学生」より範囲が狭い。em gái＝妹、anh trai＝兄（親族名詞）。"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "học（学）の派生語",
+      "items": [
+        {
+          "word": "học sinh",
+          "pos": "名",
+          "meaning": "生徒（小〜高校生）",
+          "note": "漢「学生」。大学生は sinh viên と言う"
+        },
+        {
+          "word": "đại học",
+          "pos": "名",
+          "meaning": "大学",
+          "note": "漢「大学」。trường đại học で学校としての大学"
+        },
+        {
+          "word": "khoa học",
+          "pos": "名",
+          "meaning": "科学",
+          "note": "漢「科学」。khoa học xã hội＝社会科学"
+        },
+        {
+          "word": "văn học",
+          "pos": "名",
+          "meaning": "文学",
+          "note": "漢「文学」。văn（文）は văn hóa（文化）にも"
+        },
+        {
+          "word": "học phí",
+          "pos": "名",
+          "meaning": "授業料・学費",
+          "note": "漢「学費」。phí（費）は chi phí（費用）にも"
+        },
+        {
+          "word": "học kỳ",
+          "pos": "名",
+          "meaning": "学期",
+          "note": "漢「学期」。học kỳ một＝1学期（前期）"
+        }
+      ]
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "語順：漢越語の中は「漢文の順」",
+      "targetSentence": "Anh ấy là sinh viên năm hai của một trường đại học lớn.",
+      "translation": "彼はある大きな大学の2年生です。",
+      "breakdown": [
+        {
+          "part": "主語",
+          "text": "Anh ấy",
+          "explanation": "anh（兄・年上の男性）＋ấy（その）＝「彼」。年上か同年代の男性に使う"
+        },
+        {
+          "part": "述語",
+          "text": "là sinh viên",
+          "explanation": "là＝「〜である」。名詞が述語になるときに必要"
+        },
+        {
+          "part": "修飾",
+          "text": "năm hai",
+          "explanation": "「2年目」。ベトナム語の基本は 中心語→修飾語 の順"
+        },
+        {
+          "part": "所属",
+          "text": "của một trường",
+          "explanation": "của＝「〜の」。trường（学校）がこの句の中心語"
+        },
+        {
+          "part": "漢越語",
+          "text": "đại học",
+          "explanation": "漢越語の内部は漢文と同じ 修飾語→中心語（大→学）"
+        },
+        {
+          "part": "修飾",
+          "text": "lớn",
+          "explanation": "純越語の形容詞は後ろに置く。đại（大）と lớn は同じ意味で位置が逆"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "日本語の音読みから推測する",
+      "vietnameseText": "学 gaku → <mark>học</mark>\n国 koku → <mark>quốc</mark>\n石 seki → <mark>thạch</mark>\n日 nichi → <mark>nhật</mark>\n出 shutsu → <mark>xuất</mark>\n法 hō → <mark>pháp</mark>",
+      "japaneseText": "音読みが「-ku / -ki」で終わる漢字は語末 -c / -ch に、「-chi / -tsu」で終わる漢字は語末 -t になりやすい。音読みが長音（-ō / -ū）の一部は語末 -p に対応する（法 pháp、十 thập）。どれも古い中国語の入声（-k / -t / -p で終わる音）の名残だ。",
+      "annotation": "語末が -c / -ch / -t / -p の音節に付く声調は sắc（´）と nặng（.）の2種類だけ。綴りで迷ったらこの2択で考えよう。"
+    }
+  ],
+  "caption": {
+    "hook": "📚「学」はベトナム語で何と読む？ 一つ覚えると単語が芋づる式に増える、漢越語（Hán Việt）の回です。",
+    "summary": "ベトナム語の語彙の多くは漢字由来の「漢越語」。「学」＝ học を軸に、日本語の知識を生かす方法をまとめました。\n\n✅ học sinh は「生徒（小〜高校生）」。大学生は sinh viên\n✅ 漢越語の中は 修飾語→中心語（đại học＝大学）、純越語は 中心語→修飾語（trường lớn＝大きな学校）\n✅ 音読みの -ku / -ki → 語末 -c・-ch、-chi / -tsu → 語末 -t、一部の長音 → -p（学 học、石 thạch、日 nhật、法 pháp）\n✅ 語末 -c / -ch / -t / -p の音節の声調は sắc か nặng だけ\n\n派生語6つを語彙表で確認して、自分の身の回りの単語で「音読みから推測」を試してみてください。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#漢越語",
+      "#HánViệt",
+      "#語源",
+      "#ベトナム語単語",
+      "#漢字"
+    ]
+  },
+  "audioScript": "Em gái tôi là học sinh lớp 10, còn anh trai tôi là sinh viên năm hai.\nAnh ấy học khoa học máy tính ở một trường đại học tại Hà Nội.\nHọc sinh. Đại học. Khoa học. Văn học. Học phí. Học kỳ.\nAnh ấy là sinh viên năm hai của một trường đại học lớn.\nHọc. Quốc. Thạch. Nhật. Xuất. Pháp.",
+  "status": "draft"
+}

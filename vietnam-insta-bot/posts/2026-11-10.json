@@ -1,0 +1,119 @@
+{
+  "day": "tuesday",
+  "theme": "dialogue",
+  "themeColor": "#0F766E",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Cà phê & nhé, nhỉ, mà",
+      "subtitle": "会話｜カフェで覚える文末詞のニュアンス",
+      "badge": "第1回 リアル会話"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "カフェで注文（前半）",
+      "vietnameseText": "A: Em ơi, cho anh một ly cà phê sữa đá <mark>nhé</mark>.\nB: <mark>Dạ</mark>, anh uống ở đây hay mang đi <mark>ạ</mark>?\nA: Mang đi. Hôm nay nóng <mark>nhỉ</mark>?\nB: Vâng, nóng lắm ạ. Anh có muốn ít đường không ạ?",
+      "japaneseText": "A：すみません、アイスミルクコーヒーを一つお願いね。\nB：はい、店内でお召し上がりですか、お持ち帰りですか？\nA：持ち帰りで。今日は暑いね。\nB：ええ、本当に暑いですね。砂糖は少なめにしますか？",
+      "annotation": "客Aは年上の男性なので自分を anh、若い店員を em と呼ぶ。nhé は依頼を柔らかくし、nhỉ は「〜だよね」と相手の共感を求める。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "カフェで注文（後半）",
+      "vietnameseText": "A: Ừ, ít đường thôi. Lần trước ngọt quá <mark>mà</mark>.\nB: Dạ, em nhớ rồi ạ. Của anh 35 nghìn ạ.\nA: Đây, anh gửi em. Cảm ơn em <mark>nhé</mark>!",
+      "japaneseText": "A：うん、少なめで。この前は甘すぎたからさ。\nB：はい、覚えておきます。3万5千ドンです。\nA：はい、これ。ありがとうね！",
+      "annotation": "文末の mà は「だって〜なんだから」と理由を当然のこととして示す。店員は年上の客に対して dạ と ạ で文をはさみ、丁寧さを出している。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "構文分解：丁寧な質問",
+      "targetSentence": "Dạ, anh uống ở đây hay mang đi ạ?",
+      "translation": "はい、店内でお召し上がりですか、それともお持ち帰りですか？",
+      "breakdown": [
+        {
+          "part": "応答",
+          "text": "Dạ",
+          "explanation": "目上への「はい」。返事の冒頭に置くだけで丁寧になる"
+        },
+        {
+          "part": "主語",
+          "text": "anh",
+          "explanation": "2人称「あなた」。相手が年上の男性なので anh を使う"
+        },
+        {
+          "part": "述語",
+          "text": "uống ở đây",
+          "explanation": "uống（飲む）＋ở đây（ここで）。場所の句は動詞の後ろ"
+        },
+        {
+          "part": "選択",
+          "text": "hay mang đi",
+          "explanation": "疑問文の「それとも」は hay。平叙文の「または」は主に hoặc"
+        },
+        {
+          "part": "文末詞",
+          "text": "ạ",
+          "explanation": "文末に付けて敬意を添える。目上への質問や返事に使う"
+        }
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "heading": "今日の文末詞と表現",
+      "items": [
+        {
+          "word": "nhé",
+          "pos": "文末",
+          "meaning": "〜ね（依頼・提案を柔らげる）",
+          "note": "北部で多い。南部では nha・nghen とも言う"
+        },
+        {
+          "word": "nhỉ",
+          "pos": "文末",
+          "meaning": "〜だよね（共感を求める）",
+          "note": "北部的。南部では ha をよく使う"
+        },
+        {
+          "word": "mà",
+          "pos": "文末",
+          "meaning": "だって〜なんだから",
+          "note": "理由を当然視する。強く言うと反論・不満の響きに"
+        },
+        {
+          "word": "ạ",
+          "pos": "文末",
+          "meaning": "（敬意を添える）",
+          "note": "目上・客に。Dạ … ạ で文をはさむとより丁寧"
+        },
+        {
+          "word": "mang đi",
+          "pos": "動",
+          "meaning": "持ち帰る（テイクアウト）",
+          "note": "直訳「持って行く」。店内は uống ở đây / ăn ở đây"
+        },
+        {
+          "word": "ít đường",
+          "pos": "句",
+          "meaning": "砂糖少なめ",
+          "note": "ít＝少ない。nhiều đường＝多め、không đường＝なし"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "☕ ベトナム語の会話が教科書っぽくなる原因は「文末詞」かも。カフェの注文で nhé・nhỉ・mà・ạ をまとめて覚えよう。",
+    "summary": "ベトナム語の会話は、文の最後に付く小さな言葉（文末詞）で印象が大きく変わります。\n\n✅ nhé：依頼や提案を柔らかくする「〜ね」\n✅ nhỉ：「今日は暑いね」のように共感を求める\n✅ mà：「だって〜なんだから」と理由を当然のこととして示す\n✅ dạ … ạ：目上やお客さんへの丁寧さ\n✅ 疑問文の「それとも」は hay、平叙文の「または」は hoặc\n\nお客さん（年上の男性）は自分を anh、店員を em と呼んでいます。人称代名詞が年齢関係で決まる点にも注目してください。リールの音声で会話をまねしてみましょう。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ベトナム語会話",
+      "#文末詞",
+      "#ベトナムカフェ",
+      "#ベトナムコーヒー"
+    ]
+  },
+  "audioScript": "Em ơi, cho anh một ly cà phê sữa đá nhé.\nDạ, anh uống ở đây hay mang đi ạ?\nMang đi. Hôm nay nóng nhỉ?\nVâng, nóng lắm ạ. Anh có muốn ít đường không ạ?\nỪ, ít đường thôi. Lần trước ngọt quá mà.\nDạ, em nhớ rồi ạ. Của anh 35 nghìn ạ.\nĐây, anh gửi em. Cảm ơn em nhé!",
+  "status": "draft"
+}

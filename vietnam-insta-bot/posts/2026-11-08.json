@@ -1,0 +1,133 @@
+{
+  "day": "sunday",
+  "theme": "reading",
+  "themeColor": "#1E3A8A",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Thành cổ Vinh 222 tuổi",
+      "subtitle": "ニュース精読｜築222年の古城、2027年に修復へ",
+      "badge": "第1回 ニュース長文精読"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第1段落｜何が起きる？",
+      "vietnameseText": "Thành cổ Vinh ở Nghệ An, một <mark>di tích lịch sử quốc gia</mark> đã 222 tuổi, dự kiến sẽ được <mark>trùng tu</mark> vào năm 2027 với <mark>kinh phí</mark> khoảng 10,5 tỷ đồng, lấy từ ngân sách tỉnh, ngoài kế hoạch đầu tư công trung hạn.",
+      "japaneseText": "ゲアン省にある築222年の国家歴史遺跡「ヴィン古城」が、2027年に約105億ドンをかけて修復される見通しだ。費用は、中期公共投資計画とは別枠で省の予算から拠出される。",
+      "annotation": "dự kiến sẽ＋動詞＝「〜する見込みだ」。未確定の予定を伝える報道の定番。10,5 tỷ đồng＝105億ドン（小数点はカンマ）。tỷ＝10億、triệu＝100万、nghìn＝千。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第2段落｜どこを直す？",
+      "vietnameseText": "Theo Sở Văn hóa, Thể thao và Du lịch Nghệ An, dự án <mark>đã được trình</mark> lên UBND tỉnh để xem xét. Năm <mark>hạng mục</mark> được đề xuất gồm ba cổng Tiền Môn, Tả Môn, Hữu Môn, khu mộ Đội Cung trong thành và bốt gác của nhà lao Vinh.",
+      "japaneseText": "ゲアン省文化スポーツ観光局によると、事業案はすでに省人民委員会に提出され、審査を待っている。修復対象として挙がっているのは、前門・左門・右門の3つの城門、城内のドイ・クンの墓の一帯、ヴィン監獄の見張り台の計5か所だ。",
+      "annotation": "đã được＋動詞＝「すでに〜された」。được は好ましい・中立の受け身で、不利益を受けるときは bị を使う。UBND は Ủy ban nhân dân（人民委員会）の略。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第3段落｜どんな歴史？",
+      "vietnameseText": "Thành được xây dựng năm 1804 dưới thời vua Gia Long, ban đầu chỉ <mark>đắp bằng đất</mark>, sau đó được vua Minh Mạng cho xây lại bằng <mark>đá ong</mark>. Đến năm 1998, thành được <mark>xếp hạng</mark> là di tích lịch sử cấp quốc gia.",
+      "japaneseText": "城は1804年、ザーロン帝の時代に築かれた。当初は土を盛っただけの城だったが、のちにミンマン帝の命でラテライト（紅土石）で築き直された。そして1998年、国の歴史遺跡に指定された。",
+      "annotation": "được＋人＋cho＋動詞＝「（人）の命で〜される」。受け身と使役 cho の組み合わせ。ban đầu…, sau đó… は「当初は…、その後…」と時間の流れを示す型。"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "重要語彙",
+      "items": [
+        {
+          "word": "trùng tu",
+          "pos": "動",
+          "meaning": "（文化財を）修復する",
+          "note": "漢越語「重修」。寺院・史跡に使う硬い語。家の修理は sửa"
+        },
+        {
+          "word": "kinh phí",
+          "pos": "名",
+          "meaning": "経費・事業費",
+          "note": "漢越語「経費」。事業や行事の予算に使う"
+        },
+        {
+          "word": "hạng mục",
+          "pos": "名",
+          "meaning": "（工事・事業の）項目",
+          "note": "漢越語「項目」。建設計画の工程単位として報道で頻出"
+        },
+        {
+          "word": "trình",
+          "pos": "動",
+          "meaning": "（上位機関に）提出する",
+          "note": "漢越語「呈」。trình lên＋機関。trình bày は「説明する」"
+        },
+        {
+          "word": "đá ong",
+          "pos": "名",
+          "meaning": "ラテライト（紅土石）",
+          "note": "đá（石）+ ong（蜂）。表面の穴が蜂の巣に似ていることからとされる"
+        },
+        {
+          "word": "xếp hạng",
+          "pos": "動",
+          "meaning": "格付けする・指定する",
+          "note": "xếp hạng di tích＝文化財に指定する。順位付けにも使う"
+        }
+      ]
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "構文分解",
+      "targetSentence": "Thành được xây dựng năm 1804 dưới thời vua Gia Long, ban đầu chỉ đắp bằng đất.",
+      "translation": "城は1804年、ザーロン帝の時代に築かれ、当初は土を盛っただけのものだった。",
+      "breakdown": [
+        {
+          "part": "主語",
+          "text": "Thành",
+          "explanation": "「城」。文脈上 thành cổ Vinh を指すので cổ Vinh を省略"
+        },
+        {
+          "part": "受け身",
+          "text": "được xây dựng",
+          "explanation": "được＋動詞で受け身。動作主（誰が建てたか）は言わなくてよい"
+        },
+        {
+          "part": "時",
+          "text": "năm 1804",
+          "explanation": "年は前置詞なしで năm＋数字。vào năm 1804 とも言える"
+        },
+        {
+          "part": "時代",
+          "text": "dưới thời vua Gia Long",
+          "explanation": "dưới thời＋人＝「〜の治世に」。dưới（下）で統治下を表す"
+        },
+        {
+          "part": "補足",
+          "text": "ban đầu chỉ đắp bằng đất",
+          "explanation": "ban đầu＝当初。chỉ…bằng＋材料＝「…だけで作る」。主語は前と同じなので省略"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "🏯 築222年の「ヴィン古城」が修復へ。今週のベトナムのニュースで長文を精読しよう。",
+    "summary": "ゲアン省のヴィン古城は1804年に築かれた国家歴史遺跡。2027年に約105億ドンをかけて、3つの城門などを修復する計画が省に提出されました。\n\n今回の文法ポイント\n✅ dự kiến sẽ＋動詞（〜する見込みだ）\n✅ đã được＋動詞（すでに〜された／được と bị の違い）\n✅ được＋人＋cho＋動詞（〜の命で…される）\n✅ ban đầu…, sau đó…（当初は…、その後…）\n\nまず日本語訳を見ずにベトナム語だけで読み、そのあと全訳・語彙表・構文分解で答え合わせをしてください。リールの音声で音読もどうぞ。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ベトナム語長文",
+      "#ベトナムニュース",
+      "#精読",
+      "#ゲアン省",
+      "#ベトナム歴史",
+      "#ベトナム旅行"
+    ]
+  },
+  "source": {
+    "name": "VnExpress",
+    "url": "https://vnexpress.net/thanh-co-vinh-sap-duoc-trung-tu-5142092.html",
+    "date": "2026-11-08"
+  },
+  "audioScript": "Thành cổ Vinh ở Nghệ An, một di tích lịch sử quốc gia đã 222 tuổi, dự kiến sẽ được trùng tu vào năm 2027 với kinh phí khoảng 10,5 tỷ đồng, lấy từ ngân sách tỉnh, ngoài kế hoạch đầu tư công trung hạn.\nTheo Sở Văn hóa, Thể thao và Du lịch Nghệ An, dự án đã được trình lên Ủy ban nhân dân tỉnh để xem xét. Năm hạng mục được đề xuất gồm ba cổng Tiền Môn, Tả Môn, Hữu Môn, khu mộ Đội Cung trong thành và bốt gác của nhà lao Vinh.\nThành được xây dựng năm 1804 dưới thời vua Gia Long, ban đầu chỉ đắp bằng đất, sau đó được vua Minh Mạng cho xây lại bằng đá ong. Đến năm 1998, thành được xếp hạng là di tích lịch sử cấp quốc gia.",
+  "status": "draft"
+}
