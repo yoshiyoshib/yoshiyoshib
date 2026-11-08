@@ -14,14 +14,14 @@
       "heading": "第1段落｜何が起きる？",
       "vietnameseText": "Thành cổ Vinh ở Nghệ An, một <mark>di tích lịch sử quốc gia</mark> đã 222 tuổi, dự kiến sẽ được <mark>trùng tu</mark> vào năm 2027 với <mark>kinh phí</mark> khoảng 10,5 tỷ đồng, lấy từ ngân sách tỉnh, ngoài kế hoạch đầu tư công trung hạn.",
       "japaneseText": "ゲアン省にある築222年の国家歴史遺跡「ヴィン古城」が、2027年に約105億ドンをかけて修復される見通しだ。費用は、中期公共投資計画とは別枠で省の予算から拠出される。",
-      "annotation": "dự kiến sẽ＋動詞＝「〜する見込みだ」。未確定の予定を伝える報道の定番。10,5 tỷ đồng＝105億ドン（小数点はカンマ）。tỷ＝10億、triệu＝100万、nghìn＝千。"
+      "annotation": "dự kiến sẽ＋動詞＝「〜する見込みだ」。ngoài kế hoạch đầu tư công trung hạn＝中期公共投資計画の枠外、つまり別枠の予算。10,5 tỷ＝105億（tỷ＝10億）。"
     },
     {
       "type": "text_with_translation",
       "heading": "第2段落｜どこを直す？",
       "vietnameseText": "Theo Sở Văn hóa, Thể thao và Du lịch Nghệ An, dự án <mark>đã được trình</mark> lên UBND tỉnh để xem xét. Năm <mark>hạng mục</mark> được đề xuất gồm ba cổng Tiền Môn, Tả Môn, Hữu Môn, khu mộ Đội Cung trong thành và bốt gác của nhà lao Vinh.",
-      "japaneseText": "ゲアン省文化スポーツ観光局によると、事業案はすでに省人民委員会に提出され、審査を待っている。修復対象として挙がっているのは、前門・左門・右門の3つの城門、城内のドイ・クンの墓の一帯、ヴィン監獄の見張り台の計5か所だ。",
-      "annotation": "đã được＋動詞＝「すでに〜された」。được は好ましい・中立の受け身で、不利益を受けるときは bị を使う。UBND は Ủy ban nhân dân（人民委員会）の略。"
+      "japaneseText": "ゲアン省文化スポーツ観光局によると、事業案は審査のため省人民委員会に提出された。修復対象として挙がっているのは、前門・左門・右門の3つの城門、城内のドイ・クンの墓の一帯、ヴィン監獄の見張り台の計5か所だ。",
+      "annotation": "đã được＋動詞＝「すでに〜された」（不利益なら bị）。Đội Cung は1941年の蜂起を率いた Nguyễn Văn Cung の通称（Đội＝隊長）。UBND＝人民委員会。"
     },
     {
       "type": "text_with_translation",
@@ -129,5 +129,85 @@
     "date": "2026-11-08"
   },
   "audioScript": "Thành cổ Vinh ở Nghệ An, một di tích lịch sử quốc gia đã 222 tuổi, dự kiến sẽ được trùng tu vào năm 2027 với kinh phí khoảng 10,5 tỷ đồng, lấy từ ngân sách tỉnh, ngoài kế hoạch đầu tư công trung hạn.\nTheo Sở Văn hóa, Thể thao và Du lịch Nghệ An, dự án đã được trình lên Ủy ban nhân dân tỉnh để xem xét. Năm hạng mục được đề xuất gồm ba cổng Tiền Môn, Tả Môn, Hữu Môn, khu mộ Đội Cung trong thành và bốt gác của nhà lao Vinh.\nThành được xây dựng năm 1804 dưới thời vua Gia Long, ban đầu chỉ đắp bằng đất, sau đó được vua Minh Mạng cho xây lại bằng đá ong. Đến năm 1998, thành được xếp hạng là di tích lịch sử cấp quốc gia.",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 91,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 89,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 16,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "translation",
+            "points": 9,
+            "location": "slides[3]",
+            "reason": "「2004年に城門3つを修復」は誤り（記事では2005年、他紙では2門）"
+          },
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[4].items[4].note",
+            "reason": "語源を断定している／金額の注記が不自然"
+          }
+        ],
+        "feedback": [
+          "slides[3] の過去の修復の記述を正す",
+          "語源は「とされる」でぼかす",
+          "金額の単位説明を自然な日本語に"
+        ],
+        "codeIssues": []
+      },
+      {
+        "round": 1,
+        "label": "修正1",
+        "score": 91,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 21,
+          "translation": 22,
+          "density": 23
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[2]",
+            "reason": "Đội Cung が人物名だという説明がない"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[2].japaneseText",
+            "reason": "「審査を待っている」は原文にない状態を足している"
+          },
+          {
+            "criterion": "density",
+            "points": 2,
+            "location": "annotation",
+            "reason": "注記に話題を詰め込みすぎ"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：訳の調整、Đội Cung と予算用語の説明を追加"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "ニュース要約の過去の経緯（年・数）は記事本文を基準にし、別の媒体とも照合する。食い違う事実は書かない",
+      "語源や由来が定説でない場合は「とされる」「という説がある」と書く",
+      "人名由来の固有名詞（例: mộ Đội Cung）は誰なのかを1行で説明する",
+      "日本語訳に原文にない状態（「〜を待っている」など）を足さない"
+    ],
+    "logged": true
+  }
 }

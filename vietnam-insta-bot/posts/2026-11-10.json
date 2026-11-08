@@ -12,16 +12,16 @@
     {
       "type": "text_with_translation",
       "heading": "カフェで注文（前半）",
-      "vietnameseText": "A: Em ơi, cho anh một ly cà phê sữa đá <mark>nhé</mark>.\nB: <mark>Dạ</mark>, anh uống ở đây hay mang đi <mark>ạ</mark>?\nA: Mang đi. Hôm nay nóng <mark>nhỉ</mark>?\nB: Vâng, nóng lắm ạ. Anh có muốn ít đường không ạ?",
+      "vietnameseText": "A: Em ơi, cho anh một cốc cà phê sữa đá <mark>nhé</mark>.\nB: <mark>Dạ</mark>, anh uống ở đây hay mang đi <mark>ạ</mark>?\nA: Mang đi. Hôm nay nóng <mark>nhỉ</mark>?\nB: Vâng, nóng lắm ạ. Anh uống ít đường không ạ?",
       "japaneseText": "A：すみません、アイスミルクコーヒーを一つお願いね。\nB：はい、店内でお召し上がりですか、お持ち帰りですか？\nA：持ち帰りで。今日は暑いね。\nB：ええ、本当に暑いですね。砂糖は少なめにしますか？",
-      "annotation": "客Aは年上の男性なので自分を anh、若い店員を em と呼ぶ。nhé は依頼を柔らかくし、nhỉ は「〜だよね」と相手の共感を求める。"
+      "annotation": "客Aは年上の男性なので自分を anh、若い店員を em と呼ぶ。nhé は依頼を柔らかくし、nhỉ は「〜だよね」と共感を求める。会話は北部の言い方（南部ならコップは ly）。"
     },
     {
       "type": "text_with_translation",
       "heading": "カフェで注文（後半）",
       "vietnameseText": "A: Ừ, ít đường thôi. Lần trước ngọt quá <mark>mà</mark>.\nB: Dạ, em nhớ rồi ạ. Của anh 35 nghìn ạ.\nA: Đây, anh gửi em. Cảm ơn em <mark>nhé</mark>!",
-      "japaneseText": "A：うん、少なめで。この前は甘すぎたからさ。\nB：はい、覚えておきます。3万5千ドンです。\nA：はい、これ。ありがとうね！",
-      "annotation": "文末の mà は「だって〜なんだから」と理由を当然のこととして示す。店員は年上の客に対して dạ と ạ で文をはさみ、丁寧さを出している。"
+      "japaneseText": "A：うん、少なめで。この前は甘すぎたからさ。\nB：はい、覚えてます。3万5千ドンです。\nA：はい、これ。ありがとうね！",
+      "annotation": "mà は「だって〜なんだから」と理由を示す。軽く言えば「〜だからさ」、強く言うと「〜って言ったでしょ」と不満に響く。店員は dạ と ạ で文をはさんで丁寧に。"
     },
     {
       "type": "grammar_breakdown",
@@ -114,6 +114,60 @@
       "#ベトナムコーヒー"
     ]
   },
-  "audioScript": "Em ơi, cho anh một ly cà phê sữa đá nhé.\nDạ, anh uống ở đây hay mang đi ạ?\nMang đi. Hôm nay nóng nhỉ?\nVâng, nóng lắm ạ. Anh có muốn ít đường không ạ?\nỪ, ít đường thôi. Lần trước ngọt quá mà.\nDạ, em nhớ rồi ạ. Của anh 35 nghìn ạ.\nĐây, anh gửi em. Cảm ơn em nhé!",
-  "status": "draft"
+  "audioScript": "Em ơi, cho anh một cốc cà phê sữa đá nhé.\nDạ, anh uống ở đây hay mang đi ạ?\nMang đi. Hôm nay nóng nhỉ?\nVâng, nóng lắm ạ. Anh uống ít đường không ạ?\nỪ, ít đường thôi. Lần trước ngọt quá mà.\nDạ, em nhớ rồi ạ. Của anh 35 nghìn ạ.\nĐây, anh gửi em. Cảm ơn em nhé!",
+  "status": "approved",
+  "evaluation": {
+    "score": 93,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 93,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 20,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[1]",
+            "reason": "「có muốn ít đường không」は直訳調"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[2].japaneseText",
+            "reason": "nhớ rồi を「覚えておきます」と未来に訳した"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "会話全体",
+            "reason": "北部の会話に南部寄りの ly が混ざる"
+          },
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "annotation",
+            "reason": "mà の言い方による響きの違いの説明がない"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：接客の定型表現、完了の訳、cốc に統一、mà の補足"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "会話例は北部・南部のどちらかに語彙を統一する（cốc/ly、nghìn/ngàn、nhỉ/ha）。混ぜるなら注記する",
+      "rồi 付きの完了表現は日本語でも完了・現状で訳す（覚えてます／終わりました）",
+      "店員の決まり文句は直訳調を避け、実際の接客の定型（uống … không ạ／… hay … ạ）を使う"
+    ],
+    "logged": true
+  }
 }

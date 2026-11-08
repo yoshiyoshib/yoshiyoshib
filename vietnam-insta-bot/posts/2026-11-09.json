@@ -14,7 +14,7 @@
       "heading": "「学」＝ học を使ってみる",
       "vietnameseText": "Em gái tôi là <mark>học sinh</mark> lớp 10, còn anh trai tôi là <mark>sinh viên</mark> năm hai.\nAnh ấy học <mark>khoa học</mark> máy tính ở một trường <mark>đại học</mark> tại Hà Nội.",
       "japaneseText": "私の妹は高校1年生で、兄は大学2年生です。\n兄はハノイの大学でコンピューターサイエンスを学んでいます。",
-      "annotation": "học sinh（学生）は小〜高校生だけを指し、大学生は sinh viên（生員）。日本語の「学生」より範囲が狭い。em gái＝妹、anh trai＝兄（親族名詞）。"
+      "annotation": "học sinh は小〜高校生、大学生は sinh viên。日本語の「学生」は主に大学生を指すのでずれに注意（học sinh≒生徒・児童）。em gái＝妹、anh trai＝兄。"
     },
     {
       "type": "vocabulary",
@@ -48,7 +48,7 @@
           "word": "học phí",
           "pos": "名",
           "meaning": "授業料・学費",
-          "note": "漢「学費」。phí（費）は chi phí（費用）にも"
+          "note": "漢「学費」。phí（費）は chi phí（支費＝費用）にも"
         },
         {
           "word": "học kỳ",
@@ -100,13 +100,13 @@
       "type": "text_with_translation",
       "heading": "日本語の音読みから推測する",
       "vietnameseText": "学 gaku → <mark>học</mark>\n国 koku → <mark>quốc</mark>\n石 seki → <mark>thạch</mark>\n日 nichi → <mark>nhật</mark>\n出 shutsu → <mark>xuất</mark>\n法 hō → <mark>pháp</mark>",
-      "japaneseText": "音読みが「-ku / -ki」で終わる漢字は語末 -c / -ch に、「-chi / -tsu」で終わる漢字は語末 -t になりやすい。音読みが長音（-ō / -ū）の一部は語末 -p に対応する（法 pháp、十 thập）。どれも古い中国語の入声（-k / -t / -p で終わる音）の名残だ。",
+      "japaneseText": "音読みが「-ku / -ki」の字は語末 -c / -ch に、「-chi / -tsu」の字は語末 -t になりやすい。旧仮名で「ほふ」「じふ」と書いた字（法・十）は語末 -p になる。どれも古い中国語の入声（-k / -t / -p）の名残だ。",
       "annotation": "語末が -c / -ch / -t / -p の音節に付く声調は sắc（´）と nặng（.）の2種類だけ。綴りで迷ったらこの2択で考えよう。"
     }
   ],
   "caption": {
     "hook": "📚「学」はベトナム語で何と読む？ 一つ覚えると単語が芋づる式に増える、漢越語（Hán Việt）の回です。",
-    "summary": "ベトナム語の語彙の多くは漢字由来の「漢越語」。「学」＝ học を軸に、日本語の知識を生かす方法をまとめました。\n\n✅ học sinh は「生徒（小〜高校生）」。大学生は sinh viên\n✅ 漢越語の中は 修飾語→中心語（đại học＝大学）、純越語は 中心語→修飾語（trường lớn＝大きな学校）\n✅ 音読みの -ku / -ki → 語末 -c・-ch、-chi / -tsu → 語末 -t、一部の長音 → -p（学 học、石 thạch、日 nhật、法 pháp）\n✅ 語末 -c / -ch / -t / -p の音節の声調は sắc か nặng だけ\n\n派生語6つを語彙表で確認して、自分の身の回りの単語で「音読みから推測」を試してみてください。",
+    "summary": "ベトナム語の語彙の多くは漢字由来の「漢越語」。「学」＝ học を軸に、日本語の知識を生かす方法をまとめました。\n\n✅ học sinh は「生徒（小〜高校生）」。大学生は sinh viên\n✅ 漢越語の複合語の中は 修飾語→中心語（đại học＝大学）、ベトナム語の句は 中心語→修飾語（trường lớn＝大きな学校）\n✅ 音読みの -ku / -ki → 語末 -c・-ch、-chi / -tsu → 語末 -t、一部の長音 → -p（学 học、石 thạch、日 nhật、法 pháp）\n✅ 語末 -c / -ch / -t / -p の音節の声調は sắc か nặng だけ\n\n派生語6つを語彙表で確認して、自分の身の回りの単語で「音読みから推測」を試してみてください。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -121,5 +121,82 @@
     ]
   },
   "audioScript": "Em gái tôi là học sinh lớp 10, còn anh trai tôi là sinh viên năm hai.\nAnh ấy học khoa học máy tính ở một trường đại học tại Hà Nội.\nHọc sinh. Đại học. Khoa học. Văn học. Học phí. Học kỳ.\nAnh ấy là sinh viên năm hai của một trường đại học lớn.\nHọc. Quốc. Thạch. Nhật. Xuất. Pháp.",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 90,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 98,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 25,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "slides[4]",
+            "reason": "-ki→-ch の例がない"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "slides[4].annotation",
+            "reason": "-p の由来が本文にない"
+          }
+        ],
+        "feedback": [
+          "-ch と -p の例を足す"
+        ],
+        "codeIssues": []
+      },
+      {
+        "round": 1,
+        "label": "修正1",
+        "score": 90,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 21,
+          "translation": 21,
+          "density": 23
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 3,
+            "location": "caption",
+            "reason": "純越語の例に漢越語 trường を使っていた"
+          },
+          {
+            "criterion": "translation",
+            "points": 3,
+            "location": "slides[1].annotation",
+            "reason": "「学生」との違いは範囲の広さではなく指す層のずれ"
+          },
+          {
+            "criterion": "density",
+            "points": 2,
+            "location": "slides[4]",
+            "reason": "情報量が多い"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：caption の語種の誤り、学生の説明、旧仮名の根拠を修正"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "音の対応規則に複数の分岐があるときは、分岐ごとに例を1つ以上示し、歴史的な根拠（旧仮名の -fu、入声など）を1文添える",
+      "漢越語か純越語かの例は、例の語すべての出自を確認する（trường＝場 など漢越語の名詞は多い）",
+      "日越で同じ漢字の語は、日本語の正式な用法も確かめ「ずれ」として説明する"
+    ],
+    "logged": true
+  }
 }

@@ -21,9 +21,9 @@
         },
         {
           "word": "ốm / bệnh",
-          "pos": "形",
+          "pos": "形/名",
           "meaning": "病気だ・具合が悪い",
-          "note": "北: ốm ／ 南: bệnh。南部で ốm は「やせている」"
+          "note": "北: ốm ／ 南: bệnh（bị bệnh の形が多い）。南部で ốm は「やせている」"
         },
         {
           "word": "vâng / dạ",
@@ -55,18 +55,18 @@
       "type": "text_with_translation",
       "heading": "同じ文を北部と南部で",
       "vietnameseText": "Bắc: Hôm nay <mark>tôi</mark> bị <mark>ốm</mark>, ăn <mark>không</mark> hết <mark>bát</mark> cơm.\nNam: Bữa nay <mark>tui</mark> bị <mark>bệnh</mark>, ăn <mark>hổng</mark> hết <mark>chén</mark> cơm.",
-      "japaneseText": "今日は具合が悪くて、ご飯一杯も食べきれないよ。（北部・南部とも同じ意味）",
+      "japaneseText": "今日は具合が悪くて、茶碗のご飯を食べきれないよ。（北部・南部とも同じ意味）",
       "annotation": "南部の話し言葉では tôi が tui、không が hổng、hôm nay が bữa nay になりやすい。ăn không hết は「食べきれない」の決まった語順。"
     },
     {
       "type": "grammar_breakdown",
       "heading": "発音の違い",
-      "targetSentence": "Dì ơi, giờ này dì về rồi à?",
-      "translation": "おばさん、もうこの時間に帰ってきたの？",
+      "targetSentence": "Giờ này dì về rồi à? Ngoài sân lạnh lắm hả? Mũi dì đỏ kìa.",
+      "translation": "おばさん、こんな時間にもう帰ってきたの？外、すごく寒いの？鼻が赤いよ。",
       "breakdown": [
         {
           "part": "d・gi",
-          "text": "Dì / giờ",
+          "text": "dì / Giờ",
           "explanation": "北: どちらも [z]（ザ行に近い）／ 南: どちらも [j]（ヤ行に近い）"
         },
         {
@@ -81,27 +81,27 @@
         },
         {
           "part": "声調",
-          "text": "hỏi・ngã",
-          "explanation": "北: 2つは別の声調 ／ 南: ほぼ合流して同じように発音される"
+          "text": "hả / mũi",
+          "explanation": "北: hả（hỏi）と mũi（ngã）は別の声調 ／ 南: ほぼ合流して同じように聞こえる"
         },
         {
           "part": "語末",
-          "text": "-n / -ng",
-          "explanation": "南部では語末の -n と -ng の区別が弱く、lớn が lớng のように聞こえる"
+          "text": "sân",
+          "explanation": "南部: a・ă・â・ơ の後の -n/-t は -ng/-c に近づく（sân→sâng, mặt→mặc）。i・ê の後では起きにくい"
         }
       ]
     },
     {
       "type": "text_with_translation",
       "heading": "市場で買い物（北と南）",
-      "vietnameseText": "Bắc: <mark>Vâng</mark>, cho <mark>cháu</mark> hai <mark>cân</mark> <mark>dứa</mark> ạ.\nNam: <mark>Dạ</mark>, cho <mark>con</mark> hai <mark>ký</mark> <mark>thơm</mark> nha.",
-      "japaneseText": "はい、パイナップルを2キロください。（北部・南部とも同じ意味）",
-      "annotation": "キロは北 cân・南 ký。年上の店員への一人称も北 cháu・南 con と変わる。文末は北部が ạ で丁寧に、南部は nha で柔らかくまとめることが多い。"
+      "vietnameseText": "Bắc: Cho <mark>cháu</mark> hai <mark>cân</mark> <mark>thịt lợn</mark> <mark>ạ</mark>.\nNam: Cho <mark>con</mark> hai <mark>ký</mark> <mark>thịt heo</mark> <mark>nha</mark>.",
+      "japaneseText": "豚肉を2キロください。（北部・南部とも同じ意味）",
+      "annotation": "キロは北 cân・南 ký（フランス語 kilo から）。年上の店員への一人称も北 cháu・南 con と変わる。文末は北部が ạ で丁寧に、南部は nha で柔らかくまとめることが多い。"
     }
   ],
   "caption": {
     "hook": "🍚 ハノイで「chén」をください、と言うと小さな杯が出てくるかも？ 北部弁と南部弁の違いをまとめました。",
-    "summary": "ベトナム語は北部（ハノイ）と南部（ホーチミン）で、日常語も発音もかなり違います。\n\n✅ 茶碗：北 bát ／ 南 chén\n✅ 病気：北 ốm ／ 南 bệnh（南部の ốm は「やせている」）\n✅ はい：北 vâng ／ 南 dạ\n✅ キロ：北 cân ／ 南 ký\n✅ 発音：d・gi・r は北部でどれもザ行、南部では d・gi がヤ行\n✅ 声調：hỏi と ngã は南部でほぼ同じ音\n\n教科書の多くは北部の標準語ですが、南部のドラマや旅行では南部の言い方が必須。両方セットで覚えると聞き取りが一気に楽になります。",
+    "summary": "ベトナム語は北部（ハノイ）と南部（ホーチミン）で、日常語も発音もかなり違います。\n\n✅ 茶碗：北 bát ／ 南 chén\n✅ 病気：北 ốm ／ 南 bệnh（南部の ốm は「やせている」）\n✅ はい：北 vâng ／ 南 dạ\n✅ 豚：北 lợn ／ 南 heo\n✅ キロ：北 cân ／ 南 ký\n✅ 発音：d・gi・r は北部でどれもザ行、南部では d・gi がヤ行\n✅ 声調：hỏi と ngã は南部でほぼ同じ音\n\n教科書の多くは北部の標準語ですが、南部のドラマや旅行では南部の言い方が必須。両方セットで覚えると聞き取りが一気に楽になります。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -115,6 +115,105 @@
       "#ベトナム方言"
     ]
   },
-  "audioScript": "Hôm nay tôi bị ốm, ăn không hết bát cơm.\nBữa nay tui bị bệnh, ăn hổng hết chén cơm.\nDì ơi, giờ này dì về rồi à?\nVâng, cho cháu hai cân dứa ạ.\nDạ, cho con hai ký thơm nha.",
-  "status": "draft"
+  "audioScript": "Hôm nay tôi bị ốm, ăn không hết bát cơm.\nBữa nay tui bị bệnh, ăn hổng hết chén cơm.\nGiờ này dì về rồi à? Ngoài sân lạnh lắm hả? Mũi dì đỏ kìa.\nCho cháu hai cân thịt lợn ạ.\nCho con hai ký thịt heo nha.",
+  "status": "approved",
+  "evaluation": {
+    "score": 93,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 94,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 22,
+          "translation": 22,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[3]",
+            "reason": "説明した声調・語末が例文に含まれていない"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "slides[3].breakdown[4]",
+            "reason": "-n/-ng の合流を条件なしで一般化"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[2].japaneseText",
+            "reason": "「一杯も」で原文にない強調"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[4]",
+            "reason": "パイナップルはキロでなく個数で買うのが普通"
+          }
+        ],
+        "feedback": [
+          "例文に hỏi/ngã と -n を含める",
+          "方言変化の条件を書く",
+          "訳の強調を外す",
+          "重さで買う品物に変える"
+        ],
+        "codeIssues": []
+      },
+      {
+        "round": 1,
+        "label": "修正1",
+        "score": 93,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 21,
+          "density": 24
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[3].breakdown[4]",
+            "reason": "「後ろ寄りの母音」は不正確"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[3].translation",
+            "reason": "dì が訳されていない"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[4]",
+            "reason": "依頼文を Vâng で始めるのは不自然"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[1].items[1].pos",
+            "reason": "bệnh は名詞用法が基本"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：母音の書き方、dì の訳、Vâng を外す、品詞"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "発音の解説で取り上げる声調・語頭・語末は、必ず例文と audioScript に実際に含める",
+      "方言の音変化は条件（どの母音の後か）とセットで書き、自信のない音声学用語は使わず綴りで示す",
+      "呼びかけや人称に使う親族名詞（dì, cô, chú など）は訳から落とさない",
+      "買い物の例文は、その品物を実際に買うときの単位を使う"
+    ],
+    "logged": true
+  }
 }
