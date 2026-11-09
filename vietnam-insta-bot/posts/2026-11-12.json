@@ -13,8 +13,8 @@
       "type": "text_with_translation",
       "heading": "基本の形と ○✕",
       "vietnameseText": "○ Tôi <mark>đã</mark> ăn cơm.\n○ Tôi ăn cơm <mark>rồi</mark>.\n○ Tôi <mark>đã</mark> ăn cơm <mark>rồi</mark>.\n✕ Tôi <mark>rồi</mark> ăn cơm.\n✕ Anh ăn cơm <mark>rồi</mark> không?\n○ Anh ăn cơm <mark>chưa</mark>? – Rồi. / Chưa.",
-      "japaneseText": "○ ご飯を食べた。（đã は動詞の前）\n○ ご飯はもう食べたよ。（rồi は文末）\n○ đã と rồi は一緒に使ってもよい。\n✕ rồi は動詞の前に置けない。\n✕「もう食べた？」は rồi không ではなく chưa で聞く。答えは Rồi.（もう食べた）/ Chưa.（まだ）",
-      "annotation": "đã は「ある時点までに済んでいる」ことを示す目印で、文脈で分かれば省略できる。rồi は「もうそうなった」という状態の変化を強調する。"
+      "japaneseText": "○ ご飯を食べた。（đã は動詞の前）\n○ もうご飯を食べたよ。（rồi は文末）\n○ もうご飯を食べたよ。（併用も可）\n✕ 完了の rồi は動詞の前に置けない\n✕ 確認なら rồi à? / rồi phải không? は可\n○ もうご飯食べた？ – 食べた。／まだ。",
+      "annotation": "đã は「ある時点までに済んでいる」目印、rồi は「もうそうなった」という変化を表す。"
     },
     {
       "type": "grammar_breakdown",
@@ -51,7 +51,7 @@
     },
     {
       "type": "grammar_breakdown",
-      "heading": "文末の đã：「まず〜」",
+      "heading": "動作の後の đã：「まず〜」",
       "targetSentence": "Ăn cơm đã rồi hãy nói chuyện.",
       "translation": "まずご飯を食べて、話はそれからにしよう。",
       "breakdown": [
@@ -61,19 +61,19 @@
           "explanation": "「ご飯を食べる」。勧誘・命令の文では主語を省くことが多い"
         },
         {
-          "part": "文末 đã",
+          "part": "後置 đã",
           "text": "đã",
-          "explanation": "動作の後ろの đã は「まず〜（してから）」。完了の意味ではない。北部の口語で多い"
+          "explanation": "動作の後ろの đã は「まず〜（してから）」。完了ではない（chờ chút đã, khoan đã も同じ）"
         },
         {
           "part": "接続",
           "text": "rồi",
-          "explanation": "文の途中の rồi は「それから」。2つの動作の順番をつなぐ"
+          "explanation": "接続詞の rồi は「それから」。完了の rồi と違い、後の動作の前に来る"
         },
         {
           "part": "動作2",
           "text": "hãy nói chuyện",
-          "explanation": "hãy＋動詞＝「〜しよう・〜しなさい」。後でする動作を勧める"
+          "explanation": "X đã rồi hãy Y＝「まずXして、Yはその後で」。口語（特に北部）では hẵng とも"
         }
       ]
     },
@@ -82,12 +82,12 @@
       "heading": "会話で確認",
       "vietnameseText": "A: Cậu làm bài tập <mark>chưa</mark>?\nB: Tớ làm xong <mark>rồi</mark>. Hôm qua tớ <mark>đã</mark> làm đến 12 giờ đêm.\nA: Thế à? Tớ <mark>chưa</mark> làm. Chơi game <mark>đã</mark>!",
       "japaneseText": "A：宿題、もうやった？\nB：もう終わったよ。昨日は夜12時までやったんだ。\nA：そうなの？ 私はまだ。先にゲームしよっと！",
-      "annotation": "cậu/tớ は北部の友人同士の呼び方。hôm qua のように過去の時が分かる文では đã は省略できるが、入れると「やり終えた」ことが強調される。"
+      "annotation": "cậu/tớ は北部の友人同士の呼び方。hôm qua のように過去と分かる文では đã は省略できる。入れると過去の事実としてはっきり言う響きになる（完了は xong で表す）。"
     }
   ],
   "caption": {
     "hook": "⏰「もう食べた？」を Anh ăn cơm rồi không? と言っていませんか？ đã と rồi の違いを ○✕ で整理します。",
-    "summary": "どちらも「もう〜した」と訳されがちな đã と rồi。置く位置も役割も違います。\n\n✅ đã：動詞の前。「その時点までに済んでいる」完了の目印（文脈で分かれば省略可）\n✅ rồi：文末。「もうそうなった」状態の変化（Trời tối rồi＝もう暗くなった）\n✅ 「もう〜した？」は chưa で聞く → 答えは Rồi.／Chưa.\n✅ 文末の đã は「まず〜」（Ăn cơm đã＝まずご飯）\n✅ 文の途中の rồi は「それから」\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて音読し、đã と rồi の位置を体で覚えましょう。",
+    "summary": "どちらも「もう〜した」と訳されがちな đã と rồi。置く位置も役割も違います。\n\n✅ đã：動詞の前。「その時点までに済んでいる」完了の目印（文脈で分かれば省略可）\n✅ rồi：文末。「もうそうなった」状態の変化（Trời tối rồi＝もう暗くなった）\n✅ 「もう〜した？」は chưa で聞く → 答えは Rồi.／Chưa.\n✅ 動作の後の đã は「まず〜」（Ăn cơm đã＝まずご飯）\n✅ 接続詞の rồi（それから）は後の動作の前に来る\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて音読し、đã と rồi の位置を体で覚えましょう。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
