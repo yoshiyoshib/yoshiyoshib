@@ -1,0 +1,104 @@
+{
+  "day": "thursday",
+  "theme": "grammar",
+  "themeColor": "#1D4ED8",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Đã hay rồi?",
+      "subtitle": "文法｜「もう〜した」を正しく言い分ける",
+      "badge": "第1回 文法比較講義"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "基本の形と ○✕",
+      "vietnameseText": "○ Tôi <mark>đã</mark> ăn cơm.\n○ Tôi ăn cơm <mark>rồi</mark>.\n○ Tôi <mark>đã</mark> ăn cơm <mark>rồi</mark>.\n✕ Tôi <mark>rồi</mark> ăn cơm.\n✕ Anh ăn cơm <mark>rồi</mark> không?\n○ Anh ăn cơm <mark>chưa</mark>? – Rồi. / Chưa.",
+      "japaneseText": "○ ご飯を食べた。（đã は動詞の前）\n○ ご飯はもう食べたよ。（rồi は文末）\n○ đã と rồi は一緒に使ってもよい。\n✕ rồi は動詞の前に置けない。\n✕「もう食べた？」は rồi không ではなく chưa で聞く。答えは Rồi.（もう食べた）/ Chưa.（まだ）",
+      "annotation": "đã は「ある時点までに済んでいる」ことを示す目印で、文脈で分かれば省略できる。rồi は「もうそうなった」という状態の変化を強調する。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "rồi：状態の変化",
+      "targetSentence": "Trời tối rồi, mình về thôi.",
+      "translation": "もう暗くなったね、そろそろ帰ろう。",
+      "breakdown": [
+        {
+          "part": "主語",
+          "text": "Trời",
+          "explanation": "「空」。天気や時間帯を言うときの主語"
+        },
+        {
+          "part": "述語",
+          "text": "tối",
+          "explanation": "形容詞「暗い」。形容詞はそのまま述語になり là は要らない"
+        },
+        {
+          "part": "変化",
+          "text": "rồi",
+          "explanation": "形容詞＋rồi＝「もう〜になった」。Trời đã tối は書き言葉寄り"
+        },
+        {
+          "part": "主語",
+          "text": "mình",
+          "explanation": "親しい友人同士の「私（たち）」。ここでは聞き手も含む"
+        },
+        {
+          "part": "勧誘",
+          "text": "về thôi",
+          "explanation": "về＝帰る。文末の thôi は「もう〜しよう」と区切りをつけて促す"
+        }
+      ]
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "文末の đã：「まず〜」",
+      "targetSentence": "Ăn cơm đã rồi hãy nói chuyện.",
+      "translation": "まずご飯を食べて、話はそれからにしよう。",
+      "breakdown": [
+        {
+          "part": "動作1",
+          "text": "Ăn cơm",
+          "explanation": "「ご飯を食べる」。勧誘・命令の文では主語を省くことが多い"
+        },
+        {
+          "part": "文末 đã",
+          "text": "đã",
+          "explanation": "動作の後ろの đã は「まず〜（してから）」。完了の意味ではない。北部の口語で多い"
+        },
+        {
+          "part": "接続",
+          "text": "rồi",
+          "explanation": "文の途中の rồi は「それから」。2つの動作の順番をつなぐ"
+        },
+        {
+          "part": "動作2",
+          "text": "hãy nói chuyện",
+          "explanation": "hãy＋動詞＝「〜しよう・〜しなさい」。後でする動作を勧める"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "会話で確認",
+      "vietnameseText": "A: Cậu làm bài tập <mark>chưa</mark>?\nB: Tớ làm xong <mark>rồi</mark>. Hôm qua tớ <mark>đã</mark> làm đến 12 giờ đêm.\nA: Thế à? Tớ <mark>chưa</mark> làm. Chơi game <mark>đã</mark>!",
+      "japaneseText": "A：宿題、もうやった？\nB：もう終わったよ。昨日は夜12時までやったんだ。\nA：そうなの？ 私はまだ。先にゲームしよっと！",
+      "annotation": "cậu/tớ は北部の友人同士の呼び方。hôm qua のように過去の時が分かる文では đã は省略できるが、入れると「やり終えた」ことが強調される。"
+    }
+  ],
+  "caption": {
+    "hook": "⏰「もう食べた？」を Anh ăn cơm rồi không? と言っていませんか？ đã と rồi の違いを ○✕ で整理します。",
+    "summary": "どちらも「もう〜した」と訳されがちな đã と rồi。置く位置も役割も違います。\n\n✅ đã：動詞の前。「その時点までに済んでいる」完了の目印（文脈で分かれば省略可）\n✅ rồi：文末。「もうそうなった」状態の変化（Trời tối rồi＝もう暗くなった）\n✅ 「もう〜した？」は chưa で聞く → 答えは Rồi.／Chưa.\n✅ 文末の đã は「まず〜」（Ăn cơm đã＝まずご飯）\n✅ 文の途中の rồi は「それから」\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて音読し、đã と rồi の位置を体で覚えましょう。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ベトナム語文法",
+      "#ベトナム語中級",
+      "#外国語学習"
+    ]
+  },
+  "audioScript": "Tôi đã ăn cơm.\nTôi ăn cơm rồi.\nTôi đã ăn cơm rồi.\nAnh ăn cơm chưa? Rồi. Chưa.\nTrời tối rồi, mình về thôi.\nĂn cơm đã rồi hãy nói chuyện.\nCậu làm bài tập chưa?\nTớ làm xong rồi. Hôm qua tớ đã làm đến 12 giờ đêm.\nThế à? Tớ chưa làm. Chơi game đã!",
+  "status": "draft"
+}
