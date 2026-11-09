@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-12",
+  "no": 9,
+  "kind": "phrasal",
+  "status": "approved",
+  "theme": {
+    "en": "Health and feeling unwell",
+    "ja": "体調の話で使う句動詞"
+  },
+  "items": [
+    {
+      "term": "come down with",
+      "ipa": "/ˌkʌm ˈdaʊn wɪθ/",
+      "pos": "phrasal verb",
+      "ja": "（病気に）かかる、なりかける",
+      "definition": "To start to have an illness, usually not a serious one.",
+      "example": "I think I'm **coming down with** a cold.",
+      "example_ja": "風邪をひきかけている気がする。",
+      "note": "風邪など、軽い病気によく使います。"
+    },
+    {
+      "term": "shake off",
+      "ipa": "/ˌʃeɪk ˈɔf/",
+      "pos": "phrasal verb",
+      "ja": "（病気・不調を）振り払う、治す",
+      "definition": "To get rid of an illness or a bad feeling.",
+      "example": "I can't seem to **shake off** this cough.",
+      "example_ja": "この咳がなかなか治らない。",
+      "note": "悪い印象や追っ手を「振り切る」にも使います。"
+    },
+    {
+      "term": "wear off",
+      "ipa": "/ˌwɛr ˈɔf/",
+      "pos": "phrasal verb",
+      "ja": "（効果が）切れる、薄れる",
+      "definition": "To slowly become weaker and then stop.",
+      "example": "The painkillers started to **wear off** after a few hours.",
+      "example_ja": "数時間たつと、痛み止めが切れてきた。",
+      "note": "薬・麻酔・興奮などが主語になります。"
+    },
+    {
+      "term": "pass out",
+      "ipa": "/ˌpæs ˈaʊt/",
+      "pos": "phrasal verb",
+      "ja": "気を失う",
+      "definition": "To suddenly become unconscious for a short time.",
+      "example": "He almost **passed out** from the heat.",
+      "example_ja": "彼は暑さで気を失いかけた。",
+      "note": "くだけた会話では「寝落ちする」の意味でも使います。"
+    },
+    {
+      "term": "bounce back",
+      "ipa": "/ˌbaʊns ˈbæk/",
+      "pos": "phrasal verb",
+      "ja": "（元気に）立ち直る、すぐ回復する",
+      "definition": "To recover quickly after an illness or a difficult time.",
+      "example": "Kids usually **bounce back** quickly after a fever.",
+      "example_ja": "子どもはたいてい、熱が出てもすぐに元気になる。",
+      "note": "経済や売上の「回復」にも使います。"
+    }
+  ],
+  "quiz": {
+    "sentence": "The coffee helped, but now it's starting to ____.",
+    "options": [
+      "shake off",
+      "wear off",
+      "pass out"
+    ],
+    "answer": "B",
+    "why": "wear off＝（薬やカフェインの）効果がだんだん切れる。"
+  },
+  "caption": "体調の話で使える句動詞5つ 🤒\n\n1. come down with｜（病気に）かかる\n2. shake off｜（不調を）振り払う\n3. wear off｜（効果が）切れる\n4. pass out｜気を失う\n5. bounce back｜すぐ回復する\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #句動詞 #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #英語表現 #phrasalverbs #learnenglish #advancedenglish #englishvocabulary"
+}
