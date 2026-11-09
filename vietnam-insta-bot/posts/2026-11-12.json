@@ -13,8 +13,8 @@
       "type": "text_with_translation",
       "heading": "基本の形と ○✕",
       "vietnameseText": "○ Tôi <mark>đã</mark> ăn cơm.\n○ Tôi ăn cơm <mark>rồi</mark>.\n○ Tôi <mark>đã</mark> ăn cơm <mark>rồi</mark>.\n✕ Tôi <mark>rồi</mark> ăn cơm.\n✕ Anh ăn cơm <mark>rồi</mark> không?\n○ Anh ăn cơm <mark>chưa</mark>? – Rồi. / Chưa.",
-      "japaneseText": "○ ご飯を食べた。（đã は動詞の前）\n○ もうご飯を食べたよ。（rồi は文末）\n○ もうご飯を食べたよ。（併用も可）\n✕ 完了の rồi は動詞の前に置けない\n✕ 確認なら rồi à? / rồi phải không? は可\n○ もうご飯食べた？ – 食べた。／まだ。",
-      "annotation": "đã は「ある時点までに済んでいる」目印、rồi は「もうそうなった」という変化を表す。"
+      "japaneseText": "○ ご飯を食べた。（đã は動詞の前）\n○ もうご飯を食べたよ。（rồi は文末）\n○ ご飯はもう食べたよ。（済んだことをよりはっきり）\n✕ 完了の rồi は動詞の前に置けない\n✕ 済んだかは chưa? で聞く（確認なら rồi à?）\n○ もうご飯食べた？ – 食べた。／まだ。",
+      "annotation": "đã は「その時点より前に起きた」ことを示し、rồi は「もうそうなった」という変化・完了を表す。"
     },
     {
       "type": "grammar_breakdown",
@@ -87,7 +87,7 @@
   ],
   "caption": {
     "hook": "⏰「もう食べた？」を Anh ăn cơm rồi không? と言っていませんか？ đã と rồi の違いを ○✕ で整理します。",
-    "summary": "どちらも「もう〜した」と訳されがちな đã と rồi。置く位置も役割も違います。\n\n✅ đã：動詞の前。「その時点までに済んでいる」完了の目印（文脈で分かれば省略可）\n✅ rồi：文末。「もうそうなった」状態の変化（Trời tối rồi＝もう暗くなった）\n✅ 「もう〜した？」は chưa で聞く → 答えは Rồi.／Chưa.\n✅ 動作の後の đã は「まず〜」（Ăn cơm đã＝まずご飯）\n✅ 接続詞の rồi（それから）は後の動作の前に来る\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて音読し、đã と rồi の位置を体で覚えましょう。",
+    "summary": "どちらも「もう〜した」と訳されがちな đã と rồi。置く位置も役割も違います。\n\n✅ đã：動詞の前。「その時点より前に起きた」ことを示す（文脈で分かれば省略可）\n✅ rồi：文末。「もうそうなった」変化・完了（Trời tối rồi＝もう暗くなった）\n✅ 「もう〜した？」は chưa で聞く → 答えは Rồi.／Chưa.\n✅ 動作の後の đã は「まず〜」（Ăn cơm đã＝まずご飯）\n✅ 接続詞の rồi（それから）は後の動作の前に来る\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて音読し、đã と rồi の位置を体で覚えましょう。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -100,5 +100,91 @@
     ]
   },
   "audioScript": "Tôi đã ăn cơm.\nTôi ăn cơm rồi.\nTôi đã ăn cơm rồi.\nAnh ăn cơm chưa? Rồi. Chưa.\nTrời tối rồi, mình về thôi.\nĂn cơm đã rồi hãy nói chuyện.\nCậu làm bài tập chưa?\nTớ làm xong rồi. Hôm qua tớ đã làm đến 12 giờ đêm.\nThế à? Tớ chưa làm. Chơi game đã!",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 93,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 85,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 15,
+          "translation": 21,
+          "density": 24
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 4,
+            "location": "slides[1]",
+            "reason": "「rồi は動詞の前に置けない」が接続詞の rồi の例と矛盾"
+          },
+          {
+            "criterion": "depth",
+            "points": 3,
+            "location": "slides[3]",
+            "reason": "đã rồi hãy の hãy を普通の命令と説明、hẵng に触れていない"
+          },
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[3]",
+            "reason": "後置の đã を根拠なく北部の用法とした"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[4].annotation",
+            "reason": "đã が「やり終えた」を強調するは不正確"
+          }
+        ],
+        "feedback": [
+          "完了の rồi と接続詞の rồi を区別",
+          "hãy の先送りの意味と hẵng を説明",
+          "地域の断定を削除"
+        ],
+        "codeIssues": []
+      },
+      {
+        "round": 1,
+        "label": "修正1",
+        "score": 93,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 22,
+          "translation": 22,
+          "density": 24
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[1] / slides[4]",
+            "reason": "đã の定義がスライド間で食い違う"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[1]",
+            "reason": "形の違う2文に同じ訳"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：đã の定義を統一、✕ の理由と訳の違いを明記"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "○✕ のルールを書いたら、同じ投稿の他の例文がそのルールに反していないか照合する（完了の rồi と接続詞の rồi など、働きが違えば語順も違う）",
+      "地域差は確かな根拠がある語（cậu/tớ, hẵng など）に限り、全国で使う用法を特定の地域のものとして書かない",
+      "同じ文法項目の定義は全スライドとキャプションで1つの言い方に統一する",
+      "✕ の行には正しい言い方とあわせて「なぜ誤りか」を一言書く。形の違う例文に同じ和訳を付けない"
+    ],
+    "logged": true
+  }
 }
