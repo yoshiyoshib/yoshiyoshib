@@ -14,21 +14,21 @@
       "heading": "① ぎりぎりまで動かない",
       "vietnameseText": "<mark>Nước đến chân mới nhảy</mark>\nA: Mai thi rồi mà giờ cậu mới mở sách à?\nB: Ừ, tớ đúng là kiểu nước đến chân mới nhảy.",
       "japaneseText": "直訳：水が足元まで来てやっと跳ぶ\n意味：ぎりぎりになってから慌てて動く\nA：明日試験なのに、今やっと本を開いたの？\nB：うん、私って本当に尻に火がつかないと動かないタイプなんだ。",
-      "annotation": "近い日本語は「尻に火がつく」「泥縄」。口語で、先延ばしを軽く責めたり自嘲したりするときに使う。cậu/tớ は北部の友人同士。mà は「〜なのに」。"
+      "annotation": "成語（thành ngữ）で、文の一部として使う。近い日本語は「尻に火がつかないと動かない」「泥縄」。先延ばしを軽く責めたり自嘲したりする口語。"
     },
     {
       "type": "text_with_translation",
       "heading": "② 恩を忘れない",
       "vietnameseText": "<mark>Ăn quả nhớ kẻ trồng cây</mark>\nA: Sắp đến ngày 20/11 rồi. Mình về thăm cô giáo cũ đi.\nB: Ừ, ăn quả phải nhớ kẻ trồng cây mà.",
       "japaneseText": "直訳：果実を食べるときは木を植えた人を思い出す\n意味：恩を受けた人や先人への感謝を忘れない\nA：もうすぐ11月20日だね。昔の先生に会いに行こうよ。\nB：うん、恩は忘れちゃいけないからね。",
-      "annotation": "11月20日はベトナムの「教師の日」。教訓を述べることわざ（tục ngữ）で、スピーチや目上との会話でも使える。似た表現に uống nước nhớ nguồn。mình は友人同士の「私たち」。"
+      "annotation": "教訓を述べることわざ（tục ngữ）で、スピーチや目上との会話でも使える。11月20日はベトナムの「教師の日」。似た表現に uống nước nhớ nguồn。"
     },
     {
       "type": "text_with_translation",
-      "heading": "③ 隣の芝生は青い",
+      "heading": "③ 目移りして満足しない",
       "vietnameseText": "<mark>Đứng núi này trông núi nọ</mark>\nA: Anh Nam lại nghỉ việc à? Năm nay là lần thứ ba rồi.\nB: Ừ, anh ấy cứ đứng núi này trông núi nọ.",
-      "japaneseText": "直訳：この山に立って、あの山を眺める\n意味：今あるものに満足せず、ほかのものばかり欲しがる\nA：ナムさん、また仕事を辞めたの？ 今年で3回目だよ。\nB：うん、あの人はいつも隣の芝生が青く見えるんだよ。",
-      "annotation": "近い日本語は「隣の芝生は青い」。仕事や恋愛で目移りする人を批判する響きがあるので、本人の前では使わない方が無難。anh は話し手より年上の男性。cứ は「〜してばかり」。"
+      "japaneseText": "直訳：この山に立って、あの山を眺める\n意味：今あるものに満足せず、ほかのものばかり欲しがる\nA：ナムさん、また仕事を辞めたの？ 今年で3回目だよ。\nB：うん、あの人はいつも目移りしてばかりなんだよ。",
+      "annotation": "成語（thành ngữ）。日本語の「隣の芝生は青い」は他人への羨望だが、こちらは自分の現状への不満と目移りが中心。批判の響きがあるので本人の前では避ける。"
     },
     {
       "type": "vocabulary",
@@ -74,8 +74,8 @@
     }
   ],
   "caption": {
-    "hook": "🌊「水が足元まで来てやっと跳ぶ」って、どんな人のこと？ ベトナム人が日常で使うことわざを3つ紹介します。",
-    "summary": "ことわざは逐語訳だけでは意味がつかめません。直訳・本当の意味・近い日本語・使う場面をセットで覚えましょう。\n\n✅ Nước đến chân mới nhảy：ぎりぎりまで動かない（≒尻に火がつく）\n✅ Ăn quả nhớ kẻ trồng cây：恩を忘れない。11/20 の「教師の日」によく聞く\n✅ Đứng núi này trông núi nọ：目移りする（≒隣の芝生は青い）。批判の響きあり\n\n文法ポイントは「時点＋mới＋動詞（やっと〜する）」と「cứ＋動詞（〜してばかり）」。会話例ごと音読して、使う場面ごと覚えてください。",
+    "hook": "🌊「水が足元まで来てやっと跳ぶ」って、どんな人のこと？ ベトナム人が日常で使う成語・ことわざを3つ紹介します。",
+    "summary": "成語やことわざは逐語訳だけでは意味がつかめません。直訳・本当の意味・近い日本語・使う場面をセットで覚えましょう。\n\n✅ Nước đến chân mới nhảy（成語）：ぎりぎりまで動かない\n✅ Ăn quả nhớ kẻ trồng cây（ことわざ）：恩を忘れない。11/20 の「教師の日」によく聞く\n✅ Đứng núi này trông núi nọ（成語）：今に満足せず目移りする。批判の響きあり\n\n文法ポイントは「時点＋mới＋動詞（やっと〜する）」と「cứ＋動詞（〜してばかり）」。会話例ごと音読して、使う場面ごと覚えてください。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -90,5 +90,65 @@
     ]
   },
   "audioScript": "Nước đến chân mới nhảy.\nMai thi rồi mà giờ cậu mới mở sách à?\nỪ, tớ đúng là kiểu nước đến chân mới nhảy.\nĂn quả nhớ kẻ trồng cây.\nSắp đến ngày hai mươi tháng mười một rồi. Mình về thăm cô giáo cũ đi.\nỪ, ăn quả phải nhớ kẻ trồng cây mà.\nĐứng núi này trông núi nọ.\nAnh Nam lại nghỉ việc à? Năm nay là lần thứ ba rồi.\nỪ, anh ấy cứ đứng núi này trông núi nọ.",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 93,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 93,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 22,
+          "density": 23
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[1],[3]",
+            "reason": "成語かことわざかの分類を①③に付けていない"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "caption",
+            "reason": "成語もまとめて「ことわざ」と呼んでいる"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[1].annotation",
+            "reason": "「尻に火がつく」だけでは意味がずれる"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[3].heading",
+            "reason": "「隣の芝生は青い」とはニュアンスが違う"
+          },
+          {
+            "criterion": "density",
+            "points": 2,
+            "location": "annotation",
+            "reason": "注記に論点を詰め込みすぎ"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：分類の明記、用語の統一、日本語の対応表現のずれを注記、注記を3点以内に"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "成語（thành ngữ）とことわざ（tục ngữ）を教える回は、全表現に種類を付け、キャプションの用語もそろえる",
+      "近い日本語を挙げるときはニュアンスの違いも書き、見出しで完全な同義のように扱わない",
+      "注記は3点以内にし、語彙スライドで扱う文法は注記から外す"
+    ],
+    "logged": true
+  }
 }
