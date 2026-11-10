@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-13",
+  "no": 10,
+  "kind": "idiom",
+  "status": "approved",
+  "theme": {
+    "en": "Time and timing",
+    "ja": "時間・タイミングのイディオム"
+  },
+  "items": [
+    {
+      "term": "in the nick of time",
+      "pos": "idiom",
+      "ja": "ぎりぎり間に合って",
+      "definition": "Just before it is too late.",
+      "example": "We got to the gate **in the nick of time**.",
+      "example_ja": "私たちは、搭乗口にぎりぎり間に合った。",
+      "note": "just in time より「危なかった」感じが強い表現です。"
+    },
+    {
+      "term": "call it a day",
+      "pos": "idiom",
+      "ja": "（仕事などを）今日はここまでにする",
+      "definition": "To stop working on something, either for the rest of the day or for good.",
+      "example": "It's almost six. Let's **call it a day**.",
+      "example_ja": "もうすぐ6時だ。今日はここまでにしよう。",
+      "note": "夜なら call it a night とも言います。"
+    },
+    {
+      "term": "once in a blue moon",
+      "pos": "idiom",
+      "ja": "ごくまれに",
+      "definition": "Very rarely.",
+      "example": "I only eat fast food **once in a blue moon**.",
+      "example_ja": "ファストフードを食べるのは、ごくまれだ。",
+      "note": "由来には諸説あります。"
+    },
+    {
+      "term": "against the clock",
+      "pos": "idiom",
+      "ja": "時間に追われて、急いで",
+      "definition": "Trying to finish something before a deadline.",
+      "example": "The team is working **against the clock** to fix the bug.",
+      "example_ja": "チームは時間に追われながら、不具合の修正を急いでいる。",
+      "note": "a race against the clock（時間との戦い）の形もよく使います。"
+    },
+    {
+      "term": "at the eleventh hour",
+      "pos": "idiom",
+      "ja": "土壇場で、最後の最後に",
+      "definition": "At the last possible moment.",
+      "example": "The deal was signed **at the eleventh hour**.",
+      "example_ja": "契約は土壇場で結ばれた。",
+      "note": "似た表現に at the last minute があります。"
+    }
+  ],
+  "quiz": {
+    "sentence": "We hardly ever meet now — maybe ____.",
+    "options": [
+      "in the nick of time",
+      "against the clock",
+      "once in a blue moon"
+    ],
+    "answer": "C",
+    "why": "once in a blue moon＝ごくまれに。"
+  },
+  "caption": "時間・タイミングの話で使えるイディオム5つ ⏰\n\n1. in the nick of time｜ぎりぎり間に合って\n2. call it a day｜今日はここまでにする\n3. once in a blue moon｜ごくまれに\n4. against the clock｜時間に追われて\n5. at the eleventh hour｜土壇場で\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英語イディオム #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #英語表現 #idioms #learnenglish #advancedenglish #englishidioms"
+}
