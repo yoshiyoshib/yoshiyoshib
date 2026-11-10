@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-08T22:26:08.609Z"
+    "collected": "2026-11-10T01:45:04.022Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: Unsupported get request. Object with ID '17901437292672681' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     },
-    "collected": "2026-11-08T22:26:09.083Z"
+    "collected": "2026-11-10T01:45:04.650Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -82,7 +82,7 @@
     "story": {
       "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-08T22:26:09.536Z"
+    "collected": "2026-11-10T01:45:05.243Z"
   },
   "2026-11-08": {
     "kind": "review",
@@ -100,8 +100,34 @@
       "profile_visits": 0
     },
     "story": {
-      "error": "17920391178526780: (#10) Not enough viewers for the media to show insights"
+      "error": "17920391178526780: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-08T22:26:10.347Z"
+    "collected": "2026-11-10T01:45:05.768Z"
+  },
+  "2026-11-09": {
+    "kind": "phrasal",
+    "theme": "人間関係の話で使う句動詞",
+    "terms": [
+      "warm up to",
+      "drift apart",
+      "patch up",
+      "talk down to",
+      "stand up for"
+    ],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+    },
+    "story": {
+      "error": "18044973278831446: (#10) Not enough viewers for the media to show insights"
+    },
+    "collected": "2026-11-10T01:45:06.871Z"
   }
 }
