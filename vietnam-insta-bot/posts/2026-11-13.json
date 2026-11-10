@@ -1,0 +1,94 @@
+{
+  "day": "friday",
+  "theme": "idiom",
+  "themeColor": "#C2410C",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Nước đến chân mới nhảy",
+      "subtitle": "成語・ことわざ｜ネイティブが日常で使う3つの言い回し",
+      "badge": "第1回 ことわざ・成語"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "① ぎりぎりまで動かない",
+      "vietnameseText": "<mark>Nước đến chân mới nhảy</mark>\nA: Mai thi rồi mà giờ cậu mới mở sách à?\nB: Ừ, tớ đúng là kiểu nước đến chân mới nhảy.",
+      "japaneseText": "直訳：水が足元まで来てやっと跳ぶ\n意味：ぎりぎりになってから慌てて動く\nA：明日試験なのに、今やっと本を開いたの？\nB：うん、私って本当に尻に火がつかないと動かないタイプなんだ。",
+      "annotation": "近い日本語は「尻に火がつく」「泥縄」。口語で、先延ばしを軽く責めたり自嘲したりするときに使う。cậu/tớ は北部の友人同士。mà は「〜なのに」。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "② 恩を忘れない",
+      "vietnameseText": "<mark>Ăn quả nhớ kẻ trồng cây</mark>\nA: Sắp đến ngày 20/11 rồi. Mình về thăm cô giáo cũ đi.\nB: Ừ, ăn quả phải nhớ kẻ trồng cây mà.",
+      "japaneseText": "直訳：果実を食べるときは木を植えた人を思い出す\n意味：恩を受けた人や先人への感謝を忘れない\nA：もうすぐ11月20日だね。昔の先生に会いに行こうよ。\nB：うん、恩は忘れちゃいけないからね。",
+      "annotation": "11月20日はベトナムの「教師の日」。教訓を述べることわざ（tục ngữ）で、スピーチや目上との会話でも使える。似た表現に uống nước nhớ nguồn。mình は友人同士の「私たち」。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "③ 隣の芝生は青い",
+      "vietnameseText": "<mark>Đứng núi này trông núi nọ</mark>\nA: Anh Nam lại nghỉ việc à? Năm nay là lần thứ ba rồi.\nB: Ừ, anh ấy cứ đứng núi này trông núi nọ.",
+      "japaneseText": "直訳：この山に立って、あの山を眺める\n意味：今あるものに満足せず、ほかのものばかり欲しがる\nA：ナムさん、また仕事を辞めたの？ 今年で3回目だよ。\nB：うん、あの人はいつも隣の芝生が青く見えるんだよ。",
+      "annotation": "近い日本語は「隣の芝生は青い」。仕事や恋愛で目移りする人を批判する響きがあるので、本人の前では使わない方が無難。anh は話し手より年上の男性。cứ は「〜してばかり」。"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "今日の語彙",
+      "items": [
+        {
+          "word": "thành ngữ",
+          "pos": "名",
+          "meaning": "成語・慣用句",
+          "note": "漢「成語」。文の一部として使う決まった言い回し"
+        },
+        {
+          "word": "tục ngữ",
+          "pos": "名",
+          "meaning": "ことわざ",
+          "note": "漢「俗語」。教訓を含む完結した一文。日本語の「俗語（スラング）」とはずれる"
+        },
+        {
+          "word": "mới",
+          "pos": "副",
+          "meaning": "やっと・〜して初めて",
+          "note": "時点＋mới＋動詞で「遅れて〜する」。đã（もう）と対になる"
+        },
+        {
+          "word": "cứ",
+          "pos": "副",
+          "meaning": "（いつも）〜してばかり",
+          "note": "cứ＋動詞で同じ行動を繰り返す・押し通す様子"
+        },
+        {
+          "word": "trông",
+          "pos": "動",
+          "meaning": "眺める・見やる",
+          "note": "ここでは「眺める」。trông con＝子守りをする、の意味もある"
+        },
+        {
+          "word": "kẻ",
+          "pos": "名",
+          "meaning": "者・人",
+          "note": "やや古風な語。悪い意味の「やつ」にもなる（kẻ trộm＝泥棒）"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "🌊「水が足元まで来てやっと跳ぶ」って、どんな人のこと？ ベトナム人が日常で使うことわざを3つ紹介します。",
+    "summary": "ことわざは逐語訳だけでは意味がつかめません。直訳・本当の意味・近い日本語・使う場面をセットで覚えましょう。\n\n✅ Nước đến chân mới nhảy：ぎりぎりまで動かない（≒尻に火がつく）\n✅ Ăn quả nhớ kẻ trồng cây：恩を忘れない。11/20 の「教師の日」によく聞く\n✅ Đứng núi này trông núi nọ：目移りする（≒隣の芝生は青い）。批判の響きあり\n\n文法ポイントは「時点＋mới＋動詞（やっと〜する）」と「cứ＋動詞（〜してばかり）」。会話例ごと音読して、使う場面ごと覚えてください。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ThànhNgữ",
+      "#ことわざ",
+      "#慣用句",
+      "#ベトナム文化",
+      "#教師の日"
+    ]
+  },
+  "audioScript": "Nước đến chân mới nhảy.\nMai thi rồi mà giờ cậu mới mở sách à?\nỪ, tớ đúng là kiểu nước đến chân mới nhảy.\nĂn quả nhớ kẻ trồng cây.\nSắp đến ngày hai mươi tháng mười một rồi. Mình về thăm cô giáo cũ đi.\nỪ, ăn quả phải nhớ kẻ trồng cây mà.\nĐứng núi này trông núi nọ.\nAnh Nam lại nghỉ việc à? Năm nay là lần thứ ba rồi.\nỪ, anh ấy cứ đứng núi này trông núi nọ.",
+  "status": "draft"
+}
