@@ -13,15 +13,15 @@
       "type": "text_with_translation",
       "heading": "シャドーイング①（1〜3）",
       "vietnameseText": "1. Tôi <mark>học</mark> tiếng <mark>Việt</mark> mỗi tối.\n2. Hôm nay <mark>mát</mark> quá nhỉ.\n3. <mark>Một</mark> <mark>chút</mark> nữa tôi gọi lại nhé.",
-      "japaneseText": "1. 私は毎晩ベトナム語を勉強しています。\n2. 今日は涼しいね。\n3. もう少ししたら、かけ直すね。",
+      "japaneseText": "1. 私は毎晩ベトナム語を勉強しています。\n2. 今日はすごく涼しいね。\n3. もう少ししたら、かけ直すね。",
       "annotation": "語末の -c・-t・-p は口の形を作って止めるだけで、息を破裂させない。học を「ホク」、chút を「チュツ」のように最後に母音を足さない。"
     },
     {
       "type": "text_with_translation",
       "heading": "シャドーイング②（4〜6）",
-      "vietnameseText": "4. Cảm ơn, tôi <mark>biết</mark> rồi.\n5. <mark>Chúc</mark> bạn <mark>một</mark> ngày <mark>tốt</mark> lành!\n6. <mark>Đẹp</mark> quá, mình <mark>chụp</mark> ảnh nhé!",
+      "vietnameseText": "4. Cảm ơn, mình <mark>biết</mark> rồi.\n5. <mark>Chúc</mark> bạn <mark>một</mark> ngày <mark>tốt</mark> lành!\n6. <mark>Đẹp</mark> quá, mình <mark>chụp</mark> ảnh nhé!",
       "japaneseText": "4. ありがとう、もう分かったよ。\n5. よい一日を！\n6. きれい！ 写真を撮ろうよ。",
-      "annotation": "u・ô・o の後の -c は、舌で止めると同時に唇も閉じる（học, chúc）。-p は唇を閉じて止める（đẹp, chụp）。-t は唇を閉じない。"
+      "annotation": "北部の標準発音では、u・ô・o の後の -c は唇も閉じる（học, chúc）。-p は唇を閉じ、-t は閉じない。南部では -t が -c に近づき、Việt が Việc のように聞こえる。"
     },
     {
       "type": "grammar_breakdown",
@@ -69,7 +69,7 @@
           "word": "học",
           "pos": "動",
           "meaning": "学ぶ・勉強する",
-          "note": "語末 -c。o の後なので唇を閉じて終わる"
+          "note": "語末 -c。o の後なので唇を閉じて終わる。北部では o が「アウ」寄りに聞こえる"
         },
         {
           "word": "mát",
@@ -119,6 +119,59 @@
       "#発音練習"
     ]
   },
-  "audioScript": "Tôi học tiếng Việt mỗi tối.\nHôm nay mát quá nhỉ.\nMột chút nữa tôi gọi lại nhé.\nCảm ơn, tôi biết rồi.\nChúc bạn một ngày tốt lành!\nĐẹp quá, mình chụp ảnh nhé!",
-  "status": "draft"
+  "audioScript": "Tôi học tiếng Việt mỗi tối.\nHôm nay mát quá nhỉ.\nMột chút nữa tôi gọi lại nhé.\nCảm ơn, mình biết rồi.\nChúc bạn một ngày tốt lành!\nĐẹp quá, mình chụp ảnh nhé!",
+  "status": "approved",
+  "evaluation": {
+    "score": 93,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 93,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 21,
+          "translation": 22,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 3,
+            "location": "slides[2].annotation",
+            "reason": "語末子音の規則がどの地域の発音か書いていない（南部の -t→-c に触れていない）"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "slides[4].items[0]",
+            "reason": "北部の học の母音の変化に触れていない"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[1]",
+            "reason": "quá（すごく）が訳されていない"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[2] 文4",
+            "reason": "tôi と「〜よ」で丁寧さがずれる"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：北部標準と南部の違いを明記、quá を訳出、文4を mình に"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "語末子音や母音の発音は、北部・南部・両方のどれに当てはまるかを必ず書く（南部の -t→-c、-n→-ng など）",
+      "文末の強調語・文末詞（quá, lắm, nhỉ, nhé）は日本語訳にも反映し、人称（tôi / mình）と日本語の丁寧さをそろえる"
+    ],
+    "logged": true
+  }
 }
