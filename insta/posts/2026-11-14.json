@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-14",
+  "no": 11,
+  "kind": "word",
+  "level": "C2",
+  "status": "approved",
+  "theme": {
+    "en": "Attitudes and character",
+    "ja": "人の態度・性格を表すC2形容詞"
+  },
+  "items": [
+    {
+      "term": "obsequious",
+      "ipa": "/əbˈsikwiəs/",
+      "pos": "adjective",
+      "ja": "こびへつらう、卑屈なほど従順な",
+      "definition": "Too eager to please or obey people in power.",
+      "example": "The waiter's **obsequious** manner made us uncomfortable.",
+      "example_ja": "ウェイターのへつらうような態度に、私たちは居心地が悪くなった。",
+      "note": "悪い意味です。似た言葉に sycophantic があります。"
+    },
+    {
+      "term": "magnanimous",
+      "ipa": "/mæɡˈnænɪməs/",
+      "pos": "adjective",
+      "ja": "寛大な、度量の大きい",
+      "definition": "Generous and kind, especially toward a rival or someone who has hurt you.",
+      "example": "She was **magnanimous** in victory and praised her opponent.",
+      "example_ja": "彼女は勝っても驕らず、相手をたたえた。",
+      "note": "名詞は magnanimity。"
+    },
+    {
+      "term": "truculent",
+      "ipa": "/ˈtrʌkjələnt/",
+      "pos": "adjective",
+      "ja": "けんか腰の、反抗的な",
+      "definition": "Quick to argue or fight, often in a defiant way.",
+      "example": "He became **truculent** when asked about the missing money.",
+      "example_ja": "なくなったお金のことを聞かれると、彼はけんか腰になった。",
+      "note": "かたい書き言葉でよく使われます。"
+    },
+    {
+      "term": "diffident",
+      "ipa": "/ˈdɪfɪdənt/",
+      "pos": "adjective",
+      "ja": "自信のない、遠慮がちな",
+      "definition": "Shy and lacking confidence in yourself.",
+      "example": "He gave a **diffident** smile and looked away.",
+      "example_ja": "彼は自信なさげにほほえんで、目をそらした。",
+      "note": "different と見間違えやすいので注意。"
+    },
+    {
+      "term": "sanguine",
+      "ipa": "/ˈsæŋɡwɪn/",
+      "pos": "adjective",
+      "ja": "（困難な状況でも）楽観的な",
+      "definition": "Calmly hopeful and confident, especially in a difficult or uncertain situation.",
+      "example": "Investors remain **sanguine** about the market's recovery.",
+      "example_ja": "投資家たちは、市場の回復について楽観的なままだ。",
+      "note": "be sanguine about ～ の形でよく使います。"
+    }
+  ],
+  "quiz": {
+    "sentence": "He's too ____ to speak up in big meetings.",
+    "options": [
+      "diffident",
+      "truculent",
+      "sanguine"
+    ],
+    "answer": "A",
+    "why": "diffident＝自信がなく、遠慮がちな。"
+  },
+  "caption": "人の態度・性格を表すC2レベルの形容詞5つ 🎭\n\n1. obsequious｜こびへつらう\n2. magnanimous｜寛大な\n3. truculent｜けんか腰の\n4. diffident｜自信のない\n5. sanguine｜楽観的な\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英単語 #英語勉強 #大人の英語 #英語上級 #英検1級 #TOEIC #IELTS #英語好きな人と繋がりたい #語彙力 #englishvocabulary #learnenglish #advancedenglish #C2english"
+}
