@@ -1,0 +1,124 @@
+{
+  "day": "saturday",
+  "theme": "shadowing",
+  "themeColor": "#047857",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Âm cuối -c, -t, -p",
+      "subtitle": "発音｜語末の子音を「破裂させない」シャドーイング",
+      "badge": "第1回 シャドーイング"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "シャドーイング①（1〜3）",
+      "vietnameseText": "1. Tôi <mark>học</mark> tiếng <mark>Việt</mark> mỗi tối.\n2. Hôm nay <mark>mát</mark> quá nhỉ.\n3. <mark>Một</mark> <mark>chút</mark> nữa tôi gọi lại nhé.",
+      "japaneseText": "1. 私は毎晩ベトナム語を勉強しています。\n2. 今日は涼しいね。\n3. もう少ししたら、かけ直すね。",
+      "annotation": "語末の -c・-t・-p は口の形を作って止めるだけで、息を破裂させない。học を「ホク」、chút を「チュツ」のように最後に母音を足さない。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "シャドーイング②（4〜6）",
+      "vietnameseText": "4. Cảm ơn, tôi <mark>biết</mark> rồi.\n5. <mark>Chúc</mark> bạn <mark>một</mark> ngày <mark>tốt</mark> lành!\n6. <mark>Đẹp</mark> quá, mình <mark>chụp</mark> ảnh nhé!",
+      "japaneseText": "4. ありがとう、もう分かったよ。\n5. よい一日を！\n6. きれい！ 写真を撮ろうよ。",
+      "annotation": "u・ô・o の後の -c は、舌で止めると同時に唇も閉じる（học, chúc）。-p は唇を閉じて止める（đẹp, chụp）。-t は唇を閉じない。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "1音節ずつ確認",
+      "targetSentence": "Chúc bạn một ngày tốt lành!",
+      "translation": "よい一日を！",
+      "breakdown": [
+        {
+          "part": "sắc＋-c",
+          "text": "Chúc",
+          "explanation": "高く上げる。u の後の -c なので唇を閉じて止める。「チュク」と母音を足さない"
+        },
+        {
+          "part": "nặng",
+          "text": "bạn",
+          "explanation": "低く短く、喉を詰めるように切る"
+        },
+        {
+          "part": "nặng＋-t",
+          "text": "một",
+          "explanation": "低く短く。舌先を歯ぐきに付けて止め、息は出さない"
+        },
+        {
+          "part": "huyền",
+          "text": "ngày",
+          "explanation": "低くゆっくり下げる。語頭の ng は鼻にかかったガ行の音"
+        },
+        {
+          "part": "sắc＋-t",
+          "text": "tốt",
+          "explanation": "高く上げてから舌先で止める。「トット」のように最後に母音を足さない"
+        },
+        {
+          "part": "huyền",
+          "text": "lành",
+          "explanation": "低く下げる。北部では -anh が「アイン」に近く聞こえる"
+        }
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "heading": "語末子音に注目",
+      "items": [
+        {
+          "word": "học",
+          "pos": "動",
+          "meaning": "学ぶ・勉強する",
+          "note": "語末 -c。o の後なので唇を閉じて終わる"
+        },
+        {
+          "word": "mát",
+          "pos": "形",
+          "meaning": "涼しい",
+          "note": "語末 -t。舌先を歯ぐきに付けて止める"
+        },
+        {
+          "word": "chút",
+          "pos": "名",
+          "meaning": "少し",
+          "note": "một chút＝ちょっと。-t なので唇は閉じない（chúc との違い）"
+        },
+        {
+          "word": "biết",
+          "pos": "動",
+          "meaning": "知っている・分かる",
+          "note": "biết rồi＝もう分かった。語末 -t"
+        },
+        {
+          "word": "chúc",
+          "pos": "動",
+          "meaning": "（幸せなどを）祈る",
+          "note": "chúc mừng＝おめでとう。u の後の -c で唇を閉じる"
+        },
+        {
+          "word": "chụp",
+          "pos": "動",
+          "meaning": "（写真を）撮る",
+          "note": "chụp ảnh＝写真を撮る。-p は唇を閉じて止める"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "🎧 học を「ホク」、Việt を「ヴィエトゥ」と言っていませんか？ 語末の -c・-t・-p は「止めるだけ」がコツです。",
+    "summary": "日本語は子音のあとに母音を付けるので、ベトナム語の語末子音にもつい母音を足してしまいがち。今日は6つの短文でシャドーイングしましょう。\n\n✅ -c・-t・-p は口の形を作って止めるだけ。息を破裂させない\n✅ u・ô・o の後の -c は唇も閉じる（học, chúc）\n✅ -p は唇を閉じて止める（đẹp, chụp）、-t は唇を閉じない（chút）\n✅ 語末が -c・-t・-p の音節の声調は sắc か nặng だけ\n\nリールでは各文のあとに同じ長さの無音があります。音声に続けて、同じ速さで言ってみてください。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#シャドーイング",
+      "#ベトナム語発音",
+      "#声調",
+      "#発音練習"
+    ]
+  },
+  "audioScript": "Tôi học tiếng Việt mỗi tối.\nHôm nay mát quá nhỉ.\nMột chút nữa tôi gọi lại nhé.\nCảm ơn, tôi biết rồi.\nChúc bạn một ngày tốt lành!\nĐẹp quá, mình chụp ảnh nhé!",
+  "status": "draft"
+}
