@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-12T00:57:58.317Z"
+    "collected": "2026-11-12T23:50:48.970Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T00:57:58.988Z"
+    "collected": "2026-11-12T23:50:49.462Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -82,7 +82,7 @@
     "story": {
       "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T00:57:59.823Z"
+    "collected": "2026-11-12T23:50:49.844Z"
   },
   "2026-11-08": {
     "kind": "review",
@@ -102,7 +102,7 @@
     "story": {
       "error": "17920391178526780: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T00:58:00.427Z"
+    "collected": "2026-11-12T23:50:50.283Z"
   },
   "2026-11-09": {
     "kind": "phrasal",
@@ -126,9 +126,9 @@
       "profile_visits": 0
     },
     "story": {
-      "error": "18044973278831446: Unsupported get request. Object with ID '18044973278831446' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+      "error": "18044973278831446: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T00:58:01.156Z"
+    "collected": "2026-11-12T23:50:50.759Z"
   },
   "2026-11-10": {
     "kind": "idiom",
@@ -154,7 +154,7 @@
     "story": {
       "error": "18122545960965174: Unsupported get request. Object with ID '18122545960965174' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     },
-    "collected": "2026-11-12T00:58:01.987Z"
+    "collected": "2026-11-12T23:50:51.211Z"
   },
   "2026-11-11": {
     "kind": "word",
@@ -179,8 +179,34 @@
       "profile_visits": 0
     },
     "story": {
-      "error": "18101420243434163: (#10) Not enough viewers for the media to show insights"
+      "error": "18101420243434163: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T00:58:03.608Z"
+    "collected": "2026-11-12T23:50:51.618Z"
+  },
+  "2026-11-12": {
+    "kind": "phrasal",
+    "theme": "体調の話で使う句動詞",
+    "terms": [
+      "come down with",
+      "shake off",
+      "wear off",
+      "pass out",
+      "bounce back"
+    ],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0,
+      "follows": 0,
+      "profile_visits": 0
+    },
+    "story": {
+      "error": "17954645193317317: (#10) Not enough viewers for the media to show insights"
+    },
+    "collected": "2026-11-12T23:50:52.492Z"
   }
 }
