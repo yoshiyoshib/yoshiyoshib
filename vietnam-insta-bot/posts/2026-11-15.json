@@ -1,0 +1,138 @@
+{
+  "day": "sunday",
+  "theme": "reading",
+  "themeColor": "#1E3A8A",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Miễn phí vé ngày 24/11",
+      "subtitle": "ニュース精読｜「ベトナム文化の日」に博物館が無料に",
+      "badge": "第2回 ニュース長文精読"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第1段落｜何が決まった？",
+      "vietnameseText": "Bộ Tài chính <mark>vừa</mark> ban hành thông tư <mark>miễn phí tham quan</mark> một số bảo tàng, di tích và vườn quốc gia vào ngày 24/11 hằng năm, <mark>tức</mark> Ngày Văn hóa Việt Nam.",
+      "japaneseText": "ベトナム財務省は、毎年11月24日、つまり「ベトナム文化の日」に、一部の博物館・史跡・国立公園の入場を無料にする通達を出した。",
+      "annotation": "vừa＋動詞＝「〜したばかり」。ニュースの第一報で頻出。tức は「すなわち」と言い換えを導く。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第2段落｜どこが無料？",
+      "vietnameseText": "Trong danh sách có <mark>những</mark> địa điểm quen thuộc <mark>như</mark> Bảo tàng Lịch sử quốc gia và Bảo tàng Dân tộc học Việt Nam ở Hà Nội, Dinh Độc Lập ở TP.HCM và Vườn quốc gia Cúc Phương.",
+      "japaneseText": "対象には、ハノイの国家歴史博物館やベトナム民族学博物館、ホーチミン市の独立宮殿（統一会堂）、クックフオン国立公園など、おなじみの場所が含まれている。",
+      "annotation": "những＋名詞＋như … ＝「…のような〜」と例を挙げる形。Dinh Độc Lập は「独立宮殿」の意味で、日本では「統一会堂」の名でも知られる。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "第3段落｜文化の日とは？",
+      "vietnameseText": "Ngày 24/11 <mark>được Quốc hội chọn</mark> làm Ngày Văn hóa Việt Nam vào tháng 4 năm nay, và người lao động được nghỉ <mark>hưởng nguyên lương</mark>. Năm nay, ngày này <mark>rơi vào</mark> thứ Ba.",
+      "japaneseText": "11月24日は今年4月に国会によって「ベトナム文化の日」に定められ、労働者は給料を満額受け取りながら休めることになった。今年のこの日は火曜日にあたる。",
+      "annotation": "được＋人＋動詞＝「（人）によって〜される」。hưởng nguyên lương は「給料を満額受け取る」＝有給の休日。rơi vào＋曜日＝「〜に当たる」。"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "重要語彙",
+      "items": [
+        {
+          "word": "miễn phí",
+          "pos": "形",
+          "meaning": "無料の",
+          "note": "漢「免費」。miễn phí vào cửa＝入場無料"
+        },
+        {
+          "word": "thông tư",
+          "pos": "名",
+          "meaning": "（省庁の）通達",
+          "note": "行政文書の一つ。法律（luật）・政令（nghị định）より下位"
+        },
+        {
+          "word": "có hiệu lực",
+          "pos": "動",
+          "meaning": "効力を持つ・施行される",
+          "note": "hiệu lực は漢「効力」。có hiệu lực từ ngày …＝〜から施行"
+        },
+        {
+          "word": "tham quan",
+          "pos": "動",
+          "meaning": "見学する・見て回る",
+          "note": "漢「参観」。du lịch（旅行）より「見て回る」ことに焦点"
+        },
+        {
+          "word": "hưởng",
+          "pos": "動",
+          "meaning": "受け取る・享受する",
+          "note": "漢「享」。hưởng lương＝給料を受け取る"
+        },
+        {
+          "word": "rơi vào",
+          "pos": "動",
+          "meaning": "（日付が）〜に当たる",
+          "note": "rơi＝落ちる。rơi vào cuối tuần＝週末に当たる"
+        }
+      ]
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "構文分解",
+      "targetSentence": "Thông tư được ký ngày 10/11 và có hiệu lực ngay, nên sẽ được áp dụng từ năm nay.",
+      "translation": "通達は11月10日に署名されて即日施行されるため、今年から適用される。",
+      "breakdown": [
+        {
+          "part": "主語",
+          "text": "Thông tư",
+          "explanation": "「通達」。この文全体の主語で、後ろの述語すべてにかかる"
+        },
+        {
+          "part": "受け身",
+          "text": "được ký ngày 10/11",
+          "explanation": "được＋動詞で受け身。日付は前置詞なしで後ろに置ける"
+        },
+        {
+          "part": "並列",
+          "text": "và có hiệu lực ngay",
+          "explanation": "và で述語を並べる。ngay（すぐに）は動詞句の後ろ"
+        },
+        {
+          "part": "結果",
+          "text": "nên",
+          "explanation": "「だから」。理由→結果の順。vì … nên … の vì を省いた形"
+        },
+        {
+          "part": "未来＋受け身",
+          "text": "sẽ được áp dụng",
+          "explanation": "sẽ（未来）＋được（受け身）＋áp dụng（適用する）"
+        },
+        {
+          "part": "起点",
+          "text": "từ năm nay",
+          "explanation": "từ＝「〜から」。時間の起点を示す"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "🏛️ 11月24日はベトナムの新しい祝日「文化の日」。博物館や国立公園が無料になるニュースで長文を精読しよう。",
+    "summary": "ベトナム財務省が11月10日付で通達を出し、毎年11月24日の「ベトナム文化の日」に、一部の博物館・史跡・国立公園の入場料が無料になりました。ハノイの国家歴史博物館、ホーチミン市の独立宮殿（統一会堂）などが対象です。文化の日は今年4月に国会で定められた有給の休日で、今年は火曜日に当たります。\n\n今回の文法ポイント\n✅ vừa＋動詞（〜したばかり）\n✅ những＋名詞＋như …（…のような〜）\n✅ được＋人＋動詞（〜によって…される）\n✅ … nên …（だから）／sẽ được（未来の受け身）\n\nまずベトナム語だけで読み、全訳・語彙・構文分解で答え合わせを。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ベトナム語長文",
+      "#ベトナムニュース",
+      "#精読",
+      "#ベトナム文化",
+      "#ベトナム旅行",
+      "#博物館"
+    ]
+  },
+  "source": {
+    "name": "Dân trí",
+    "url": "https://dantri.com.vn/du-lich/mien-phi-tham-quan-nhieu-bao-tang-vuon-quoc-gia-vao-ngay-van-hoa-viet-nam-20261112090155266.htm",
+    "date": "2026-11-12"
+  },
+  "audioScript": "Bộ Tài chính vừa ban hành thông tư miễn phí tham quan một số bảo tàng, di tích và vườn quốc gia vào ngày 24 tháng 11 hằng năm, tức Ngày Văn hóa Việt Nam.\nTrong danh sách có những địa điểm quen thuộc như Bảo tàng Lịch sử quốc gia và Bảo tàng Dân tộc học Việt Nam ở Hà Nội, Dinh Độc Lập ở Thành phố Hồ Chí Minh và Vườn quốc gia Cúc Phương.\nNgày 24 tháng 11 được Quốc hội chọn làm Ngày Văn hóa Việt Nam vào tháng 4 năm nay, và người lao động được nghỉ hưởng nguyên lương. Năm nay, ngày này rơi vào thứ Ba.\nThông tư được ký ngày 10 tháng 11 và có hiệu lực ngay, nên sẽ được áp dụng từ năm nay.",
+  "status": "draft"
+}
