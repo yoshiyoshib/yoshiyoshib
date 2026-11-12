@@ -21,13 +21,13 @@
       "heading": "第2段落｜どこが無料？",
       "vietnameseText": "Trong danh sách có <mark>những</mark> địa điểm quen thuộc <mark>như</mark> Bảo tàng Lịch sử quốc gia và Bảo tàng Dân tộc học Việt Nam ở Hà Nội, Dinh Độc Lập ở TP.HCM và Vườn quốc gia Cúc Phương.",
       "japaneseText": "対象には、ハノイの国家歴史博物館やベトナム民族学博物館、ホーチミン市の独立宮殿（統一会堂）、クックフオン国立公園など、おなじみの場所が含まれている。",
-      "annotation": "những＋名詞＋như … ＝「…のような〜」と例を挙げる形。Dinh Độc Lập は「独立宮殿」の意味で、日本では「統一会堂」の名でも知られる。"
+      "annotation": "những＋名詞＋như …＝「…のような〜」と例を挙げる形。Dinh Độc Lập（独立宮殿）は1975年以前の大統領官邸で、Hội trường Thống Nhất（統一会堂）とも呼ばれる。"
     },
     {
       "type": "text_with_translation",
       "heading": "第3段落｜文化の日とは？",
       "vietnameseText": "Ngày 24/11 <mark>được Quốc hội chọn</mark> làm Ngày Văn hóa Việt Nam vào tháng 4 năm nay, và người lao động được nghỉ <mark>hưởng nguyên lương</mark>. Năm nay, ngày này <mark>rơi vào</mark> thứ Ba.",
-      "japaneseText": "11月24日は今年4月に国会によって「ベトナム文化の日」に定められ、労働者は給料を満額受け取りながら休めることになった。今年のこの日は火曜日にあたる。",
+      "japaneseText": "11月24日は今年4月に国会によって「ベトナム文化の日」に定められ、労働者は有給で休めることになった。今年のこの日は火曜日にあたる。",
       "annotation": "được＋人＋動詞＝「（人）によって〜される」。hưởng nguyên lương は「給料を満額受け取る」＝有給の休日。rơi vào＋曜日＝「〜に当たる」。"
     },
     {
@@ -134,5 +134,58 @@
     "date": "2026-11-12"
   },
   "audioScript": "Bộ Tài chính vừa ban hành thông tư miễn phí tham quan một số bảo tàng, di tích và vườn quốc gia vào ngày 24 tháng 11 hằng năm, tức Ngày Văn hóa Việt Nam.\nTrong danh sách có những địa điểm quen thuộc như Bảo tàng Lịch sử quốc gia và Bảo tàng Dân tộc học Việt Nam ở Hà Nội, Dinh Độc Lập ở Thành phố Hồ Chí Minh và Vườn quốc gia Cúc Phương.\nNgày 24 tháng 11 được Quốc hội chọn làm Ngày Văn hóa Việt Nam vào tháng 4 năm nay, và người lao động được nghỉ hưởng nguyên lương. Năm nay, ngày này rơi vào thứ Ba.\nThông tư được ký ngày 10 tháng 11 và có hiệu lực ngay, nên sẽ được áp dụng từ năm nay.",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 93,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 93,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 21,
+          "translation": 23,
+          "density": 24
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[2].annotation",
+            "reason": "Dinh Độc Lập の別名・由来がない"
+          },
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[1].annotation",
+            "reason": "tức の説明が浅い"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[3].japaneseText",
+            "reason": "hưởng nguyên lương の訳が直訳調"
+          },
+          {
+            "criterion": "density",
+            "points": 1,
+            "location": "全体",
+            "reason": "締めの理解確認がない"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：「有給で休める」に、独立宮殿の別名と由来を追記（事実は検索で照合済み）"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "ニュースの固有名詞（施設名・機関名）には、日本語訳に加えてベトナム語の別名や由来を1行添える",
+      "được hưởng / được nghỉ のような制度用語は直訳せず、日本の制度用語（有給・祝日など）に置き換えて訳す"
+    ],
+    "logged": true
+  }
 }
