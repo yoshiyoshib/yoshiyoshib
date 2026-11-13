@@ -14,7 +14,7 @@
       "heading": "nhà（純越語）と gia（漢越語）",
       "vietnameseText": "Nhà tôi có bốn người. Cả <mark>gia đình</mark> tôi đều thích nấu ăn.\nMẹ tôi là <mark>chuyên gia</mark> dinh dưỡng, nên rất cẩn thận khi dùng <mark>gia vị</mark>.",
       "japaneseText": "うちは4人家族です。家族みんな料理が好きです。\n母は栄養の専門家なので、調味料を使うときにとても気をつけています。",
-      "annotation": "純越語の nhà は「家」のほか、口語で「家族」も指す。漢越語の gia は単独では使わず、gia đình（家庭）などの複合語の中だけで使う。"
+      "annotation": "純越語の nhà は「家」のほか、口語で「家族」も指す。漢越語の gia（家）は単独では使わず gia đình などの複合語の中で使う（gia（加）は口語で gia thêm「足す」と単独でも使う）。"
     },
     {
       "type": "vocabulary",
@@ -82,7 +82,7 @@
         {
           "part": "複数",
           "text": "các lớp học",
-          "explanation": "các は特定の範囲の「それぞれの〜」を指す複数"
+          "explanation": "các は範囲が決まった名詞につく複数（「（それらの）〜」）。「それぞれ」は mỗi / từng"
         },
         {
           "part": "修飾",
@@ -95,13 +95,13 @@
       "type": "text_with_translation",
       "heading": "日本語のカ行 ↔ gi-",
       "vietnameseText": "家 ka → <mark>gia</mark>（gia đình）\n加 ka → <mark>gia</mark>（tham gia）\n価 ka → <mark>giá</mark>（giá cả）\n間 kan → <mark>gian</mark>（thời gian）\n教 kyō → <mark>giáo</mark>（giáo viên）\n解 kai → <mark>giải</mark>（giải thích）",
-      "japaneseText": "日本語でカ行（ka・kan・kyō・kai など）で読む漢字の一部は、ベトナム語では gi- で始まる。家と加はどちらも gia なので、意味は複合語と文脈で見分ける。ただし国 quốc・科 khoa のように k 系の音のままの字も多い。",
+      "japaneseText": "カ行（ka・kan・kyō・kai など）で読む漢字の一部は gi- になる。家と加はどちらも gia なので文脈で見分ける。国 quốc・科 khoa のように k 系のままの字も多い。",
       "annotation": "gi- は北部では「ザ」行、南部では「ヤ」行に近く発音される（gia＝北「ザー」／南「ヤー」）。"
     }
   ],
   "caption": {
     "hook": "🏠 gia đình（家庭）と tham gia（参加）、同じ gia なのに漢字が違う？ 漢越語「gia」を掘り下げます。",
-    "summary": "ベトナム語の gia には、漢字の「家」と「加」の2つがあります。\n\n✅ 家：gia đình（家族）、quốc gia（国家）、chuyên gia（専門家）\n✅ 加：tham gia（参加する）、gia tăng（増加する）、gia vị（調味料）\n✅ 純越語の nhà（家・家族）は単独で使えるが、漢越語の gia は複合語の中だけ\n✅ 日本語のカ行で読む漢字の一部は gi- になる（家 gia、教 giáo、間 gian、解 giải）。ただし国 quốc のように k 系のままの字も多い\n\n音読みから推測できる単語が一気に増えます。ほかの gi- の単語も探してみてください。",
+    "summary": "ベトナム語の gia には、漢字の「家」と「加」の2つがあります。\n\n✅ 家：gia đình（家族）、quốc gia（国家）、chuyên gia（専門家）\n✅ 加：tham gia（参加する）、gia tăng（増加する）、gia vị（調味料）\n✅ 純越語の nhà（家・家族）は単独で使えるが、漢越語の gia（家）は複合語の中だけ（gia（加）は口語で gia thêm＝足す、とも）\n✅ 日本語のカ行で読む漢字の一部は gi- になる（家 gia、教 giáo、間 gian、解 giải）。ただし国 quốc のように k 系のままの字も多い\n\n音読みから推測できる単語が一気に増えます。ほかの gi- の単語も探してみてください。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -116,5 +116,53 @@
     ]
   },
   "audioScript": "Nhà tôi có bốn người. Cả gia đình tôi đều thích nấu ăn.\nMẹ tôi là chuyên gia dinh dưỡng, nên rất cẩn thận khi dùng gia vị.\nGia đình. Quốc gia. Chuyên gia. Tham gia. Gia tăng. Gia vị.\nNgày càng có nhiều người nước ngoài tham gia các lớp học nấu ăn Việt Nam.\nGia đình. Tham gia. Giá cả. Thời gian. Giáo viên. Giải thích.",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 95,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 95,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 23,
+          "density": 24
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[1].annotation",
+            "reason": "gia（加）は口語で単独でも使うのに「単独では使わない」と断定"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[3].breakdown[3]",
+            "reason": "các を「それぞれ」と訳した（それぞれは mỗi / từng）"
+          },
+          {
+            "criterion": "density",
+            "points": 1,
+            "location": "slides[4]",
+            "reason": "1枚の情報量がやや多い"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：gia（加）の単独用法を追記、các の訳を修正、最後のスライドを短縮"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "「漢越語の○○は単独では使わない」と言い切るときは、同音の別の漢字ごとに単独用法がないか確認し、例外を書き添える",
+      "các / những / mỗi / từng の訳語を固定する（các＝範囲が決まった「〜たち・全部の」、mỗi・từng＝「それぞれ」）"
+    ],
+    "codeNote": "初回の check で「声調記号付き音節が少ない」と判定（ローマ字の音読み行が原因）。各行に例語を添えて解消",
+    "logged": true
+  }
 }
