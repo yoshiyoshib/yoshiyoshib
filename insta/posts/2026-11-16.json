@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-16",
+  "no": 13,
+  "kind": "phrasal",
+  "status": "approved",
+  "theme": {
+    "en": "Studying and learning",
+    "ja": "勉強・学びの話で使う句動詞"
+  },
+  "items": [
+    {
+      "term": "brush up on",
+      "ipa": "/ˌbrʌʃ ˈʌp ɑn/",
+      "pos": "phrasal verb",
+      "ja": "（忘れかけた知識・技術を）磨き直す",
+      "definition": "To practice or study something again to improve it.",
+      "example": "I need to **brush up on** my Spanish before the trip.",
+      "example_ja": "旅行の前に、スペイン語を勉強し直さないと。",
+      "note": "on のあとに、分野やスキルが来ます。"
+    },
+    {
+      "term": "catch on",
+      "ipa": "/ˌkætʃ ˈɑn/",
+      "pos": "phrasal verb",
+      "ja": "（やっと）理解する、わかってくる",
+      "definition": "To begin to understand something.",
+      "example": "It took me a while to **catch on** to the rules.",
+      "example_ja": "ルールが分かるまで、少し時間がかかった。",
+      "note": "「流行る」の意味でもよく使います。"
+    },
+    {
+      "term": "cram for",
+      "ipa": "/ˈkræm fɔr/",
+      "pos": "phrasal verb",
+      "ja": "（試験のために）詰め込み勉強をする",
+      "definition": "To study a lot in a short time just before an exam.",
+      "example": "He stayed up all night **cramming for** the test.",
+      "example_ja": "彼はテストのために、徹夜で詰め込み勉強をした。",
+      "note": "一夜漬けのイメージです。"
+    },
+    {
+      "term": "fall behind",
+      "ipa": "/ˌfɔl bɪˈhaɪnd/",
+      "pos": "phrasal verb",
+      "ja": "遅れをとる、ついていけなくなる",
+      "definition": "To fail to keep up with others or with a schedule.",
+      "example": "If you miss class, it's easy to **fall behind**.",
+      "example_ja": "授業を休むと、すぐに遅れをとってしまう。",
+      "note": "fall behind on ～（～が滞る）の形も。例：fall behind on rent"
+    },
+    {
+      "term": "read up on",
+      "ipa": "/ˌrid ˈʌp ɑn/",
+      "pos": "phrasal verb",
+      "ja": "（前もって）よく調べる、読んで勉強する",
+      "definition": "To read a lot about a subject to learn about it.",
+      "example": "I **read up on** the company before my interview.",
+      "example_ja": "面接の前に、その会社についてよく調べた。",
+      "note": "brush up on と同じく、on のあとに話題が来ます。"
+    }
+  ],
+  "quiz": {
+    "sentence": "I missed two weeks of class and ____.",
+    "options": [
+      "read up on",
+      "caught on",
+      "fell behind"
+    ],
+    "answer": "C",
+    "why": "fall behind＝（周りや予定に）遅れをとる。"
+  },
+  "caption": "勉強・学びの話で使える句動詞5つ 📚\n\n1. brush up on｜磨き直す\n2. catch on｜わかってくる\n3. cram for｜詰め込み勉強をする\n4. fall behind｜遅れをとる\n5. read up on｜よく調べる\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #句動詞 #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #英語表現 #phrasalverbs #learnenglish #advancedenglish #englishvocabulary"
+}
