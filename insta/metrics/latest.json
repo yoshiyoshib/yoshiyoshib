@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-12T23:50:48.970Z"
+    "collected": "2026-11-13T23:50:04.781Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T23:50:49.462Z"
+    "collected": "2026-11-13T23:50:06.051Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -82,7 +82,7 @@
     "story": {
       "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T23:50:49.844Z"
+    "collected": "2026-11-13T23:50:07.877Z"
   },
   "2026-11-08": {
     "kind": "review",
@@ -102,7 +102,7 @@
     "story": {
       "error": "17920391178526780: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T23:50:50.283Z"
+    "collected": "2026-11-13T23:50:08.532Z"
   },
   "2026-11-09": {
     "kind": "phrasal",
@@ -128,7 +128,7 @@
     "story": {
       "error": "18044973278831446: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T23:50:50.759Z"
+    "collected": "2026-11-13T23:50:09.671Z"
   },
   "2026-11-10": {
     "kind": "idiom",
@@ -154,7 +154,7 @@
     "story": {
       "error": "18122545960965174: Unsupported get request. Object with ID '18122545960965174' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     },
-    "collected": "2026-11-12T23:50:51.211Z"
+    "collected": "2026-11-13T23:50:10.975Z"
   },
   "2026-11-11": {
     "kind": "word",
@@ -181,7 +181,7 @@
     "story": {
       "error": "18101420243434163: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-12T23:50:51.618Z"
+    "collected": "2026-11-13T23:50:11.534Z"
   },
   "2026-11-12": {
     "kind": "phrasal",
@@ -202,11 +202,37 @@
       "comments": 0,
       "total_interactions": 0,
       "follows": 0,
+      "profile_visits": 1
+    },
+    "story": {
+      "error": "17954645193317317: Unsupported get request. Object with ID '17954645193317317' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    },
+    "collected": "2026-11-13T23:50:12.845Z"
+  },
+  "2026-11-13": {
+    "kind": "idiom",
+    "theme": "時間・タイミングのイディオム",
+    "terms": [
+      "in the nick of time",
+      "call it a day",
+      "once in a blue moon",
+      "against the clock",
+      "at the eleventh hour"
+    ],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 0,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 0,
+      "follows": 0,
       "profile_visits": 0
     },
     "story": {
-      "error": "17954645193317317: (#10) Not enough viewers for the media to show insights"
+      "error": "18208440958375586: (#10) Not enough viewers for the media to show insights"
     },
-    "collected": "2026-11-12T23:50:52.492Z"
+    "collected": "2026-11-13T23:50:15.664Z"
   }
 }
