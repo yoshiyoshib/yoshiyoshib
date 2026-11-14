@@ -1,0 +1,119 @@
+{
+  "day": "tuesday",
+  "theme": "dialogue",
+  "themeColor": "#0F766E",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Taxi Hà Nội: chứ, đấy, cơ",
+      "subtitle": "会話｜タクシーで覚える北部の文末詞",
+      "badge": "第2回 リアル会話"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "タクシーで（乗車）",
+      "vietnameseText": "A: Anh ơi, cho em đến Bảo tàng Dân tộc học. Anh biết đường <mark>chứ</mark> ạ?\nB: Biết <mark>chứ</mark>. Nhưng giờ này đường Cầu Giấy hay tắc lắm <mark>đấy</mark>.\nA: Thế anh đi đường khác được không ạ? Em phải đến trước 9 giờ.\nB: Ừ, để anh đi đường vòng nhé.",
+      "japaneseText": "A：すみません、民族学博物館までお願いします。道はご存じですよね？\nB：もちろん。でもこの時間、カウザイ通りはよく渋滞するんだよ。\nA：じゃあ別の道で行ってもらえますか？ 9時までに着かないといけないんです。\nB：うん、じゃあ回り道していくね。",
+      "annotation": "乗客（若い女性）は年上の運転手を anh、自分を em と呼ぶ。chứ は「当然〜でしょ」と同意を前提に確認する（Biết chứ＝もちろん知ってるよ）。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "タクシーで（到着）",
+      "vietnameseText": "B: Đến rồi <mark>đấy</mark>. Em xuống ở cổng chính nhé?\nA: Dạ không, em xuống ở cổng sau <mark>cơ</mark>. Bạn em đợi ở đấy.\nB: À, thế à. Đây, cổng sau đây.\nA: Em cảm ơn anh ạ!",
+      "japaneseText": "B：着いたよ。正門で降りる？\nA：いえ、裏門なんです。友達がそこで待っているので。\nB：ああ、そうなんだ。はい、裏門だよ。\nA：ありがとうございます！",
+      "annotation": "cơ は「（〜ではなく）〜なんです」と相手の思い込みを訂正する北部の口語。文末の đấy は「〜だよ」と気づかせる（南部では đó）。ở đấy の đấy は「そこ」。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "構文分解：やわらかく訂正する",
+      "targetSentence": "Dạ không, em xuống ở cổng sau cơ.",
+      "translation": "いえ、裏門で降りるんです。",
+      "breakdown": [
+        {
+          "part": "応答",
+          "text": "Dạ không",
+          "explanation": "丁寧な「いいえ」。dạ を付けると否定しても角が立たない"
+        },
+        {
+          "part": "主語",
+          "text": "em",
+          "explanation": "年下の自称。相手（運転手）を anh と呼ぶのと対になる"
+        },
+        {
+          "part": "述語",
+          "text": "xuống",
+          "explanation": "「降りる」。車から降りるのは xuống xe（xe は省略できる）"
+        },
+        {
+          "part": "場所",
+          "text": "ở cổng sau",
+          "explanation": "ở＋場所。cổng sau＝裏門（sau＝後ろ）。正門は cổng chính"
+        },
+        {
+          "part": "文末詞",
+          "text": "cơ",
+          "explanation": "相手の予想（正門）を打ち消して「〜のほうなんです」と訂正する"
+        }
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "heading": "今日の文末詞と表現",
+      "items": [
+        {
+          "word": "chứ",
+          "pos": "文末",
+          "meaning": "当然〜でしょ・もちろん",
+          "note": "同意を前提に確認する。Biết chứ＝もちろん知ってる"
+        },
+        {
+          "word": "đấy",
+          "pos": "文末",
+          "meaning": "〜だよ（気づかせる）",
+          "note": "北部。南部では đó。ở đấy＝そこで（指示詞）"
+        },
+        {
+          "word": "cơ",
+          "pos": "文末",
+          "meaning": "〜のほうなんです（訂正）",
+          "note": "北部の口語。相手の思い込みをやわらかく打ち消す"
+        },
+        {
+          "word": "tắc đường",
+          "pos": "動",
+          "meaning": "渋滞する",
+          "note": "北部の言い方。南部では kẹt xe"
+        },
+        {
+          "word": "đường vòng",
+          "pos": "名",
+          "meaning": "回り道",
+          "note": "vòng＝輪・回る。đi đường vòng＝回り道をする"
+        },
+        {
+          "word": "cổng sau",
+          "pos": "名",
+          "meaning": "裏門",
+          "note": "sau＝後ろ。cổng chính＝正門"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "🚕 ハノイのタクシーで「正門じゃなくて裏門なんです」と言えますか？ 北部の文末詞 chứ・đấy・cơ を会話で覚えよう。",
+    "summary": "文末詞を使いこなすと、ベトナム語の会話がぐっと自然になります。今回はハノイ（北部）のタクシーが舞台です。\n\n✅ chứ：「当然〜でしょ」と同意を前提に確認（Biết chứ＝もちろん）\n✅ đấy：「〜だよ」と相手に気づかせる（南部では đó）\n✅ cơ：「（〜ではなく）〜なんです」とやわらかく訂正する北部の口語\n✅ 渋滞：北部 tắc đường／南部 kẹt xe\n\n乗客（若い女性）は運転手を anh、自分を em と呼び、ạ や dạ で丁寧さを出しています。リールの音声で会話をまねしてみましょう。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ベトナム語会話",
+      "#文末詞",
+      "#ハノイ",
+      "#ベトナム旅行"
+    ]
+  },
+  "audioScript": "Anh ơi, cho em đến Bảo tàng Dân tộc học. Anh biết đường chứ ạ?\nBiết chứ. Nhưng giờ này đường Cầu Giấy hay tắc lắm đấy.\nThế anh đi đường khác được không ạ? Em phải đến trước 9 giờ.\nỪ, để anh đi đường vòng nhé.\nĐến rồi đấy. Em xuống ở cổng chính nhé?\nDạ không, em xuống ở cổng sau cơ. Bạn em đợi ở đấy.\nÀ, thế à. Đây, cổng sau đây.\nEm cảm ơn anh ạ!",
+  "status": "draft"
+}
