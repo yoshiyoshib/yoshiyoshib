@@ -6,22 +6,22 @@
     {
       "type": "cover",
       "title": "Taxi Hà Nội: chứ, đấy, cơ",
-      "subtitle": "会話｜タクシーで覚える北部の文末詞",
+      "subtitle": "会話｜タクシーで覚える文末詞（đấy・cơ は北部らしい表現）",
       "badge": "第2回 リアル会話"
     },
     {
       "type": "text_with_translation",
       "heading": "タクシーで（乗車）",
-      "vietnameseText": "A: Anh ơi, cho em đến Bảo tàng Dân tộc học. Anh biết đường <mark>chứ</mark> ạ?\nB: Biết <mark>chứ</mark>. Nhưng giờ này đường Cầu Giấy hay tắc lắm <mark>đấy</mark>.\nA: Thế anh đi đường khác được không ạ? Em phải đến trước 9 giờ.\nB: Ừ, để anh đi đường vòng nhé.",
-      "japaneseText": "A：すみません、民族学博物館までお願いします。道はご存じですよね？\nB：もちろん。でもこの時間、カウザイ通りはよく渋滞するんだよ。\nA：じゃあ別の道で行ってもらえますか？ 9時までに着かないといけないんです。\nB：うん、じゃあ回り道していくね。",
-      "annotation": "乗客（若い女性）は年上の運転手を anh、自分を em と呼ぶ。chứ は「当然〜でしょ」と同意を前提に確認する（Biết chứ＝もちろん知ってるよ）。"
+      "vietnameseText": "A: Anh ơi, cho em đến Bảo tàng Dân tộc học. Anh có biết đường không ạ?\nB: Biết <mark>chứ</mark>. Nhưng giờ này đường Cầu Giấy hay tắc lắm <mark>đấy</mark>.\nA: Thế anh đi đường khác được không ạ? Em phải đến trước 9 giờ.\nB: Ừ, để anh đi đường vòng nhé.",
+      "japaneseText": "A：すみません、民族学博物館までお願いします。道はご存じですか？\nB：もちろん。でもこの時間、カウザイ通りはよく渋滞するんだよ。\nA：じゃあ別の道で行ってもらえますか？ 9時までに着かないといけないんです。\nB：うん、じゃあ回り道していくね。",
+      "annotation": "乗客は運転手より年下なので相手を anh、自分を em と呼ぶ（性別は関係ない）。Biết chứ の chứ は「もちろん〜だよ」と当然のこととして答える。"
     },
     {
       "type": "text_with_translation",
       "heading": "タクシーで（到着）",
       "vietnameseText": "B: Đến rồi <mark>đấy</mark>. Em xuống ở cổng chính nhé?\nA: Dạ không, em xuống ở cổng sau <mark>cơ</mark>. Bạn em đợi ở đấy.\nB: À, thế à. Đây, cổng sau đây.\nA: Em cảm ơn anh ạ!",
       "japaneseText": "B：着いたよ。正門で降りる？\nA：いえ、裏門なんです。友達がそこで待っているので。\nB：ああ、そうなんだ。はい、裏門だよ。\nA：ありがとうございます！",
-      "annotation": "cơ は「（〜ではなく）〜なんです」と相手の思い込みを訂正する北部の口語。文末の đấy は「〜だよ」と気づかせる（南部では đó）。ở đấy の đấy は「そこ」。"
+      "annotation": "cơ は「（〜ではなく）〜なんです」と相手の思い込みをやわらかく訂正する北部の口語。Đây, cổng sau đây の文末の đây は「ほら、ここ」と示す。"
     },
     {
       "type": "grammar_breakdown",
@@ -64,7 +64,7 @@
           "word": "chứ",
           "pos": "文末",
           "meaning": "当然〜でしょ・もちろん",
-          "note": "同意を前提に確認する。Biết chứ＝もちろん知ってる"
+          "note": "全国共通。Biết chứ＝もちろん。chứ không＝「〜であって…ではない」"
         },
         {
           "word": "đấy",
@@ -100,8 +100,8 @@
     }
   ],
   "caption": {
-    "hook": "🚕 ハノイのタクシーで「正門じゃなくて裏門なんです」と言えますか？ 北部の文末詞 chứ・đấy・cơ を会話で覚えよう。",
-    "summary": "文末詞を使いこなすと、ベトナム語の会話がぐっと自然になります。今回はハノイ（北部）のタクシーが舞台です。\n\n✅ chứ：「当然〜でしょ」と同意を前提に確認（Biết chứ＝もちろん）\n✅ đấy：「〜だよ」と相手に気づかせる（南部では đó）\n✅ cơ：「（〜ではなく）〜なんです」とやわらかく訂正する北部の口語\n✅ 渋滞：北部 tắc đường／南部 kẹt xe\n\n乗客（若い女性）は運転手を anh、自分を em と呼び、ạ や dạ で丁寧さを出しています。リールの音声で会話をまねしてみましょう。",
+    "hook": "🚕 ハノイのタクシーで「正門じゃなくて裏門なんです」と言えますか？ 文末詞 chứ・đấy・cơ を会話で覚えよう。",
+    "summary": "文末詞を使いこなすと、ベトナム語の会話がぐっと自然になります。今回はハノイ（北部）のタクシーが舞台です。\n\n✅ chứ：「もちろん〜だよ」と当然のこととして答える（全国共通）。chứ không＝「〜であって…ではない」\n✅ đấy：「〜だよ」と相手に気づかせる（南部では đó）\n✅ cơ：「（〜ではなく）〜なんです」とやわらかく訂正する北部の口語\n✅ 渋滞：北部 tắc đường／南部 kẹt xe\n\n乗客は運転手より年下なので相手を anh、自分を em と呼び（性別は関係ありません）、ạ や dạ で丁寧さを出しています。リールの音声で会話をまねしてみましょう。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -114,6 +114,66 @@
       "#ベトナム旅行"
     ]
   },
-  "audioScript": "Anh ơi, cho em đến Bảo tàng Dân tộc học. Anh biết đường chứ ạ?\nBiết chứ. Nhưng giờ này đường Cầu Giấy hay tắc lắm đấy.\nThế anh đi đường khác được không ạ? Em phải đến trước 9 giờ.\nỪ, để anh đi đường vòng nhé.\nĐến rồi đấy. Em xuống ở cổng chính nhé?\nDạ không, em xuống ở cổng sau cơ. Bạn em đợi ở đấy.\nÀ, thế à. Đây, cổng sau đây.\nEm cảm ơn anh ạ!",
-  "status": "draft"
+  "audioScript": "Anh ơi, cho em đến Bảo tàng Dân tộc học. Anh có biết đường không ạ?\nBiết chứ. Nhưng giờ này đường Cầu Giấy hay tắc lắm đấy.\nThế anh đi đường khác được không ạ? Em phải đến trước 9 giờ.\nỪ, để anh đi đường vòng nhé.\nĐến rồi đấy. Em xuống ở cổng chính nhé?\nDạ không, em xuống ở cổng sau cơ. Bạn em đợi ở đấy.\nÀ, thế à. Đây, cổng sau đây.\nEm cảm ơn anh ạ!",
+  "status": "approved",
+  "evaluation": {
+    "score": 94,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 94,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 22,
+          "translation": 23,
+          "density": 24
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[0].subtitle",
+            "reason": "全国共通の chứ を「北部の文末詞」にまとめた"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "chứ の説明",
+            "reason": "chứ の用法が1つだけ（chứ không など）"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[1] A1",
+            "reason": "Anh biết đường chứ ạ? は運転手を疑う響きになりうる"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "annotation",
+            "reason": "本文にない乗客の性別を書いた"
+          },
+          {
+            "criterion": "density",
+            "points": 1,
+            "location": "slides[2].annotation",
+            "reason": "注記に論点が多い"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：地域の表記、chứ の用法、A1 を中立的な質問に、性別の記述を削除、注記を整理"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "文末詞をまとめて地域名（北部・南部）で呼ぶときは、語ごとに地域を確かめる（chứ・nhé・mà などは全国共通）",
+      "文末詞は働きごと（疑問・強い答え・対比など）に例を付けて説明する",
+      "話者の性別や年齢など、ベトナム語から読み取れない設定を足さない。人称と丁寧語は年齢・関係で説明する"
+    ],
+    "logged": true
+  }
 }
