@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-18",
+  "no": 15,
+  "kind": "word",
+  "level": "C1",
+  "status": "approved",
+  "theme": {
+    "en": "Discussion and opinions",
+    "ja": "議論・意見の場で使うC1形容詞"
+  },
+  "items": [
+    {
+      "term": "compelling",
+      "ipa": "/kəmˈpɛlɪŋ/",
+      "pos": "adjective",
+      "ja": "説得力のある、思わず引きつけられる",
+      "definition": "So convincing or interesting that people pay attention.",
+      "example": "She made a **compelling** case for a four-day week.",
+      "example_ja": "彼女は週休3日制について、説得力のある主張をした。",
+      "note": "compelling evidence（説得力のある証拠）もよく使います。"
+    },
+    {
+      "term": "plausible",
+      "ipa": "/ˈplɔzəbəl/",
+      "pos": "adjective",
+      "ja": "もっともらしい、ありえそうな",
+      "definition": "Seeming reasonable or likely to be true.",
+      "example": "His excuse sounded **plausible**, but I wasn't sure.",
+      "example_ja": "彼の言い訳はもっともらしく聞こえたが、確信はなかった。",
+      "note": "「本当かどうかは別」という含みが出ることもあります。"
+    },
+    {
+      "term": "contentious",
+      "ipa": "/kənˈtɛnʃəs/",
+      "pos": "adjective",
+      "ja": "議論を呼ぶ、意見が分かれる",
+      "definition": "Likely to cause disagreement or argument.",
+      "example": "Immigration remains a **contentious** issue.",
+      "example_ja": "移民は、今も意見が分かれる問題だ。",
+      "note": "controversial と近い意味です。"
+    },
+    {
+      "term": "tentative",
+      "ipa": "/ˈtɛntətɪv/",
+      "pos": "adjective",
+      "ja": "仮の、暫定的な",
+      "definition": "Not certain or final yet.",
+      "example": "We reached a **tentative** agreement on the budget.",
+      "example_ja": "予算について、暫定的な合意に達した。",
+      "note": "a tentative smile（おずおずした笑み）の意味もあります。"
+    },
+    {
+      "term": "coherent",
+      "ipa": "/koʊˈhɪrənt/",
+      "pos": "adjective",
+      "ja": "筋の通った、一貫した",
+      "definition": "Clear, logical and easy to understand.",
+      "example": "We need a **coherent** plan, not a list of ideas.",
+      "example_ja": "必要なのはアイデアの羅列ではなく、筋の通った計画だ。",
+      "note": "反対は incoherent（支離滅裂な）。"
+    }
+  ],
+  "quiz": {
+    "sentence": "The date is ____ until the boss approves it.",
+    "options": [
+      "tentative",
+      "coherent",
+      "contentious"
+    ],
+    "answer": "A",
+    "why": "tentative＝まだ確定していない、仮の。"
+  },
+  "caption": "議論・意見の場で使えるC1レベルの形容詞5つ 🗣️\n\n1. compelling｜説得力のある\n2. plausible｜もっともらしい\n3. contentious｜意見が分かれる\n4. tentative｜仮の、暫定的な\n5. coherent｜筋の通った\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英単語 #英語勉強 #大人の英語 #ビジネス英語 #英語上級 #英検1級 #TOEIC #IELTS #英語好きな人と繋がりたい #englishvocabulary #learnenglish #advancedenglish #C1english"
+}
