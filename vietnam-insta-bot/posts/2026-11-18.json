@@ -1,0 +1,120 @@
+{
+  "day": "wednesday",
+  "theme": "dialect",
+  "themeColor": "#7C3AED",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Ô hay dù? Bắc vs Nam",
+      "subtitle": "方言｜家族の会話で比べる北部と南部の日常語",
+      "badge": "第2回 南北ことば比較"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "北と南で違う日常語",
+      "items": [
+        {
+          "word": "ô / dù",
+          "pos": "名",
+          "meaning": "傘",
+          "note": "北: ô ／ 南: dù。mang ô / mang dù＝傘を持っていく"
+        },
+        {
+          "word": "mũ / nón",
+          "pos": "名",
+          "meaning": "帽子",
+          "note": "北: mũ ／ 南: nón。ヘルメットは mũ bảo hiểm / nón bảo hiểm"
+        },
+        {
+          "word": "thìa / muỗng",
+          "pos": "名",
+          "meaning": "スプーン",
+          "note": "北: thìa ／ 南: muỗng"
+        },
+        {
+          "word": "bố / ba",
+          "pos": "名",
+          "meaning": "父・お父さん",
+          "note": "北: bố ／ 南: ba。母は 北: mẹ ／ 南: má"
+        },
+        {
+          "word": "ngã / té",
+          "pos": "動",
+          "meaning": "転ぶ",
+          "note": "北: ngã ／ 南: té"
+        },
+        {
+          "word": "thế / vậy",
+          "pos": "代",
+          "meaning": "そう・そんなに",
+          "note": "北: thế ／ 南: vậy。Thế à? / Vậy hả?＝そうなの？"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "同じ文を北部と南部で",
+      "vietnameseText": "Bắc: Trời mưa to <mark>thế</mark>, <mark>bố</mark> nhớ mang <mark>ô</mark> và đội <mark>mũ</mark> bảo hiểm nhé.\nNam: Trời mưa lớn <mark>vậy</mark>, <mark>ba</mark> nhớ mang <mark>dù</mark> và đội <mark>nón</mark> bảo hiểm nha.",
+      "japaneseText": "雨がこんなに強いから、お父さん、傘を持って、ヘルメットもかぶってね。（北部・南部とも同じ意味）",
+      "annotation": "子どもが父親に話している（bố / ba は呼びかけと「あなた」を兼ねる）。強い雨は北 mưa to／南 mưa lớn。文末は北 nhé／南 nha が多い。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "構文分解：南部の質問",
+      "targetSentence": "Sao em té vậy? Có đau hông?",
+      "translation": "どうして転んだの？ 痛くない？",
+      "breakdown": [
+        {
+          "part": "疑問",
+          "text": "Sao",
+          "explanation": "「どうして」。南部では Sao rồi?（どう？）のように「どう」の意味でもよく使う"
+        },
+        {
+          "part": "主語",
+          "text": "em",
+          "explanation": "年下の相手への「あなた」。話し手は兄・姉・親などの立場"
+        },
+        {
+          "part": "述語",
+          "text": "té",
+          "explanation": "南部の「転ぶ」。北部では ngã"
+        },
+        {
+          "part": "文末",
+          "text": "vậy",
+          "explanation": "疑問をやわらげる「〜の？」。北部では thế（Sao em ngã thế?）"
+        },
+        {
+          "part": "疑問",
+          "text": "Có đau hông?",
+          "explanation": "có … không の không を南部の話し言葉では hông と言うことが多い"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "食卓で（北と南）",
+      "vietnameseText": "Bắc: <mark>Mẹ</mark> ơi, cho con xin cái <mark>thìa</mark> ạ. – <mark>Đây này</mark>.\nNam: <mark>Má</mark> ơi, cho con xin cái <mark>muỗng</mark> nha. – <mark>Nè</mark>.",
+      "japaneseText": "お母さん、スプーンちょうだい。――はい、どうぞ。（北部・南部とも同じ意味）",
+      "annotation": "母は北 mẹ／南 má。cho con xin は親に物を頼むていねいな言い方。手渡すときの「はい、これ」は北 đây này／南 nè。"
+    }
+  ],
+  "caption": {
+    "hook": "☔ ハノイでは ô、ホーチミンでは dù。同じ「傘」でも北と南で言葉が違います。家族の会話で比べてみましょう。",
+    "summary": "北部弁と南部弁の比較、第2回は家族の会話でよく使う日常語です。\n\n✅ 傘：北 ô ／ 南 dù\n✅ 帽子：北 mũ ／ 南 nón（ヘルメットは mũ / nón bảo hiểm）\n✅ スプーン：北 thìa ／ 南 muỗng\n✅ 父・母：北 bố・mẹ ／ 南 ba・má\n✅ 転ぶ：北 ngã ／ 南 té\n✅ そう：北 thế ／ 南 vậy（Thế à? / Vậy hả?）\n✅ 手渡すときの「はい」：北 đây này ／ 南 nè\n\nドラマや旅行先でどちらも耳にします。セットで覚えると聞き取りが楽になります。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#北部弁",
+      "#南部弁",
+      "#ハノイ",
+      "#ホーチミン",
+      "#ベトナム方言"
+    ]
+  },
+  "audioScript": "Trời mưa to thế, bố nhớ mang ô và đội mũ bảo hiểm nhé.\nTrời mưa lớn vậy, ba nhớ mang dù và đội nón bảo hiểm nha.\nSao em té vậy? Có đau hông?\nMẹ ơi, cho con xin cái thìa ạ. Đây này.\nMá ơi, cho con xin cái muỗng nha. Nè.",
+  "status": "draft"
+}
