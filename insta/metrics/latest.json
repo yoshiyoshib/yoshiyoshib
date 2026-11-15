@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-14T22:42:45.726Z"
+    "collected": "2026-11-15T23:08:26.579Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:46.184Z"
+    "collected": "2026-11-15T23:08:27.323Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -82,7 +82,7 @@
     "story": {
       "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:46.562Z"
+    "collected": "2026-11-15T23:08:27.991Z"
   },
   "2026-11-08": {
     "kind": "review",
@@ -102,7 +102,7 @@
     "story": {
       "error": "17920391178526780: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:46.879Z"
+    "collected": "2026-11-15T23:08:28.468Z"
   },
   "2026-11-09": {
     "kind": "phrasal",
@@ -128,7 +128,7 @@
     "story": {
       "error": "18044973278831446: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:47.265Z"
+    "collected": "2026-11-15T23:08:28.943Z"
   },
   "2026-11-10": {
     "kind": "idiom",
@@ -154,7 +154,7 @@
     "story": {
       "error": "18122545960965174: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:47.623Z"
+    "collected": "2026-11-15T23:08:29.382Z"
   },
   "2026-11-11": {
     "kind": "word",
@@ -181,7 +181,7 @@
     "story": {
       "error": "18101420243434163: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:47.925Z"
+    "collected": "2026-11-15T23:08:29.814Z"
   },
   "2026-11-12": {
     "kind": "phrasal",
@@ -207,7 +207,7 @@
     "story": {
       "error": "17954645193317317: Unsupported get request. Object with ID '17954645193317317' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
     },
-    "collected": "2026-11-14T22:42:48.458Z"
+    "collected": "2026-11-15T23:08:30.559Z"
   },
   "2026-11-13": {
     "kind": "idiom",
@@ -233,7 +233,7 @@
     "story": {
       "error": "18208440958375586: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-14T22:42:48.800Z"
+    "collected": "2026-11-15T23:08:31.844Z"
   },
   "2026-11-14": {
     "kind": "word",
@@ -255,11 +255,31 @@
       "comments": 0,
       "total_interactions": 0,
       "follows": 0,
+      "profile_visits": 1
+    },
+    "story": {
+      "error": "18115608524139261: Unsupported get request. Object with ID '18115608524139261' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+    },
+    "collected": "2026-11-15T23:08:32.396Z"
+  },
+  "2026-11-15": {
+    "kind": "review",
+    "theme": "今週の表現をまとめて復習",
+    "terms": [],
+    "feed": {
+      "reach": 0,
+      "views": 0,
+      "saved": 1,
+      "shares": 0,
+      "likes": 0,
+      "comments": 0,
+      "total_interactions": 1,
+      "follows": 0,
       "profile_visits": 0
     },
     "story": {
-      "error": "18115608524139261: (#10) Not enough viewers for the media to show insights"
+      "error": "17913136392302513: (#10) Not enough viewers for the media to show insights"
     },
-    "collected": "2026-11-14T22:42:49.593Z"
+    "collected": "2026-11-15T23:08:33.782Z"
   }
 }
