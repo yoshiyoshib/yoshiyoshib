@@ -17,7 +17,7 @@
           "word": "ô / dù",
           "pos": "名",
           "meaning": "傘",
-          "note": "北: ô ／ 南: dù。mang ô / mang dù＝傘を持っていく"
+          "note": "北: ô ／ 南: dù。北 mang ô ／ 南 đem dù＝傘を持っていく"
         },
         {
           "word": "mũ / nón",
@@ -35,7 +35,7 @@
           "word": "bố / ba",
           "pos": "名",
           "meaning": "父・お父さん",
-          "note": "北: bố ／ 南: ba。母は 北: mẹ ／ 南: má"
+          "note": "北: bố ／ 南: ba。母は 北: mẹ ／ 南: má（南部でも若い世代は mẹ も多い）"
         },
         {
           "word": "ngã / té",
@@ -47,16 +47,16 @@
           "word": "thế / vậy",
           "pos": "代",
           "meaning": "そう・そんなに",
-          "note": "北: thế ／ 南: vậy。Thế à? / Vậy hả?＝そうなの？"
+          "note": "vậy は全国共通の標準形。thế は北部の口語に多い（Thế à? / Vậy hả?）"
         }
       ]
     },
     {
       "type": "text_with_translation",
       "heading": "同じ文を北部と南部で",
-      "vietnameseText": "Bắc: Trời mưa to <mark>thế này</mark>, <mark>bố</mark> nhớ <mark>mang</mark> <mark>ô</mark> nhé.\nNam: Trời mưa lớn <mark>vầy</mark>, <mark>ba</mark> nhớ <mark>đem</mark> <mark>dù</mark> nha.",
+      "vietnameseText": "Bắc: Trời mưa <mark>to</mark> <mark>thế này</mark>, <mark>bố</mark> nhớ <mark>mang</mark> <mark>ô</mark> nhé.\nNam: Trời mưa <mark>lớn</mark> <mark>vầy</mark>, <mark>ba</mark> nhớ <mark>đem</mark> <mark>dù</mark> nha.",
       "japaneseText": "こんなに雨が強いから、お父さん、忘れずに傘を持っていってね。（北部・南部とも同じ意味）",
-      "annotation": "子どもが父親に話している。「持っていく」は北 mang／南 đem が多い。目の前の様子を指す「こんなに」は北 thế này／南 vầy。"
+      "annotation": "子どもが父親への言葉。雨が強い：北 mưa to／南 mưa lớn。持っていく：北 mang／南 đem。目の前の「こんなに」：北 thế này／南 vầy。"
     },
     {
       "type": "grammar_breakdown",
@@ -101,7 +101,7 @@
   ],
   "caption": {
     "hook": "☔ ハノイでは ô、ホーチミンでは dù。同じ「傘」でも北と南で言葉が違います。家族の会話で比べてみましょう。",
-    "summary": "北部弁と南部弁の比較、第2回は家族の会話でよく使う日常語です。\n\n✅ 傘：北 ô ／ 南 dù\n✅ 帽子：北 mũ ／ 南 nón（ヘルメットは mũ / nón bảo hiểm）\n✅ スプーン：北 thìa ／ 南 muỗng\n✅ 父・母：北 bố・mẹ ／ 南 ba・má\n✅ 転ぶ：北 ngã ／ 南 té\n✅ そう：北 thế ／ 南 vậy（Thế à? / Vậy hả?）、目の前の「こんなに」：北 thế này ／ 南 vầy\n✅ 持っていく：北 mang ／ 南 đem\n✅ 手渡すときの「はい」：北 đây này ／ 南 nè\n\nドラマや旅行先でどちらも耳にします。セットで覚えると聞き取りが楽になります。",
+    "summary": "北部弁と南部弁の比較、第2回は家族の会話でよく使う日常語です。\n\n✅ 傘：北 ô ／ 南 dù\n✅ 帽子：北 mũ ／ 南 nón（ヘルメットは mũ / nón bảo hiểm）\n✅ スプーン：北 thìa ／ 南 muỗng\n✅ 父・母：北 bố・mẹ ／ 南 ba・má\n✅ 転ぶ：北 ngã ／ 南 té\n✅ そう：北部の口語 thế ／ 全国共通 vậy（Thế à? / Vậy hả?）、目の前の「こんなに」：北 thế này ／ 南 vầy\n✅ 持っていく：北 mang ／ 南 đem、雨が強い：北 mưa to ／ 南 mưa lớn\n✅ 手渡すときの「はい」：北 đây này ／ 南 nè\n\nドラマや旅行先でどちらも耳にします。セットで覚えると聞き取りが楽になります。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -116,5 +116,105 @@
     ]
   },
   "audioScript": "Trời mưa to thế này, bố nhớ mang ô nhé.\nTrời mưa lớn vầy, ba nhớ đem dù nha.\nSao em té vậy? Có đau hông?\nMẹ ơi, cho con xin cái thìa ạ. Đây này.\nMá ơi, cho con xin cái muỗng nha. Nè.",
-  "status": "draft"
+  "status": "approved",
+  "evaluation": {
+    "score": 95,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 86,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 18,
+          "translation": 18,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 4,
+            "location": "slides[3].breakdown[1]",
+            "reason": "em を親が子に使うと説明（親→子は con）"
+          },
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[1]",
+            "reason": "nón（笠）が北部でも使われる点など補足不足"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[2]",
+            "reason": "ヘルメット（バイク）と傘が同じ場面で不自然"
+          },
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[2] 南部文",
+            "reason": "南部なら đem・vầy が自然"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[2].japaneseText",
+            "reason": "nhớ（忘れずに）が訳にない"
+          }
+        ],
+        "feedback": [
+          "親族呼称を修正",
+          "場面を傘だけに",
+          "南部の đem・vầy",
+          "nhớ を訳出",
+          "丁寧度の差を注記"
+        ],
+        "codeIssues": []
+      },
+      {
+        "round": 1,
+        "label": "修正1",
+        "score": 95,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 21,
+          "translation": 24,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "depth",
+            "points": 2,
+            "location": "slides[1].items[5]",
+            "reason": "vậy は全国共通なのに南部語として二分"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "slides[2]",
+            "reason": "mưa to/lớn の差を説明していない"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[1].items[0]",
+            "reason": "語彙スライドの mang dù が例文の đem と食い違う"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：vậy の位置づけ、mưa to/lớn を明示、用例の統一"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "親族呼称は関係を厳密に書く（親→子は con、兄姉→弟妹は em）",
+      "南北の語を二分するときは、片方が全国共通の標準形か（vậy, ngã など）を明記し、口語の傾向と分けて書く",
+      "例文の場面は実生活に合わせ、語を詰め込むために不自然な状況を作らない（バイク＋ヘルメットなら傘ではなく雨合羽）",
+      "例文に出る地域差はすべて mark と注記で取り上げ、語彙スライドの用例と食い違わせない"
+    ],
+    "logged": true
+  }
 }
