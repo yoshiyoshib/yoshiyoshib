@@ -12,9 +12,9 @@
     {
       "type": "text_with_translation",
       "heading": "基本の ○✕",
-      "vietnameseText": "○ Tôi <mark>bị</mark> mất ví.\n○ Tôi <mark>được</mark> thầy khen.\n✕ Tôi <mark>bị</mark> thầy khen.\n✕ Tôi <mark>được</mark> mất ví.\n○ Tôi <mark>bị</mark> mẹ mắng.\n△ Tôi bị mắng <mark>bởi</mark> mẹ.",
-      "japaneseText": "○ 財布をなくしてしまった。（不利益→bị）\n○ 先生にほめられた。（うれしい→được）\n✕ ほめられたのに bị は（皮肉でない限り）不自然\n✕ 財布をなくしたのに được は意味が矛盾\n○ 母に叱られた。（bị＋動作主＋動詞）\n△ 同じ意味だが bởi は翻訳調で、会話では使わない",
-      "annotation": "bị は主語にとって不利益な出来事、được は利益や中立の出来事に使う。動作主（誰に）は bị / được の直後に置く。"
+      "vietnameseText": "○ Tôi <mark>bị</mark> mất ví.\n○ Tôi <mark>được</mark> thầy khen.\n✕ Tôi <mark>được</mark> mất ví.\n△ Tôi <mark>bị</mark> thầy khen.\n○ Tôi <mark>bị</mark> mẹ mắng.\n△ Tôi bị mắng <mark>bởi</mark> mẹ.",
+      "japaneseText": "○ 財布をなくしてしまった。（被害→bị）\n○ 先生にほめられた。（うれしい→được）\n✕ 財布をなくしたのに được は意味が矛盾\n△ 皮肉・冗談なら可（ほめられて困った）\n○ 母に叱られた。（bị＋動作主＋動詞）\n△ 会話ではまず使わない（書き言葉で見かける）",
+      "annotation": "bị は不利益、được は利益・中立の出来事に使う。bị は形容詞や自動詞にも付く（bị ốm＝病気になる）。"
     },
     {
       "type": "grammar_breakdown",
@@ -68,7 +68,7 @@
         {
           "part": "受け身",
           "text": "được",
-          "explanation": "利益がなくても、説明文やニュースの中立の受け身は được が基本"
+          "explanation": "説明文やニュースの中立の受け身は được が基本。bị だと災難の響き（悪い出来事は bị phá hủy など）"
         },
         {
           "part": "動詞",
@@ -78,21 +78,21 @@
         {
           "part": "時",
           "text": "vào năm 1990",
-          "explanation": "vào＋時点＝「〜に」。ここで bị を使うと災難のように響く"
+          "explanation": "vào＋時点＝「〜に」。話し言葉では được を省いて Cây cầu này xây năm 1990 とも言う"
         }
       ]
     },
     {
       "type": "text_with_translation",
       "heading": "会話で確認",
-      "vietnameseText": "A: Sao trông cậu vui thế?\nB: Tớ <mark>được</mark> nhận học bổng rồi!\nA: Thích thế! Tớ thì vừa <mark>bị</mark> trừ điểm vì đi muộn.\nB: Ôi, tội cậu.",
+      "vietnameseText": "A: Sao trông cậu vui thế?\nB: Tớ <mark>được</mark> nhận học bổng rồi!\nA: Thích thế! Tớ thì vừa <mark>bị</mark> trừ điểm vì đi muộn.\nB: Ôi, khổ thân cậu!",
       "japaneseText": "A：なんでそんなにうれしそうなの？\nB：奨学金をもらえたんだ！\nA：いいなあ！ 私なんて遅刻して減点されたばかりだよ。\nB：うわ、かわいそうに。",
-      "annotation": "cậu/tớ は北部の友人同士の呼び方。được nhận は「（うれしいことに）受け取る」、bị trừ điểm は「（嫌なことに）減点される」。遅刻は北 đi muộn／南 đi trễ。"
+      "annotation": "cậu/tớ は北部の友人同士の呼び方。được nhận は「（うれしいことに）受け取る」、bị trừ điểm は「（嫌なことに）減点される」。同情の「かわいそうに」は北 khổ thân／南 tội nghiệp。"
     }
   ],
   "caption": {
-    "hook": "😢😊 ベトナム語の受け身は2種類。「先生にほめられた」を bị で言うと、迷惑そうに聞こえるかも？",
-    "summary": "日本語の「〜される」は、ベトナム語では bị と được の2つに分かれます。\n\n✅ bị：主語にとって嫌な出来事（bị mất ví＝財布をなくす、bị phạt＝罰を受ける）\n✅ được：うれしい出来事・中立の出来事（được khen＝ほめられる、được xây dựng＝建てられる）\n✅ 動作主は bị / được の直後：Tôi bị mẹ mắng（母に叱られた）\n✅ bởi を使う形は翻訳調で、会話では使わない\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて読み、bị と được の響きの違いを体で覚えましょう。",
+    "hook": "😢😊 ベトナム語の受け身は2種類。「先生にほめられた」を bị で言うと、皮肉っぽく聞こえるかも？",
+    "summary": "日本語の「〜される」は、ベトナム語では bị と được の2つに分かれます。\n\n✅ bị：主語にとって嫌な出来事（bị mất ví＝財布をなくす、bị phạt＝罰を受ける）\n✅ được：うれしい出来事・中立の出来事（được khen＝ほめられる、được xây dựng＝建てられる）\n✅ 動作主は bị / được の直後：Tôi bị mẹ mắng（母に叱られた）\n✅ bởi を使う形は会話ではまず使わない（書き言葉では được viết bởi…＝〜によって書かれた、の形で見かける）\n✅ bị は形容詞にも付く（bị ốm＝病気になる）\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて読み、bị と được の響きの違いを体で覚えましょう。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -104,6 +104,6 @@
       "#受け身"
     ]
   },
-  "audioScript": "Tôi bị mất ví.\nTôi được thầy khen.\nTôi bị mẹ mắng.\nHôm qua tôi bị cô giáo phạt vì quên làm bài tập.\nCây cầu này được xây dựng vào năm 1990.\nSao trông cậu vui thế?\nTớ được nhận học bổng rồi!\nThích thế! Tớ thì vừa bị trừ điểm vì đi muộn.\nÔi, tội cậu.",
+  "audioScript": "Tôi bị mất ví.\nTôi được thầy khen.\nTôi bị mẹ mắng.\nHôm qua tôi bị cô giáo phạt vì quên làm bài tập.\nCây cầu này được xây dựng vào năm 1990.\nSao trông cậu vui thế?\nTớ được nhận học bổng rồi!\nThích thế! Tớ thì vừa bị trừ điểm vì đi muộn.\nÔi, khổ thân cậu!",
   "status": "draft"
 }
