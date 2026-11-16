@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-19",
+  "no": 16,
+  "kind": "phrasal",
+  "status": "approved",
+  "theme": {
+    "en": "Jobs and careers",
+    "ja": "仕事・キャリアの話で使う句動詞"
+  },
+  "items": [
+    {
+      "term": "step down",
+      "ipa": "/ˌstɛp ˈdaʊn/",
+      "pos": "phrasal verb",
+      "ja": "（役職から）退く、辞任する",
+      "definition": "To leave an important job or position.",
+      "example": "The CEO will **step down** at the end of the year.",
+      "example_ja": "CEOは年末に退任する予定だ。",
+      "note": "トップや要職を自ら退くときによく使います。"
+    },
+    {
+      "term": "take on",
+      "ipa": "/ˌteɪk ˈɑn/",
+      "pos": "phrasal verb",
+      "ja": "（仕事・責任を）引き受ける",
+      "definition": "To accept a job or responsibility.",
+      "example": "I can't **take on** any more projects this month.",
+      "example_ja": "今月はこれ以上プロジェクトを引き受けられない。",
+      "note": "「（難しい仕事・相手に）立ち向かう」の意味もあります。"
+    },
+    {
+      "term": "lay off",
+      "ipa": "/ˌleɪ ˈɔf/",
+      "pos": "phrasal verb",
+      "ja": "（業績などの理由で）解雇する",
+      "definition": "To end someone's job because there is not enough work or money.",
+      "example": "The factory **laid off** 200 workers last month.",
+      "example_ja": "その工場は先月、200人を解雇した。",
+      "note": "本人の落ち度ではない解雇。名詞は layoff。"
+    },
+    {
+      "term": "burn out",
+      "ipa": "/ˌbɝn ˈaʊt/",
+      "pos": "phrasal verb",
+      "ja": "燃え尽きる、疲れ果てる",
+      "definition": "To become exhausted from working too hard for too long.",
+      "example": "If you never take a break, you'll **burn out**.",
+      "example_ja": "まったく休まないと、燃え尽きてしまうよ。",
+      "note": "名詞は burnout（燃え尽き症候群）。"
+    },
+    {
+      "term": "hand over",
+      "ipa": "/ˌhænd ˈoʊvɚ/",
+      "pos": "phrasal verb",
+      "ja": "（仕事・責任を）引き継ぐ、引き渡す",
+      "definition": "To give responsibility for something to someone else.",
+      "example": "Before I go on leave, I'll **hand over** my clients to Ken.",
+      "example_ja": "休暇に入る前に、担当の顧客をケンに引き継ぎます。",
+      "note": "hand ～ over to＋人 の形も。米国では hand off もよく使う。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Working 80-hour weeks, she started to ____.",
+    "options": [
+      "take on",
+      "lay off",
+      "burn out"
+    ],
+    "answer": "C",
+    "why": "burn out＝働きすぎて燃え尽きる。"
+  },
+  "caption": "仕事・キャリアの話で使える句動詞5つ 💼\n\n1. step down｜退く、辞任する\n2. take on｜引き受ける\n3. lay off｜解雇する\n4. burn out｜燃え尽きる\n5. hand over｜引き継ぐ\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #句動詞 #英語勉強 #大人の英語 #ビジネス英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #phrasalverbs #learnenglish #advancedenglish #englishvocabulary"
+}
