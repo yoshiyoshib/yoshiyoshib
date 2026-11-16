@@ -1,0 +1,109 @@
+{
+  "day": "thursday",
+  "theme": "grammar",
+  "themeColor": "#1D4ED8",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Bị hay được?",
+      "subtitle": "文法｜「〜される」の2つの受け身を使い分ける",
+      "badge": "第2回 文法比較講義"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "基本の ○✕",
+      "vietnameseText": "○ Tôi <mark>bị</mark> mất ví.\n○ Tôi <mark>được</mark> thầy khen.\n✕ Tôi <mark>bị</mark> thầy khen.\n✕ Tôi <mark>được</mark> mất ví.\n○ Tôi <mark>bị</mark> mẹ mắng.\n△ Tôi bị mắng <mark>bởi</mark> mẹ.",
+      "japaneseText": "○ 財布をなくしてしまった。（不利益→bị）\n○ 先生にほめられた。（うれしい→được）\n✕ ほめられたのに bị は（皮肉でない限り）不自然\n✕ 財布をなくしたのに được は意味が矛盾\n○ 母に叱られた。（bị＋動作主＋動詞）\n△ 同じ意味だが bởi は翻訳調で、会話では使わない",
+      "annotation": "bị は主語にとって不利益な出来事、được は利益や中立の出来事に使う。動作主（誰に）は bị / được の直後に置く。"
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "bị：不利益の受け身",
+      "targetSentence": "Hôm qua tôi bị cô giáo phạt vì quên làm bài tập.",
+      "translation": "昨日、宿題をし忘れて先生に罰を受けた。",
+      "breakdown": [
+        {
+          "part": "時",
+          "text": "Hôm qua",
+          "explanation": "「昨日」。時を表す語は文頭に置ける"
+        },
+        {
+          "part": "主語",
+          "text": "tôi",
+          "explanation": "「私」。不利益を受ける人が主語になる"
+        },
+        {
+          "part": "受け身",
+          "text": "bị",
+          "explanation": "叱られる・罰を受けるなど、主語にとって嫌な出来事"
+        },
+        {
+          "part": "動作主",
+          "text": "cô giáo",
+          "explanation": "「（女性の）先生」。bị の直後に置く。言わなくてもよい"
+        },
+        {
+          "part": "動詞",
+          "text": "phạt",
+          "explanation": "漢越語「罰」。bị phạt＝罰を受ける・罰金を取られる"
+        },
+        {
+          "part": "理由",
+          "text": "vì quên làm bài tập",
+          "explanation": "vì＝「〜なので」。quên＋動詞＝「〜し忘れる」"
+        }
+      ]
+    },
+    {
+      "type": "grammar_breakdown",
+      "heading": "được：利益・中立の受け身",
+      "targetSentence": "Cây cầu này được xây dựng vào năm 1990.",
+      "translation": "この橋は1990年に建てられた。",
+      "breakdown": [
+        {
+          "part": "主語",
+          "text": "Cây cầu này",
+          "explanation": "cây は細長い物などに付く類別詞。này（この）は名詞の後ろ"
+        },
+        {
+          "part": "受け身",
+          "text": "được",
+          "explanation": "利益がなくても、説明文やニュースの中立の受け身は được が基本"
+        },
+        {
+          "part": "動詞",
+          "text": "xây dựng",
+          "explanation": "「建設する」。書き言葉寄りで、話し言葉では xây だけが多い"
+        },
+        {
+          "part": "時",
+          "text": "vào năm 1990",
+          "explanation": "vào＋時点＝「〜に」。ここで bị を使うと災難のように響く"
+        }
+      ]
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "会話で確認",
+      "vietnameseText": "A: Sao trông cậu vui thế?\nB: Tớ <mark>được</mark> nhận học bổng rồi!\nA: Thích thế! Tớ thì vừa <mark>bị</mark> trừ điểm vì đi muộn.\nB: Ôi, tội cậu.",
+      "japaneseText": "A：なんでそんなにうれしそうなの？\nB：奨学金をもらえたんだ！\nA：いいなあ！ 私なんて遅刻して減点されたばかりだよ。\nB：うわ、かわいそうに。",
+      "annotation": "cậu/tớ は北部の友人同士の呼び方。được nhận は「（うれしいことに）受け取る」、bị trừ điểm は「（嫌なことに）減点される」。遅刻は北 đi muộn／南 đi trễ。"
+    }
+  ],
+  "caption": {
+    "hook": "😢😊 ベトナム語の受け身は2種類。「先生にほめられた」を bị で言うと、迷惑そうに聞こえるかも？",
+    "summary": "日本語の「〜される」は、ベトナム語では bị と được の2つに分かれます。\n\n✅ bị：主語にとって嫌な出来事（bị mất ví＝財布をなくす、bị phạt＝罰を受ける）\n✅ được：うれしい出来事・中立の出来事（được khen＝ほめられる、được xây dựng＝建てられる）\n✅ 動作主は bị / được の直後：Tôi bị mẹ mắng（母に叱られた）\n✅ bởi を使う形は翻訳調で、会話では使わない\n\n最後の会話は北部の友人同士（cậu/tớ）です。音声に合わせて読み、bị と được の響きの違いを体で覚えましょう。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ベトナム語文法",
+      "#ベトナム語中級",
+      "#受け身"
+    ]
+  },
+  "audioScript": "Tôi bị mất ví.\nTôi được thầy khen.\nTôi bị mẹ mắng.\nHôm qua tôi bị cô giáo phạt vì quên làm bài tập.\nCây cầu này được xây dựng vào năm 1990.\nSao trông cậu vui thế?\nTớ được nhận học bổng rồi!\nThích thế! Tớ thì vừa bị trừ điểm vì đi muộn.\nÔi, tội cậu.",
+  "status": "draft"
+}
