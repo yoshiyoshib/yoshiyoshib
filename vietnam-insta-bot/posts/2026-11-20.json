@@ -1,0 +1,94 @@
+{
+  "day": "friday",
+  "theme": "idiom",
+  "themeColor": "#C2410C",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Không thầy đố mày làm nên",
+      "subtitle": "成語・ことわざ｜教師の日（11/20）によく聞く3つの言葉",
+      "badge": "第2回 ことわざ・成語"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "① 先生がいてこそ",
+      "vietnameseText": "<mark>Không thầy đố mày làm nên</mark>\nA: Hôm nay 20/11, cậu tặng hoa cô chủ nhiệm chưa?\nB: Tặng rồi. Không thầy đố mày làm nên mà.",
+      "japaneseText": "直訳：先生なしで、お前に何かを成し遂げられるものか\n意味：師の導きがなければ、人は何も成し遂げられない\nA：今日は11月20日だけど、担任の先生にもう花をあげた？\nB：あげたよ。先生がいなきゃ何もできないからね。",
+      "annotation": "ことわざ（tục ngữ）。đố mày は「できるものならやってみろ」という挑発の言い方で、先生なしでは無理だと強調する。11月20日の教師の日によく使われる。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "② 師を敬う伝統",
+      "vietnameseText": "<mark>Tôn sư trọng đạo</mark>\nA: Ở Việt Nam, ngày 20/11 học sinh thường đến thăm thầy cô cũ.\nB: Ừ, đó là truyền thống tôn sư trọng đạo của người Việt.",
+      "japaneseText": "直訳：師を尊び、道を重んじる\n意味：先生を敬い、学びの道を大切にする\nA：ベトナムでは11月20日に、生徒がよく昔の先生を訪ねるんだ。\nB：うん、それがベトナム人の「尊師重道」の伝統だよ。",
+      "annotation": "成語（thành ngữ）で、漢字の四字熟語「尊師重道」。硬い書き言葉寄りで、スピーチや作文で使う。日常会話なら kính trọng thầy cô（先生を敬う）。"
+    },
+    {
+      "type": "text_with_translation",
+      "heading": "③ 友から学ぶ",
+      "vietnameseText": "<mark>Học thầy không tày học bạn</mark>\nA: Bài này khó quá, cô giảng mà tớ vẫn chưa hiểu.\nB: Để tớ giải thích cho. Học thầy không tày học bạn mà!",
+      "japaneseText": "直訳：先生から学ぶのは、友から学ぶのに及ばない\n意味：仲間から学ぶことも、先生に負けないほど大切だ\nA：この問題すごく難しい。先生が説明してくれたのに、まだ分からないよ。\nB：じゃあ私が説明してあげる。友達から学ぶのも大事なんだから！",
+      "annotation": "ことわざ（tục ngữ）。tày は「〜に匹敵する」という古い語（現代語の bằng）。①と逆に聞こえるが、先生を否定するのではなく仲間と学ぶ大切さを強調する。"
+    },
+    {
+      "type": "vocabulary",
+      "heading": "今日の語彙",
+      "items": [
+        {
+          "word": "thầy",
+          "pos": "名",
+          "meaning": "（男性の）先生・師",
+          "note": "女性の先生は cô。thầy cô＝先生方"
+        },
+        {
+          "word": "đố",
+          "pos": "動",
+          "meaning": "挑む・〜できるものか",
+          "note": "đố mày＝お前にできるものか。đố vui＝なぞなぞ"
+        },
+        {
+          "word": "chủ nhiệm",
+          "pos": "名",
+          "meaning": "担任",
+          "note": "漢「主任」。cô / thầy chủ nhiệm＝担任の先生"
+        },
+        {
+          "word": "truyền thống",
+          "pos": "名",
+          "meaning": "伝統",
+          "note": "漢「伝統」。truyền thống gia đình＝家の伝統"
+        },
+        {
+          "word": "tôn trọng",
+          "pos": "動",
+          "meaning": "尊重する",
+          "note": "漢「尊重」。tôn sư の tôn（尊）と同じ字"
+        },
+        {
+          "word": "tày",
+          "pos": "動",
+          "meaning": "匹敵する（古語）",
+          "note": "現代語では bằng。ことわざの中に残っている"
+        }
+      ]
+    }
+  ],
+  "caption": {
+    "hook": "🍎 11月20日はベトナムの「教師の日」。この日によく聞く成語・ことわざを3つ紹介します。",
+    "summary": "ベトナムでは11月20日に、生徒が先生に花を贈ったり、昔の先生を訪ねたりします。\n\n✅ Không thầy đố mày làm nên（ことわざ）：先生なしでは何も成し遂げられない\n✅ Tôn sư trọng đạo（成語）：「尊師重道」。師を敬い、学びを大切にする。硬い表現\n✅ Học thầy không tày học bạn（ことわざ）：友から学ぶことも大切。①と逆に聞こえるのが面白いところ\n\n文法ポイントは「〜 chưa?（もう〜した？）→ 〜 rồi（もうした）」と、古い語 tày＝bằng。会話ごと音読して、使う場面と一緒に覚えましょう。",
+    "hashtags": [
+      "#ベトナム語",
+      "#ベトナム語学習",
+      "#ベトナム語勉強",
+      "#tiengviet",
+      "#語学学習",
+      "#ThànhNgữ",
+      "#ことわざ",
+      "#慣用句",
+      "#教師の日",
+      "#ベトナム文化"
+    ]
+  },
+  "audioScript": "Không thầy đố mày làm nên.\nHôm nay hai mươi tháng mười một, cậu tặng hoa cô chủ nhiệm chưa?\nTặng rồi. Không thầy đố mày làm nên mà.\nTôn sư trọng đạo.\nỞ Việt Nam, ngày hai mươi tháng mười một học sinh thường đến thăm thầy cô cũ.\nỪ, đó là truyền thống tôn sư trọng đạo của người Việt.\nHọc thầy không tày học bạn.\nBài này khó quá, cô giảng mà tớ vẫn chưa hiểu.\nĐể tớ giải thích cho. Học thầy không tày học bạn mà!",
+  "status": "draft"
+}
