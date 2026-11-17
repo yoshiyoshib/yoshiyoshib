@@ -80,6 +80,7 @@ async function publish(creationId, label) {
     console.log("publishing quota:", JSON.stringify(lim.data?.[0] || lim));
     return;
   }
+  if (!dry && config().paused) { console.log(`::warning::Posting is paused (config.json "paused"): ${config().paused_reason || ""}`); return; }
   if (!dry && (!IG_USER_ID || !IG_ACCESS_TOKEN)) { console.log("::warning::IG_USER_ID / IG_ACCESS_TOKEN are not set. Skipping."); return; }
   if (!base) { console.error("MEDIA_BASE_URL is not set and this is not running in GitHub Actions."); process.exit(1); }
 
