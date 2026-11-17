@@ -19,16 +19,16 @@
     {
       "type": "text_with_translation",
       "heading": "② 師を敬う伝統",
-      "vietnameseText": "<mark>Tôn sư trọng đạo</mark>\nA: Ở Việt Nam, ngày 20/11 học sinh thường đến thăm thầy cô cũ.\nB: Ừ, đó là truyền thống tôn sư trọng đạo của người Việt.",
-      "japaneseText": "直訳：師を尊び、道を重んじる\n意味：先生を敬い、学びの道を大切にする\nA：ベトナムでは11月20日に、生徒がよく昔の先生を訪ねるんだ。\nB：うん、それがベトナム人の「尊師重道」の伝統だよ。",
-      "annotation": "成語（thành ngữ）で、漢字の四字熟語「尊師重道」。硬い書き言葉寄りで、スピーチや作文で使う。日常会話なら kính trọng thầy cô（先生を敬う）。"
+      "vietnameseText": "<mark>Tôn sư trọng đạo</mark>\nA: Năm nào 20/11 bọn mình cũng về thăm thầy cô cũ nhỉ.\nB: Ừ, đúng là truyền thống tôn sư trọng đạo.",
+      "japaneseText": "直訳：師を尊び、道を重んじる\n意味：先生を敬い、教えの道を大切にする\nA：毎年11月20日は、私たち昔の先生に会いに行くよね。\nB：うん、まさに「尊師重道」の伝統だね。",
+      "annotation": "成語（thành ngữ）で、四字熟語「尊師重道」。đạo（道）は師の教え・道理のこと。硬い書き言葉寄り。教師の日（20/11）は1982年に制定された。"
     },
     {
       "type": "text_with_translation",
       "heading": "③ 友から学ぶ",
       "vietnameseText": "<mark>Học thầy không tày học bạn</mark>\nA: Bài này khó quá, cô giảng mà tớ vẫn chưa hiểu.\nB: Để tớ giải thích cho. Học thầy không tày học bạn mà!",
-      "japaneseText": "直訳：先生から学ぶのは、友から学ぶのに及ばない\n意味：仲間から学ぶことも、先生に負けないほど大切だ\nA：この問題すごく難しい。先生が説明してくれたのに、まだ分からないよ。\nB：じゃあ私が説明してあげる。友達から学ぶのも大事なんだから！",
-      "annotation": "ことわざ（tục ngữ）。tày は「〜に匹敵する」という古い語（現代語の bằng）。①と逆に聞こえるが、先生を否定するのではなく仲間と学ぶ大切さを強調する。"
+      "japaneseText": "直訳：先生から学ぶのは、友から学ぶのに及ばない\n意味：先生から習うより、友達から学ぶ方が身につくこともある\nA：この問題すごく難しい。先生が説明してくれたのに、まだ分からないよ。\nB：じゃあ私が説明してあげる。友達から学ぶのも大事なんだから！",
+      "annotation": "ことわざ（tục ngữ）。không tày＝「〜に及ばない」（tày は bằng の古い言い方）。①と逆に聞こえるが、先生を否定するのではなく仲間と学ぶ大切さを強調する。"
     },
     {
       "type": "vocabulary",
@@ -66,8 +66,8 @@
         },
         {
           "word": "tày",
-          "pos": "動",
-          "meaning": "匹敵する（古語）",
+          "pos": "形",
+          "meaning": "等しい・匹敵する（古語）",
           "note": "現代語では bằng。ことわざの中に残っている"
         }
       ]
@@ -75,7 +75,7 @@
   ],
   "caption": {
     "hook": "🍎 11月20日はベトナムの「教師の日」。この日によく聞く成語・ことわざを3つ紹介します。",
-    "summary": "ベトナムでは11月20日に、生徒が先生に花を贈ったり、昔の先生を訪ねたりします。\n\n✅ Không thầy đố mày làm nên（ことわざ）：先生なしでは何も成し遂げられない\n✅ Tôn sư trọng đạo（成語）：「尊師重道」。師を敬い、学びを大切にする。硬い表現\n✅ Học thầy không tày học bạn（ことわざ）：友から学ぶことも大切。①と逆に聞こえるのが面白いところ\n\n文法ポイントは「〜 chưa?（もう〜した？）→ 〜 rồi（もうした）」と、古い語 tày＝bằng。会話ごと音読して、使う場面と一緒に覚えましょう。",
+    "summary": "ベトナムでは11月20日に、生徒が先生に花を贈ったり、昔の先生を訪ねたりします。\n\n✅ Không thầy đố mày làm nên（ことわざ）：先生なしでは何も成し遂げられない\n✅ Tôn sư trọng đạo（成語）：「尊師重道」。師を敬い、学びを大切にする。硬い表現\n✅ Học thầy không tày học bạn（ことわざ）：先生から習うより友達から学ぶ方が身につくことも。①と逆に聞こえるのが面白いところ\n\n文法ポイントは「〜 chưa?（もう〜した？）→ 〜 rồi（もうした）」と、古い語 tày＝bằng。会話ごと音読して、使う場面と一緒に覚えましょう。",
     "hashtags": [
       "#ベトナム語",
       "#ベトナム語学習",
@@ -89,6 +89,60 @@
       "#ベトナム文化"
     ]
   },
-  "audioScript": "Không thầy đố mày làm nên.\nHôm nay hai mươi tháng mười một, cậu tặng hoa cô chủ nhiệm chưa?\nTặng rồi. Không thầy đố mày làm nên mà.\nTôn sư trọng đạo.\nỞ Việt Nam, ngày hai mươi tháng mười một học sinh thường đến thăm thầy cô cũ.\nỪ, đó là truyền thống tôn sư trọng đạo của người Việt.\nHọc thầy không tày học bạn.\nBài này khó quá, cô giảng mà tớ vẫn chưa hiểu.\nĐể tớ giải thích cho. Học thầy không tày học bạn mà!",
-  "status": "draft"
+  "audioScript": "Không thầy đố mày làm nên.\nHôm nay hai mươi tháng mười một, cậu tặng hoa cô chủ nhiệm chưa?\nTặng rồi. Không thầy đố mày làm nên mà.\nTôn sư trọng đạo.\nNăm nào hai mươi tháng mười một bọn mình cũng về thăm thầy cô cũ nhỉ.\nỪ, đúng là truyền thống tôn sư trọng đạo.\nHọc thầy không tày học bạn.\nBài này khó quá, cô giảng mà tớ vẫn chưa hiểu.\nĐể tớ giải thích cho. Học thầy không tày học bạn mà!",
+  "status": "approved",
+  "evaluation": {
+    "score": 95,
+    "passed": true,
+    "overflowRounds": 0,
+    "history": [
+      {
+        "round": 0,
+        "label": "初稿",
+        "score": 95,
+        "scores": {
+          "tone_marks": 25,
+          "depth": 23,
+          "translation": 22,
+          "density": 25
+        },
+        "deductions": [
+          {
+            "criterion": "translation",
+            "points": 2,
+            "location": "slides[3]",
+            "reason": "意味の行が不tày（及ばない）の比較を弱めていた"
+          },
+          {
+            "criterion": "translation",
+            "points": 1,
+            "location": "slides[2]",
+            "reason": "ベトナム人同士で自国の習慣を説明する不自然な会話"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "slides[4].items[5]",
+            "reason": "tày は形容詞"
+          },
+          {
+            "criterion": "depth",
+            "points": 1,
+            "location": "annotation",
+            "reason": "教師の日の由来・đạo の意味が浅い"
+          }
+        ],
+        "feedback": [
+          "合格後に軽微修正：意味の行、会話②、品詞、1982年制定と đạo の説明を追記"
+        ],
+        "codeIssues": []
+      }
+    ],
+    "lessons": [
+      "ことわざの「意味」行は直訳の論理（比較・否定・条件）を弱めない。和らげた解釈は注記に分けて書く",
+      "ベトナム人同士の会話で「Ở Việt Nam」「người Việt」のような自国説明の言い方をさせない",
+      "「等しい」系の語（bằng / tày / ngang）の品詞は形容詞"
+    ],
+    "logged": true
+  }
 }
