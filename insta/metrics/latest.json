@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-19T00:42:57.707Z"
+    "collected": "2026-11-20T00:53:04.363Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:42:58.278Z"
+    "collected": "2026-11-20T00:53:04.933Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -82,7 +82,7 @@
     "story": {
       "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:42:58.856Z"
+    "collected": "2026-11-20T00:53:05.520Z"
   },
   "2026-11-08": {
     "kind": "review",
@@ -102,7 +102,7 @@
     "story": {
       "error": "17920391178526780: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:42:59.436Z"
+    "collected": "2026-11-20T00:53:05.977Z"
   },
   "2026-11-09": {
     "kind": "phrasal",
@@ -128,7 +128,7 @@
     "story": {
       "error": "18044973278831446: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:42:59.982Z"
+    "collected": "2026-11-20T00:53:06.692Z"
   },
   "2026-11-10": {
     "kind": "idiom",
@@ -154,7 +154,7 @@
     "story": {
       "error": "18122545960965174: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:00.419Z"
+    "collected": "2026-11-20T00:53:07.149Z"
   },
   "2026-11-11": {
     "kind": "word",
@@ -181,7 +181,7 @@
     "story": {
       "error": "18101420243434163: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:00.872Z"
+    "collected": "2026-11-20T00:53:07.529Z"
   },
   "2026-11-12": {
     "kind": "phrasal",
@@ -207,7 +207,7 @@
     "story": {
       "error": "17954645193317317: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:01.360Z"
+    "collected": "2026-11-20T00:53:08.005Z"
   },
   "2026-11-13": {
     "kind": "idiom",
@@ -233,7 +233,7 @@
     "story": {
       "error": "18208440958375586: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:01.812Z"
+    "collected": "2026-11-20T00:53:08.425Z"
   },
   "2026-11-14": {
     "kind": "word",
@@ -260,7 +260,7 @@
     "story": {
       "error": "18115608524139261: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:02.320Z"
+    "collected": "2026-11-20T00:53:09.023Z"
   },
   "2026-11-15": {
     "kind": "review",
@@ -280,7 +280,7 @@
     "story": {
       "error": "17913136392302513: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:02.770Z"
+    "collected": "2026-11-20T00:53:09.425Z"
   },
   "2026-11-16": {
     "kind": "phrasal",
@@ -306,7 +306,7 @@
     "story": {
       "error": "18446600809181471: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:03.194Z"
+    "collected": "2026-11-20T00:53:09.835Z"
   },
   "2026-11-17": {
     "kind": "idiom",
@@ -319,8 +319,8 @@
       "blow off steam"
     ],
     "story": {
-      "error": "18122245280517322: Unsupported get request. Object with ID '18122245280517322' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
+      "error": "18122245280517322: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-19T00:43:03.970Z"
+    "collected": "2026-11-20T00:53:09.913Z"
   }
 }
