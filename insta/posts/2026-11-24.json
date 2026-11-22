@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-24",
+  "no": 21,
+  "kind": "idiom",
+  "status": "draft",
+  "theme": {
+    "en": "Success and failure",
+    "ja": "成功・失敗の場面で使うイディオム"
+  },
+  "items": [
+    {
+      "term": "come through with flying colors",
+      "pos": "idiom",
+      "ja": "見事に成功する、優秀な成績で通過する",
+      "definition": "To succeed at something impressively or with great distinction.",
+      "example": "She studied all week and **came through with flying colors**.",
+      "example_ja": "彼女は一週間勉強して、見事な成績で試験を突破した。",
+      "note": "flying colors は勝利を示す旗から来た表現。"
+    },
+    {
+      "term": "fall flat",
+      "ipa": "/ˌfɔl ˈflæt/",
+      "pos": "idiom",
+      "ja": "失敗する、期待外れに終わる",
+      "definition": "To fail completely to have the intended or expected effect.",
+      "example": "His opening joke **fell flat** in front of the new audience.",
+      "example_ja": "彼の冒頭のジョークは初めての聴衆の前で滑ってしまった。",
+      "note": "ユーモアや提案が「ウケない・響かない」ときに特によく使います。"
+    },
+    {
+      "term": "bite the dust",
+      "ipa": "/ˌbaɪt ðə ˈdʌst/",
+      "pos": "idiom",
+      "ja": "失敗する、消える（計画・会社などが）",
+      "definition": "To fail or come to an end, often suddenly.",
+      "example": "Several startups **bit the dust** during the economic downturn.",
+      "example_ja": "景気後退の中、いくつかのスタートアップが消えていった。",
+      "note": "元は「戦死する」の意味。今は比喩的に幅広く使われます。"
+    },
+    {
+      "term": "go off without a hitch",
+      "pos": "idiom",
+      "ja": "一切問題なく進む、順調に終わる",
+      "definition": "To happen or be completed without any problems or obstacles.",
+      "example": "The product launch **went off without a hitch**.",
+      "example_ja": "製品の発表会はひとつのトラブルもなく終わった。",
+      "note": "hitch＝障害物。without a hitch で「何も引っかかりなし」。"
+    },
+    {
+      "term": "come up short",
+      "ipa": "/ˌkʌm ˌʌp ˈʃɔrt/",
+      "pos": "idiom",
+      "ja": "目標に届かない、期待を下回る",
+      "definition": "To fail to reach or achieve what is needed or expected.",
+      "example": "They trained for months but **came up short** in the finals.",
+      "example_ja": "何ヶ月もトレーニングしたが、決勝で力が及ばなかった。",
+      "note": "資金・得点・成績など「足りない」あらゆる場面で使います。"
+    }
+  ],
+  "quiz": {
+    "sentence": "Despite months of planning, the festival ____.",
+    "options": [
+      "came through with flying colors",
+      "fell flat",
+      "went off without a hitch"
+    ],
+    "answer": "B",
+    "why": "fall flat＝失敗する、期待外れに終わる。"
+  },
+  "caption": "成功・失敗の場面で使えるイディオム5つ 🏆\n\n1. come through with flying colors｜見事に成功する\n2. fall flat｜失敗する、空振りに終わる\n3. bite the dust｜失敗する、消える\n4. go off without a hitch｜問題なく進む\n5. come up short｜目標に届かない\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #イディオム #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #idioms #learnenglish #advancedenglish #englishvocabulary #英語表現"
+}

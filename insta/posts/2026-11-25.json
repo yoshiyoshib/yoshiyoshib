@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-25",
+  "no": 22,
+  "kind": "word",
+  "level": "C1",
+  "status": "draft",
+  "theme": {
+    "en": "Describing people and situations",
+    "ja": "人・状況を描写するC1形容詞"
+  },
+  "items": [
+    {
+      "term": "astute",
+      "ipa": "/əˈstuːt/",
+      "pos": "adjective",
+      "ja": "洞察力のある、抜け目のない",
+      "definition": "Able to understand a situation quickly and use that to your advantage.",
+      "example": "An **astute** negotiator, she spotted the flaw in their offer at once.",
+      "example_ja": "鋭い交渉者である彼女は、先方の申し出の欠陥をすぐに見抜いた。",
+      "note": "smart より格上で、特に判断の鋭さ・観察力を強調します。"
+    },
+    {
+      "term": "relentless",
+      "ipa": "/rɪˈlɛntləs/",
+      "pos": "adjective",
+      "ja": "容赦ない、絶え間ない",
+      "definition": "Never stopping or becoming less severe; harsh and unceasing.",
+      "example": "The team faced **relentless** pressure in the final quarter.",
+      "example_ja": "そのチームは最終クォーターで絶え間ないプレッシャーにさらされた。",
+      "note": "副詞は relentlessly。「執拗に、絶え間なく」の意味。"
+    },
+    {
+      "term": "ambiguous",
+      "ipa": "/æmˈbɪɡjuəs/",
+      "pos": "adjective",
+      "ja": "あいまいな、複数の意味にとれる",
+      "definition": "Having more than one possible meaning; not clear or certain.",
+      "example": "His **ambiguous** response left the team unsure what to do next.",
+      "example_ja": "彼の曖昧な返答で、チームは次に何をすべきか分からなくなった。",
+      "note": "名詞は ambiguity。故意にあいまいにする場合も使います。"
+    },
+    {
+      "term": "oblivious",
+      "ipa": "/əˈblɪviəs/",
+      "pos": "adjective",
+      "ja": "気づいていない、無頓着な",
+      "definition": "Not aware of or paying attention to what is happening around you.",
+      "example": "He kept scrolling, **oblivious** to the argument beside him.",
+      "example_ja": "彼はスクロールし続け、すぐそばの口論に気づいていなかった。",
+      "note": "be oblivious to / of ～ の形で使います。"
+    },
+    {
+      "term": "impartial",
+      "ipa": "/ɪmˈpɑrʃəl/",
+      "pos": "adjective",
+      "ja": "公平な、偏りのない",
+      "definition": "Treating all sides equally, without favoritism or bias.",
+      "example": "We need an **impartial** judge to review both proposals fairly.",
+      "example_ja": "両方の提案を公平に審査するために、偏りのない審査員が必要だ。",
+      "note": "neutral より積極的に「どちらにも肩入れしない」姿勢を表します。"
+    }
+  ],
+  "quiz": {
+    "sentence": "She gave an ____ review, judging each entry on its merits.",
+    "options": [
+      "oblivious",
+      "relentless",
+      "impartial"
+    ],
+    "answer": "C",
+    "why": "impartial＝公平な。内容だけで判断するのは公平な姿勢。"
+  },
+  "caption": "人・状況を表すのに役立つC1形容詞5つ 📖\n\n1. astute｜洞察力のある\n2. relentless｜容赦ない、絶え間ない\n3. ambiguous｜あいまいな\n4. oblivious｜気づいていない\n5. impartial｜公平な\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #英単語 #C1英語 #英語勉強 #大人の英語 #英会話 #英語上級 #IELTS #TOEIC #英語好きな人と繋がりたい #vocabulary #learnenglish #advancedenglish #englishwords"
+}

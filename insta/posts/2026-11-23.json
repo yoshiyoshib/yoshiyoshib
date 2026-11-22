@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-23",
+  "no": 20,
+  "kind": "phrasal",
+  "status": "draft",
+  "theme": {
+    "en": "Travel and getting around",
+    "ja": "旅行・移動に使う句動詞"
+  },
+  "items": [
+    {
+      "term": "set off",
+      "ipa": "/ˌsɛt ˈɔf/",
+      "pos": "phrasal verb",
+      "ja": "出発する、旅立つ",
+      "definition": "To begin a journey or trip.",
+      "example": "We **set off** for Paris at dawn to catch the first train.",
+      "example_ja": "一番列車に乗ろうと夜明けにパリへ向けて出発した。",
+      "note": "set out と同義だが、set off はやや口語的。"
+    },
+    {
+      "term": "see off",
+      "ipa": "/ˌsi ˈɔf/",
+      "pos": "phrasal verb",
+      "ja": "（人を）見送る",
+      "definition": "To go somewhere to say goodbye to someone who is leaving.",
+      "example": "Her whole family came to **see her off** at the airport.",
+      "example_ja": "家族全員が空港まで彼女を見送りに来た。",
+      "note": "分離可能。see ～ off の語順にも注意。"
+    },
+    {
+      "term": "touch down",
+      "ipa": "/ˌtʌtʃ ˈdaʊn/",
+      "pos": "phrasal verb",
+      "ja": "（飛行機が）着陸する",
+      "definition": "When a plane touches down, it lands on the ground.",
+      "example": "The flight **touched down** in Seoul thirty minutes early.",
+      "example_ja": "そのフライトは30分早くソウルに着陸した。",
+      "note": "名詞は touchdown。アメフトの「タッチダウン」と同じ語。"
+    },
+    {
+      "term": "head back",
+      "ipa": "/ˌhɛd ˈbæk/",
+      "pos": "phrasal verb",
+      "ja": "帰路につく、戻る",
+      "definition": "To return to a place you came from.",
+      "example": "After a week in Kyoto, we **headed back** to Tokyo.",
+      "example_ja": "京都で一週間過ごした後、東京へ戻った。",
+      "note": "head home / head to＋場所 の形でもよく使います。"
+    },
+    {
+      "term": "stop over",
+      "ipa": "/ˌstɑp ˈoʊvɚ/",
+      "pos": "phrasal verb",
+      "ja": "（旅の途中で）立ち寄る",
+      "definition": "To make a short stay somewhere on the way to your final destination.",
+      "example": "We **stopped over** in Dubai for two nights on the way to London.",
+      "example_ja": "ロンドンへ向かう途中、ドバイに2泊立ち寄った。",
+      "note": "名詞は stopover（経由地、乗り継ぎ）。"
+    }
+  ],
+  "quiz": {
+    "sentence": "The plane _____ at JFK an hour behind schedule.",
+    "options": [
+      "set off",
+      "touch down",
+      "head back"
+    ],
+    "answer": "B",
+    "why": "touch down＝飛行機が着陸する。"
+  },
+  "caption": "旅行・移動に使える句動詞5つ ✈️\n\n1. set off｜出発する\n2. see off｜見送る\n3. touch down｜着陸する\n4. head back｜戻る\n5. stop over｜途中で立ち寄る\n\n最後のスライドのクイズ、答えをコメントで教えてください👇\n正解は明日の朝のストーリーで発表します。\n保存して、明日もう一度見返すと定着しやすいです。\n\n.\n.\n.\n#英語学習 #句動詞 #旅行英語 #英語勉強 #大人の英語 #英会話 #英語上級 #TOEIC #IELTS #英語好きな人と繋がりたい #phrasalverbs #learnenglish #travelvocabulary #englishvocabulary"
+}
