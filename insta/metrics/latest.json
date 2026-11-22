@@ -29,7 +29,7 @@
       "comments": 0,
       "total_interactions": 1
     },
-    "collected": "2026-11-21T23:34:06.075Z"
+    "collected": "2026-11-22T23:47:31.519Z"
   },
   "2026-11-06": {
     "kind": "idiom",
@@ -55,7 +55,7 @@
     "story": {
       "error": "17901437292672681: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:06.838Z"
+    "collected": "2026-11-22T23:47:32.006Z"
   },
   "2026-11-07": {
     "kind": "word",
@@ -82,7 +82,7 @@
     "story": {
       "error": "18091406912260591: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:07.363Z"
+    "collected": "2026-11-22T23:47:32.390Z"
   },
   "2026-11-08": {
     "kind": "review",
@@ -102,7 +102,7 @@
     "story": {
       "error": "17920391178526780: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:08.034Z"
+    "collected": "2026-11-22T23:47:32.702Z"
   },
   "2026-11-09": {
     "kind": "phrasal",
@@ -128,7 +128,7 @@
     "story": {
       "error": "18044973278831446: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:08.507Z"
+    "collected": "2026-11-22T23:47:33.122Z"
   },
   "2026-11-10": {
     "kind": "idiom",
@@ -154,7 +154,7 @@
     "story": {
       "error": "18122545960965174: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:09.026Z"
+    "collected": "2026-11-22T23:47:33.435Z"
   },
   "2026-11-11": {
     "kind": "word",
@@ -181,7 +181,7 @@
     "story": {
       "error": "18101420243434163: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:09.481Z"
+    "collected": "2026-11-22T23:47:33.815Z"
   },
   "2026-11-12": {
     "kind": "phrasal",
@@ -207,7 +207,7 @@
     "story": {
       "error": "17954645193317317: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:09.911Z"
+    "collected": "2026-11-22T23:47:34.190Z"
   },
   "2026-11-13": {
     "kind": "idiom",
@@ -233,7 +233,7 @@
     "story": {
       "error": "18208440958375586: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:10.352Z"
+    "collected": "2026-11-22T23:47:34.567Z"
   },
   "2026-11-14": {
     "kind": "word",
@@ -260,7 +260,7 @@
     "story": {
       "error": "18115608524139261: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:10.768Z"
+    "collected": "2026-11-22T23:47:35.435Z"
   },
   "2026-11-15": {
     "kind": "review",
@@ -280,7 +280,7 @@
     "story": {
       "error": "17913136392302513: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:11.201Z"
+    "collected": "2026-11-22T23:47:35.765Z"
   },
   "2026-11-16": {
     "kind": "phrasal",
@@ -306,7 +306,7 @@
     "story": {
       "error": "18446600809181471: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:11.734Z"
+    "collected": "2026-11-22T23:47:36.094Z"
   },
   "2026-11-17": {
     "kind": "idiom",
@@ -321,6 +321,6 @@
     "story": {
       "error": "18122245280517322: (#100) Tried accessing nonexisting field (insights)"
     },
-    "collected": "2026-11-21T23:34:11.840Z"
+    "collected": "2026-11-22T23:47:36.128Z"
   }
 }
